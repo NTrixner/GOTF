@@ -1,0 +1,124 @@
+\section{Game Modes}\label{sec:gamemodes}
+GOTF groups multiple interactions into so-called scenes.
+A scene happens whenever the players' goals are at risk in some form.
+Not every group of interactions is automatically a scene - only situations in which a \lq Dramatic Question \rq is happening can be counted as a scene.
+In such cases, how the player characters resolve the situation decides the Game Mode they're operating in.
+In a GOTF-based system, every character has a level for each Game Mode that is designed into the system.
+For example, the GOTF\_Fantasy has the modes Combat, Social Interaction and Adventuring.
+When designing a Game Mode, the GM should keep the following questions in mind:
+\begin{itemize}
+    \item What distinguishes this Game Mode from the other Game Modes
+    \item What actions are typical for the characters to perform in a specific Game Mode
+    \item What measurements are going to be typical in a Game Mode
+    \item What resources are used in the Game Mode
+\end{itemize}
+
+A character performing a trained action in a specific Game Mode (See \lq ~\nameref{sec:perks} \rq below) can add their relevant Level to relevant checks.\\
+When a party successfully prevails through a scene in a Game Mode, the characters gain 1 Experience Point (XP) in that Game Mode.\\
+Some Scenes are more important or dramatic to the story than others.
+These Scenes may provide 2 XP in that Game Mode, or in extreme cases even 3 XP.\\
+A character immediately levels up their specific Game Mode when they have gained a certain amount of XP for that Game Mode.
+By default, the formula for the required XP for a given level is:\\
+$XP_{l+1} = XP_{l} + l * 4$\\
+Where $XP_{1} = 0$ and $XP_{2} = 1$\\
+This means that a character starts at level 1 in each Game Mode, and gains level 2 after one Scene in that Game Mode, and level 3 after 5 Scenes, and so forth.\\
+
+By default, each time a character gains XP in a Game Mode, they gain Learning Points (LP).\\
+Learning Points are used to acquire new Perks (See \lq ~\nameref{sec:perks} \rq below).\\
+The amount of LP a character gains when gaining XP equals their current level times 100.\\
+If a character gains more than one XP in a level, they gain LP as if the would have gained each XP after the other - meaning that a character with 4 XP who gains 3 XP would gain 200 LP for the first XP, and 600 for the second two.\\
+
+\section{Attributes}\label{ch:attributes}
+The GOTF uses Attributes to describe a character's abilities in a numeric way.
+There are three types of attributes: Active, Defensive and Pools.\\
+
+\subsection{Active}\label{subsec:activeattributes}
+Active Attributes are static values that describe a character's physical and mental abilities.
+In the GOTF\_Fantasy, these include Strength, Vitality, Dexterity, Agility, Intellect, Perception, and Charisma.\\
+Active Attributes range between 1 and 12, and can not leave this range without special reasoning.
+A system can decide how a player allots these values at character creation, but suggestions are rolling and then assigning, point distribution with a minimum value, rolling directly, and predefined value lists.\\
+
+\subsection{Defensive}\label{subsec:defensiveattributes}
+Defensive Attributes are attributes that can be targeted by some type of effect.\\
+In the GOTF\_Fantasy, these include Dodge, Notice and Willpower.\\
+Defensive Attributes are usually derived from Active Attributes.\\
+Each Defensive Attribute has three values: The modifier, the Lower and the Higher value.\\
+The Modifier is usually equal to the active attribute that it derives from, adding Game Mode levels if the character is trained in the defensive attribute, or gains proficiency in the attribute in some other manner.
+The Lower Value equals 8 plus the Modifier, and the Higher Value equals 21 plus the Modifier.\\
+Whenever a check targets a creature's defensive attribute, the result of that check is compared to the Lower and Higher Value first.
+If the check is below the Lower Value, it fails.\\
+If it is higher than the Higher Value, it succeeds.\\
+If it is between (including the Lower and Higher value itself), the target creature can make a d20 roll and add their Modifier to it.
+If that roll is higher than the original check, the negative effects of the original check is reduced - sometimes by half, sometimes completely, as designated by the action itself.\\
+
+\subsection{Pools}\label{subsec:poolattributes}
+Pools are a form of depleting resource that a creature has.\\
+In the GOTF\_Fantasy, these are Health, Mana and Stamina.\\
+A Pool Value has a maximum value, a current value (that is smaller than or equal to the maximum value) and the current Value can be reduced by actions of the creature itself or by other effects.
+When the current Value of a Pool reaches 0, some negative effect afflicts the creature.
+A system may define sub-ranges of a pool that already have some negative effects, in order to promote resource management.\\
+Each Pool Value should also have a way of regenerating it.\\
+Similar to Defensive Attributes, Pools can also be based on Active Attributes.
+If that is the case, any perk that increases a Pool would also add the Active Attribute value to the Pool's Maximum Value, and any change of the Active Attribute would trigger a recalculation of the Pool.\\
+Determining the starting Value of Pools is up to the system, but the Origins of a Character are a typical source.\\
+
+\section{Origins}\label{sec:origins}
+Origins describe the character in amore fundamental, and historic way.
+In the GOTF\_Fantasy, this includes Species, Culture and Background.\\
+A system can have as many or few types of Origins as desired, but somewhere between 2 and 5 is easier to track.\\
+The boni from these Origins can be manyfold, and the designer of a system is completely unlimited, but common suggestions would be:
+\begin{itemize}
+    \item Gaining +2, +1, -1 or -2 on an Active Attribute.
+    This might also increase or decrease the maximum value of that Active Attribute.
+    \item Gaining a certain type of modifier in specific tasks, typically a +1d4 or a +1d6.
+    \item Gaining temporary bonuses that can be used once, and then not anymore for a significant amount of time.
+    \item Static bonuses, such as certain types of perception, movement or communication.
+    \item Bonuses that apply when interacting with others of the same Origin, or when interacting with the Origin itself.
+\end{itemize}
+
+\section{Perks}\label{sec:perks}
+Perks are modular forms of powers and abilities that a character has learned.\\
+These can be spells, increases for active or pool attributes, special movements, superpowers that the character becomes more accustomed to, new software on a mech, knowledge a character has gained, the limits are only decided by the system.\\
+In general, Perks can be described in the following way:\\
+\begin{itemize}
+    \item Name
+    The name of the Perk
+    \item Requirements
+    This describes what requirements a perk has.
+    This can include other perks, a certain origin, a certain Game Mode Level, or in-game feats that aren't described in the system itself.
+    \item Costs
+    This describes the costs of a perk in LP.
+    A character who learns a perk has to spend this amount of LP.
+    Sometimes, a system will also denote how much time is required to learn a perk.
+    In such a case, it is a good idea to define a relationship between LP and amount of required time, since \lq costs more LP \rq and \lq takes more time to learn\rq are both synonyms for \lq is more difficult to learn \rq.
+    \item Tags
+    The tags, or descriptors of a perk.
+    These might include if the perk can be trained in multiple ranks, if it is a \lq passive \rq (aka always active) perk or an \lq active \rq (aka some type of action the character gains) perk, if it is a spell, if requires memorizing, etc. etc.
+    This might also include how and where a character can learn a certain perk - books, scrolls, trainers, the internet, if it costs money to learn something, etc.
+    \item Description
+    This includes a description of the in-game explanation of the perk, as well as a description of the effect that the perk has in the terms of the system rules.
+    In case of perks that have multiple ranks, this also includes the level progression (How many LP a higher Rank of the perk costs, as well as the effect that it has on higher levels)
+\end{itemize}
+
+\subsection{Group Perks}\label{subsec:groupperks}
+Some perks are organized in groups.\\
+In the GOTF\_Fantasy this includes Armor Proficiencies, Weapon Proficiencies, Skills, Spells and Martial Perks.\\
+Organizing Perks into groups and giving them group mechanics can be used to increase immersion, give thematic cohesion, and curb hyper-specialization.\\
+The latter can be done by calculating the Perk Rank costs of the Perks in a Group by the total amount of Ranks of Perks in that group.\\
+As an example, the GOTF\_Fantasy uses a Group Rank Progression for Skills.
+This means that every new Skill and every higher Rank in an already learned skill are equally difficult to learn, resulting in there being a distribution of skills amongst the PCs, and not one character having \lq all the skills \rq, while the other characters focus on other issues.\\
+Other ways of grouping perks include common mechanics, common resources, similar effects but for different areas of the game (like all proficiency and skill perks in the GOTF\_Fantasy) and all perks in a group using the same Pool.\\
+
+\section{Inventory}\label{sec:inventory}
+While the GOTF does not necessitate that any given system uses an itemization system and track equipment or money, many traditional tabletop RPGs have such a system, and so here are some basic guidelines to create a working item system:\\
+Any character can carry a certain amount of items, possibly based on a type of container they are wearing.
+Each item comes in a different size category, and the different size categories use a factor of 10 with each other.\\
+For example, the GOTF\_Fantasy has coin sized (CS), tiny (T), small (S), medium (M), large (L) and extra-large (XL) items.
+One tiny item is the same size as 10 coin sized items.\\
+A character can generally carry an amount of large items equal to their strength.\\
+\\
+The value of items is defined by some form of currency, but in general a baseline for the value of such a currency is needed.\\
+A good base value could be LP - in such a case, a designer could create, for example, a 1:1 ratio between LP and money.
+While it wouldn't be possible to convert money into LP or vice-versa (other than perhaps at character creation), the power of items could then be determined alongside perks.\\
+This comparison wouldn't work for temporary or consumable items though, since gaining a new ability would be exponentially more valuable than a limited-use object.\\
+In such a case, a dividend of 5 is suggested, but could also be 2 or 10, or something else.\\

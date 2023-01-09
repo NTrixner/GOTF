@@ -1,0 +1,55 @@
+name: Auto-Release
+
+on: 
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+      - name: Github Action for LaTeX main build
+        uses: xu-cheng/latex-action@1.2.1
+        with:
+          root_file: gotf.tex
+#      - name: Github Action for LaTeX creature compendium
+#        uses: xu-cheng/latex-action@1.2.1
+#        with:
+#          root_file: creatureCompendium.tex
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.run_number }}
+          release_name: Release ${{ github.run_number }}
+          draft: false
+          prerelease: false
+      - name: Upload Release Asset main file
+        id: upload-release-asset-mainfile
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{github.token}}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          asset_path: ./gotf.pdf
+          asset_name: gotf.pdf
+          asset_content_type: application/pdf
+#      - name: Upload Release Asset creature compendium
+#        id: upload-release-asset-creaturecompendium
+#        uses: actions/upload-release-asset@v1.0.1
+#        env:
+#          GITHUB_TOKEN: ${{github.token}}
+#        with:
+#          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+#          asset_path: ./creatureCompendium.pdf
+#          asset_name: creatureCompendium.pdf
+#          asset_content_type: application/pdf
+      
+
