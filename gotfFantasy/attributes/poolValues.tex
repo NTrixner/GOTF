@@ -1,13 +1,13 @@
 \section{Pool Values}\label{sec:pools}
-For RLP, two main pool values are important, with a third being tracked, but really being just important for magically trained characters.
-The base number of these values is determined by a character's race and attributes.\\
+For the GOTF\_F, two main pool values are important, with a third and fourth being tracked, but really being just important for magically and priestly trained characters respectively.
+The base number of these values is determined by a character's species and attributes.\\
 
 \subsection{Relevant Attributes}\label{subsec:relevantAttributesPools}
-The three Pool Values are each dependent on an Attribute.
-Health depends on Vitality, Stamina depends on Strength, and Mana depends on Intellect.
-This means that each of the Pool Values is equal to a number stemming from a race, plus the relevant attribute.
-For example, a Daevana starts with 25 Health.
-With 9 Vitality, a Daevana would start the game with 34 Health.
+The four Pool Values are each dependent on an Attribute.
+Health depends on Vitality, Stamina depends on Strength, Mana depends on Intellect, and Faith depends on Charisma.
+This means that each of the Pool Values is equal to a number stemming from a species, plus the relevant attribute.
+For example, a Human starts with 25 Health.
+With 9 Vitality, a Human would start the game with 34 Health.
 If that character then increases their Vitality by 1, their maximum Health would also increase.
 Additionally, with each rank in ~\nameref{perk:increasehealth}, Vitality is added to the character's maximum health again.
 This also means that a character with 3 ranks in Increase Health would gain 4 additional maximum Health if they increase their Vitality by 1.
@@ -15,34 +15,27 @@ This also means that a character with 3 ranks in Increase Health would gain 4 ad
 \subsection{Health}\label{pool:health} describes a character's ability to withstand any type of damage.
 Health can be seen as a combination of resilience, bodily health and luck.
 If a character reaches 0 Health, they are \textbf{dead}.
-A character with less than one fourth of their Health becomes "\nameref{condition:wounded}".
-A character with less than one tenth of their Health becomes "\nameref{condition:heavilyWounded}".
+A character with less than one fourth of their Health becomes wounded. %"\nameref{condition:wounded}".
+A character with less than one tenth of their Health becomes heavily wounded.%"\nameref{condition:heavilyWounded}".
 Health can be restored by resting (See Recovering Pool values, below), by alchemy and by magic.
 A character that is dead can not be healed.
-Reviving magic doesn't exist in the Ragged Lands.\\
 
 \subsection{Stamina}\label{pool:stamina} describes a character's ability to act out tasks that are bodily challenging.
-When a character climbs or swims fast, or if a character uses special maneuvers in combat, they loses stamina.
+When a character climbs or swims fast, or if a character uses special maneuvers in combat, they lose stamina.
 Stamina can be restored by resting (See below).
-It usually doesn't take much longer than an hour to completely restore Stamina, so outside of a stressful situation, a character usually has full Stamina.
-A character with less than one fourth of their Stamina becomes "\nameref{condition:exhausted}".
-A character with less than one tenth of their Stamina becomes "\nameref{condition:heavilyExhausted}".k
-If a character reaches a Stamina of 0, they become \textbf{unconscious}.\\
+It usually doesn't take much longer than an hour to completely restore Stamina, so outside a stressful situation, a character usually has full Stamina.
 
 \subsection{Mana}\label{pool:mana} is usually tracked for every character, but only important for magic users.
 It describes a character's ability to cast spells.
 Casting a spell costs Mana, and a character replenishes mana by eating.
-A character with less than one fourth of their Mana becomes "\nameref{condition:drained}".
-A character with less than one tenth of their Mana becomes "\nameref{condition:heavilyDrained}".
-A character that reaches 0 Mana becomes \textbf{paralyzed}.\\
 
 \subsection{Recovering Pool Values}\label{subsec:recoveringPoolValues}
-For each of the 3 different Pool values, recovery works the same way, but is triggered by different conditions.
+For each of the 4 different Pool values, recovery works the same way, but is triggered by different conditions.
 Whenever one of these conditions occur, the characters regain points in that pool value as mentioned below
 
 \subsection{Recovering Health}\label{subsec:recoverHealth}
 Aside from using special tools or magic for healing, each character has the ability to recover health in a natural way.
-A character's natural healing ability allows them to heal 1 points of health, per 1 hour.
+A character's natural healing ability allows them to heal 1 point of health, per 1 hour.
 While resting, this healing effect is doubled.
 A priest or healer may further improve someone's natural healing ability.
 
@@ -54,6 +47,10 @@ For every 2 seconds a character rests like that (or every AP in combat they spen
 Mana is recovered over time, but the rate at which it recovers can be influenced by the food that the character eats.
 A meal usually lasts for 8 hours.
 A usual ration provides a recovery of 1d6 points per hour.
+
+\subsection{Recovering Faith}\label{subsec:recoverFaith}
+Faith is fully recovered at a certain time of day, after the character holds their daily prayer (which usually takes about 15 Minutes).
+The time at which this prayer has to occur is based on the religion of the character, but happens usually at one of the four cardinal times: Dawn, Noon, Dusk, or Midnight.
 
 \subsection{Temporary Pool Values}\label{subsec:temporaryPoolValues}
 When a character gains temporary bonuses to their pool values, they function as temporary increase of their maximum values.\\

@@ -24,27 +24,6 @@
 \setcounter{secnumdepth}{0}
 \setcounter{tocdepth}{1}
 
-\newcommand{\passus} [1] {%
-  \SI{#1}ps (\pgfmathparse{1.5*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~m, \pgfmathparse{5*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~ft)%
-}
-
-\newcommand{\leg} [1] {%
-  \SI{#1}leg (\pgfmathparse{1.2*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~km, \pgfmathparse{0.746*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~mi)%
-}
-
-\newcommand{\fin} [1] {%
-  \SI{#1}fin (\pgfmathparse{1.5*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~cm, \pgfmathparse{0.6*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~")%
-}
-
-\newcommand{\pugnus} [1] {%
-  \SI{#1}pugnus (\pgfmathparse{0.33*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~kg, \pgfmathparse{10*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~fl oz)%
-}
-
-\newcommand{\stone} [1] {%
-  \SI{#1}stone (\pgfmathparse{6*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~kg, \pgfmathparse{13*#1}\pgfmathprintnumber[precision=2]\pgfmathresult~lb)%
-}
-
-
 
 \begin{document}
 	\title{GOTF \\ Generic Open Tabletop Framework}
@@ -56,47 +35,10 @@
 	\tableofcontents
 
 \part{Introduction}\label{part:intrudction}
-\section{Tabletop Roleplaying Games}\label{sec:ttrpgs}
-	The following paragraph describes what a Tabletop roleplaying game is and how it is played.
-	If you are already an experienced player or GM, you can skip this paragraph.
-	Tabletop roleplaying games are a form of game that is played, as the name suggests, at a table.\\
-	They require 3 to 8 players, as well as a single person refereeing the game - the "Game Master" (GM).\\
-	Each of the players takes on the role of a character, represented by one or more sheets of paper, a so called "Character Sheet".\\
-	The GM describes a situation in a fantastical world to the players, and the players decide how their characters, the so-called "Player Characters" react.\\
-	The GM decides, if the actions of a PC would require a die roll.
-	If they do, the Player rolls a polyhedric die in accordance to the rules of the games and the parameters set by the GM, adds values from their Character Sheet to the roll, and proclaims the resulting number.\\
-	The GM then decides if the action has failed, succeeded, and by which degree.
-	As a result, the GM describes how the situation has changed, and the players again describe how they want to react to the evolving situation.
-	Sometimes, the results of an interaction might make it neccessary to update a character sheet, such as reducing health or adding items to the character's backpack.\\
-	Many interactions between GM and players happen during a single evening of play, a so-called "Session".\\
-	The result of this simple looping mechanism is a unique, interactive and entertaining story, created and shared by multiple individuals.
-	Oftentimes, at the end of a session, the players will take their character sheets home (or leave them with the GM), in order to resume the story at the next session.\\
-	When multiple session share some kind of singularity - typically the cast of characters, or the main storyline - they are called a "Campaign".\\
-	The fantastical world, in which such a story takes place is called a "Setting".
+	\input{./intro/ttrpg}
+	\input{./intro/gotf_explanation}
+	\input{./intro/gotf_explanation}
 
-\section{What the GOTF is}\label{sec:gotfexplanation}
-	For many, following a predefined ruleset is the easiest solution when it comes to TTRPGs.
-	There have been many more or less successful systems in the past, and there is something for most flavors.
-	It is not the target of the GOTF to replace these systems, and we don't espouse to be an "end all be all" system for every single player out there - that would be arrogant.\\
-	Instead, the target of the GOTF is to take a setting-gnostic system (called RLP, the Ragged Lands Pen and Paper System), which was designed by the author of this document, and make it more generalized, so it can fit many different worlds, flavors and aesthetics.\\
-	The GOTF is a meta-system designed to make it easy to create, modify and share RPG Rules Systems.\\
-	It is based around a single Core Mechanic - the roll of a D20 plus modifiers, but adds multiple systems on top of that, while being completely modular.\\
-	The basics of a GOTF system are: Game Modes, Attributes, Perks, Origins, and Inventory.
-	We will go into more detail regarding these entities in the following chapters.\\
-	This document is not designed for beginners, and not for people who just want a simple RPG System they can pick up and try out.
-	For that, try the file "GOTF\_Fantasy.pdf", which is a GOTF-based rules system designed for simple fantasy adventures - think of your generic humans, elves, dwarves etc.
-
-\section{How to use this document}\label{sec:howtouse}
-	In the following chapters, this document explains how to create a GOTF-based system.
-	It first describes the base mechanic, as well as how to adjudicate actions, handle rounding, modifier types, etc.
-	It then goes over the base components of a GOTF-based system - Game Modes, Attributes, Perks, Origins and Inventory.
-	To a large extent, most of these systems do not provide fixed numbers or strong guidelines.
-	The reason for that is that the GOTF is designed to work with different levels of power-fantasy.
-	The balancing of numbers is left to the GM.
-	Note, that this document is licensed under the WTFPL.
-	This means that this document has no legal restrictions to any use, both commercial or private.
-	You can also distribute this document freely and without charge.
-	Unlike with other systems and licenses, this will never change.
 
 \part{Basic Rules}\label{part:basicRules}
 	\input{./basicRules/baseMechanic}
