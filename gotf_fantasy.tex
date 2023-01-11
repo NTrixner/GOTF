@@ -15,11 +15,11 @@
 \usepackage{textcomp}
 \usepackage{amsmath}
 \hypersetup{
-	colorlinks,
-	citecolor=black,
-	filecolor=black,
-	linkcolor=black,
-	urlcolor=black
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
 }
 
 \setcounter{secnumdepth}{0}
@@ -28,48 +28,60 @@
 
 
 \begin{document}
-	\title{GOTF \\ Generic Open Tabletop Framework}
-	\
-	\author{Nikolaus Trixner}
+    \title{GOTF \\ Generic Open Tabletop Framework}
+    \author{Nikolaus Trixner}
 
-	\maketitle
+    \maketitle
 
-	\tableofcontents
-
-	\part{Introduction}\label{part:intrudction}
-	\input{./intro/ttrpg}
+    \tableofcontents
 
 
-	\part{Basic Rules}\label{part:basicRules}
-	\input{./basicRules/baseMechanic}
-
-	\part{Game Modes}\label{part:gameModes}
-	\input{./gotfFantasy/gameModes/overview}
-	
-	\part{Attributes}\label{part:attributes}
-	\input{./gotfFantasy/attributes/mainAttributes}
-	\input{./gotfFantasy/attributes/poolValues}
-	\input{./gotfFantasy/attributes/defensiveAttributes}
-
-	\part{Origins}\label{part:origins}
-	\input{./gotfFantasy/origins/species}
-	\input{./gotfFantasy/origins/cultures}
-	\input{./gotfFantasy/origins/backgrounds}
-
-	\part{Perks}\label{part:perks}
-	\input{./gotfFantasy/perks/description}
-	\input{./gotfFantasy/perks/base}
-	\input{./gotfFantasy/perks/martial}
-	\input{./gotfFantasy/perks/divine}
-	\input{./gotfFantasy/perks/magic}
-	\input{./gotfFantasy/perks/skills}
-
-	\part{Creating a character}\label{part:characterCreation}
-	\input{./gotfFantasy/charCreation}
+    \part{Introduction}\label{part:intrudction}
+    \input{./intro/ttrpg}
 
 
-	\part{License}\label{part:license}
-	Copyright © 2000 Nikolaus Trixner\\
-	This work is free.
-	You can redistribute it and/or modify> it under the  terms of the Do What The Fuck You Want To Public License, Version 2, as published by Sam Hocevar.
+    \part{Basic Rules}\label{part:basicRules}
+    \input{./basicRules/baseMechanic}
+
+
+    \part{Game Modes}\label{part:gameModes}
+    \input{./gotfFantasy/gameModes/overview}
+
+
+    \part{Attributes}\label{part:attributes}
+    \input{./gotfFantasy/attributes/mainAttributes}
+    \input{./gotfFantasy/attributes/poolValues}
+    \input{./gotfFantasy/attributes/defensiveAttributes}
+
+
+    \part{Origins}\label{part:origins}
+    \input{./gotfFantasy/origins/species}
+    \input{./gotfFantasy/origins/cultures}
+    \input{./gotfFantasy/origins/backgrounds}
+
+
+    \part{Perks}\label{part:perks}
+    \input{./gotfFantasy/perks/description}
+    \input{./gotfFantasy/perks/base}
+    \input{./gotfFantasy/perks/martial}
+    \input{./gotfFantasy/perks/divine}
+    \input{./gotfFantasy/perks/magic}
+    \input{./gotfFantasy/perks/skills}
+
+
+    \part{Creating a character}\label{part:characterCreation}
+    \input{./gotfFantasy/charCreation}
+
+    \addcontentsline{toc}{part}{Appendices}
+    \begin{appendices}
+        \input{./gotfFantasy/appendices/damage}
+        \input{./gotfFantasy/appendices/conditions}
+        \input{./gotfFantasy/appendices/biomes}
+
+        \chapter{License}\label{chapter:license}
+        Copyright © 2000 Nikolaus Trixner\\
+        This work is free.
+        You can redistribute it and/or modify> it under the terms of the Do What The Fuck You Want To Public License, Version 2, as published by Sam Hocevar.
+    \end{appendices}
+
 \end{document}
