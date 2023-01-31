@@ -8,8 +8,8 @@ Drinking a potion takes 4 AP, and retrieving them from your inventory costs an a
 	Antidote & T & 30\\
 	Health Potion & T & 100\\
 	Mana Potion & T & 100\\
-	Spider's Venom & T & 30\\
 	Stamina Potion & T & 50\\
+	Spider's Venom & T & 30\\
 	Strength Potion & T & 50\\
 	Vitality Potion & T & 50\\
 	Agility Potion & T & 50\\
@@ -19,13 +19,51 @@ Drinking a potion takes 4 AP, and retrieving them from your inventory costs an a
 	Charisma Potion & T & 50\\
 \end{longtable}
 
+\subsection{Antidote}\label{potion:antidote}
+Drinking an \textbf{Antidote} grants a creature a +4 Alchemical Bonus on any checks against poison or venom effect for the next hour.\\
+\textbf{Recipe}:\\
+Tier: 1\\
+Price: 50 Gold \\
+Threshold: 18\\
+Solvent: Alcohol\\
+Ingredients: 1x Poison Essence I, 1x Health Essence I\\
+1st Bonus: +5 Alchemical Bonus\\
+2nd Bonus: +6 Alchemical Bonus\\
 
-Drinking an \textbf{Antidote} grants a creature +4 on any checks against poison or venom effect for the next hour.\\
-
+\subsection{Health Potion}\label{potion:healthPotion}
 A \textbf{Health Potion} regenerates 2d6+2 Health immediately.\\
+\textbf{Recipe}:\\
+Tier: 1\\
+Price: 50 Gold\\
+Threshold: 20\\
+Solvent: Water\\
+Ingredients: 1x Health Essence I\\
+1st Bonus: 2d6+3 Health\\
+2nd Bonus: 2d6+4 Health\\
 
+\subsection{Mana Potion}\label{potion:manaPotion}
 A \textbf{Mana Potion} regenerates 2d6+2 Mana immediately.\\
+\textbf{Recipe}:\\
+Tier: 1\\
+Price: 50 Gold\\
+Threshold: 20\\
+Solvent: Alcohol\\
+Ingredients: 1x Magic Essence I\\
+1st Bonus: 2d6+3 Mana\\
+2nd Bonus: 2d6+4 Mana\\
 
+\subsection{Stamina Potion}\label{potion:staminaPotion}
+A \textbf{Stamina Potion} regenerates 2d6+2 Stamina immediately.\\
+\textbf{Recipe}:\\
+Tier: 1\\
+Price: 30\\
+Threshold: 20\\
+Solvent: Water\\
+Ingredients: 1x Speed Essence I\\
+1st Bonus: 2d6+3 Stamina\\
+2nd Bonus: 2d6+4 Stamina\\
+
+\subsection{Spider's Venom}\label{potion:spidersVenom}
 A \textbf{Spider's Venom} can be applied to any melee weapon that deals cutting or piercing damage.
 It can also be applied to a batch of up to 10 units of ammunition.
 The effect lasts until the weapon strikes a creature, so it isn't wasted on a natural 1 or a dodge.
@@ -35,19 +73,89 @@ Applying a poison takes 1 minute and requires a Th 15 Dexterity check.
 On a failed check, the user loses the poison.
 If the check is failed by 5 or more the character is affected by the poison.\\
 Someone hurt by a weapon drenched in Spider's venom (where at least one damage was dealt) must make a Th 12 VIT check or take 3D6 Necrotic damage.\\
+\textbf{Recipe}:\\
+Tier: 1\\
+Price: 75 Gold\\
+Threshold: 22\\
+Solvent: Alcohol\\
+Ingredients: 1x Spider Venom Sack\\
+1st Bonus: Th 13 Vitality Check instead\\
+2nd Bonus: Th 14 Vitality Check instead\\
 
-A \textbf{Stamina Potion} regenerates 2d6+2 Stamina immediately.\\
 
-A \textbf{Strength Potion} increases your Strength by 1 for 1 hour.\\
+\subsection{Strength Potion}\label{potion:strengthPotion}
+A \textbf{Strength Potion} grants a +1 Alchemical Bonus to Strength for 1 hour.\\
+\textbf{Recipe}:\\
+Tier: 2\\
+Price: 150 Gold\\
+Threshold: 24\\
+Solvent: Water\\
+Ingredients: 1x Body Essence I, 1x Fire Essence II\\
+1st Bonus: Works for 2 hours instead\\
+2nd Bonus: Works for 3 hours instead\\
 
-A \textbf{Vitality Potion} increases your Vitality by 1 for 1 hour.\\
+\subsection{Vitality Potion}\label{potion:vitalityPotion}
+A \textbf{Vitality Potion} grants a +1 Alchemical Bonus to Vitality for 1 hour.\\
+\textbf{Recipe}:\\
+Tier: 2\\
+Price: 150 Gold\\
+Threshold: 24\\
+Solvent: Water\\
+Ingredients: 1x Body Essence I, 1x Health Essence II\\
+1st Bonus: Works for 2 hours instead\\
+2nd Bonus: Works for 3 hours instead\\
 
-A \textbf{Agility Potion} increases your Agility by 1 for 1 hour.\\
+\subsection{Agility Potion}\label{potion:agilityPotion}
+A \textbf{Agility Potion} grants a +1 Alchemical Bonus to Agility for 1 hour.\\
+\textbf{Recipe}:\\
+Tier: 2\\
+Price: 150 Gold\\
+Threshold: 24\\
+Solvent: Water\\
+Ingredients: 1x Body Essence I, 1x Speed Essence II\\
+1st Bonus: Works for 2 hours instead\\
+2nd Bonus: Works for 3 hours instead\\
 
-A \textbf{Dexterity Potion} increases your Dexterity by 1 for 1 hour.\\
+\subsection{Dexterity Potion}\label{potion:dexterityPotion}
+A \textbf{Dexterity Potion} grants a +1 Alchemical Bonus to Dexterity for 1 hour.\\
+\textbf{Recipe}:\\
+Tier: 2\\
+Price: 150 Gold\\
+Threshold: 24\\
+Solvent: Water\\
+Ingredients: 1x Body Essence I, 1x Lightning Essence II\\
+1st Bonus: Works for 2 hours instead\\
+2nd Bonus: Works for 3 hours instead\\
 
-A \textbf{Intellect Potion} increases your Intellect by 1 for 1 hour.\\
+\subsection{Intellect Potion}\label{potion:intellectPotion}
+A \textbf{Intellect Potion} grants a +1 Alchemical Bonus to Intellect for 1 hour.\\
+\textbf{Recipe}:\\
+Tier: 2\\
+Price: 150 Gold\\
+Threshold: 24\\
+Solvent: Water\\
+Ingredients: 1x Body Essence I, 1x Magic Essence II\\
+1st Bonus: Works for 2 hours instead\\
+2nd Bonus: Works for 3 hours instead\\
 
-A \textbf{Perception Potion} increases your Perception by 1 for 1 hour.\\
+\subsection{Perception Potion}\label{potion:perceptionPotion}
+A \textbf{Perception Potion} grants a +1 Alchemical Bonus to Perception for 1 hour.\\
+\textbf{Recipe}:\\
+Tier: 2\\
+Price: 150 Gold\\
+Threshold: 24\\
+Solvent: Water\\
+Ingredients: 1x Body Essence I, 1x Light Essence II\\
+1st Bonus: Works for 2 hours instead\\
+2nd Bonus: Works for 3 hours instead\\
 
-A \textbf{Charisma Potion} increases your Charisma by 1 for 1 hour.
+\subsection{Charisma Potion}\label{potion:charismaPotion}
+A \textbf{Charisma Potion} grants a +1 Alchemical Bonus to Charisma for 1 hour.\\
+\textbf{Recipe}:\\
+Tier: 2\\
+Price: 150 Gold\\
+Threshold: 24\\
+Solvent: Water\\
+Ingredients: 1x Body Essence I, 1x Radiant Essence II\\
+1st Bonus: Works for 2 hours instead\\
+2nd Bonus: Works for 3 hours instead
