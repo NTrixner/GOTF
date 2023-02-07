@@ -3,7 +3,7 @@ name: Auto-Release
 on: 
   push:
     branches: 
-      - master
+      - release
 
 jobs:
   build:
@@ -17,10 +17,12 @@ jobs:
         uses: xu-cheng/latex-action@1.2.1
         with:
           root_file: gotf.tex
+          latexmk_use_lualatex: true
       - name: Github Action for LaTeX GOTF Fantasy
         uses: xu-cheng/latex-action@1.2.1
         with:
           root_file: gotf_fantasy.tex
+          latexmk_use_lualatex: true
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1.0.0
