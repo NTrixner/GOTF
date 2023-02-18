@@ -1,14 +1,15 @@
 {
-  "name": "Fur Jacket",
-  "type": "light",
+  "recipe": "Gambeson",
+  "material": "Fur",
+  "type": "medium",
   "defenses": [
     {
       "type": "blunt",
-      "amount": 1
+      "amount": 3
     },
     {
       "type": "cutting",
-      "amount": 1
+      "amount": 2
     },
     {
       "type": "piercing",
@@ -25,10 +26,10 @@
     },
     {
       "type": "pockets",
-      "amount":  2,
+      "amount":  3,
       "size": "S"
     }
   ],
-  "size": "M",
-  "value": 100
+  "size": "L",
+  "value": 225
 }

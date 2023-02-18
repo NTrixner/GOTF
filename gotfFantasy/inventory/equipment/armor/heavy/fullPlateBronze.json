@@ -1,0 +1,31 @@
+{
+  "recipe": "Full Plate",
+  "material": "Bronze",
+  "type": "heavy",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 7
+    },
+    {
+      "type": "cutting",
+      "amount": 9
+    },
+    {
+      "type": "piercing",
+      "amount": 9
+    }
+  ],
+  "attributes": [
+    {
+      "type": "over"
+    },
+    {
+      "type": "pockets",
+      "amount":  2,
+      "size": "S"
+    }
+  ],
+  "size": "L",
+  "value": 750
+}

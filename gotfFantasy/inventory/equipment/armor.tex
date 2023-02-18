@@ -24,12 +24,16 @@ The quality bonus of an armor changes its base price:\\
 \end{itemize}
 
 \section{Armor List}\label{armorList}
-\input{./gotfFantasy/inventory/equipment/armor/cloth}
 
-\input{./gotfFantasy/inventory/equipment/armor/light}
-
-\input{./gotfFantasy/inventory/equipment/armor/medium}
-
-\input{./gotfFantasy/inventory/equipment/armor/heavy}
+\luadirect{printArmorHead()}
+\luadirect{printArmorOver("Clothing")}
+\luadirect{printAllArmors('./gotfFantasy/inventory/equipment/armor/cloth')}
+\luadirect{printArmorOver("Light")}
+\luadirect{printAllArmors('./gotfFantasy/inventory/equipment/armor/light')}
+\luadirect{printArmorOver("Medium")}
+\luadirect{printAllArmors('./gotfFantasy/inventory/equipment/armor/medium')}
+\luadirect{printArmorOver("Heavy")}
+\luadirect{printAllArmors('./gotfFantasy/inventory/equipment/armor/heavy')}
+\luadirect{printArmorFoot()}
 
 \input{./gotfFantasy/inventory/equipment/armor/armorAttributes}

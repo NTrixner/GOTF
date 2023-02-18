@@ -1,5 +1,6 @@
 {
-  "name": "Fleece Jacket",
+  "recipe": "Robes",
+  "material": "Linen",
   "type": "cloth",
   "defenses": [
     {
@@ -9,15 +10,18 @@
   ],
   "attributes": [
     {
-      "type": "warming",
-      "amount": 1
+      "type": "over"
     },
     {
       "type": "pockets",
-      "amount":  4,
+      "amount":  2,
       "size": "S"
+    },
+    {
+      "type": "enchantable",
+      "amount":  2
     }
   ],
   "size": "M",
-  "value": 60
+  "value": 85
 }

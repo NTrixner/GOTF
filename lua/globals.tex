@@ -5,6 +5,14 @@
 
 	RESISTANCE_SHORTS = {blunt = "b", cutting = "c", piercing = "p", heat = "ht", cold = "cld", electrical = "elec", corrosive = "crs", necrose = "ncr", radiation = "rad", nihilation = "nihil"}
 
+    function format_int(number)
+        local i, j, minus, int, fraction = tostring(number):find('([-]?)(%d+)([.]?%d*)')
+
+        int = int:reverse():gsub("(%d%d%d)", "%1,")
+
+        return minus .. int:reverse():gsub("^,", "") .. fraction
+    end
+
 	function read(file)
 		local handler = io.open(file, "rb")
 		local content = handler:read("*all")

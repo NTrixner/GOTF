@@ -1,33 +1,28 @@
 {
-  "name": "Bronze Chain Shirt",
-  "type": "light",
+  "recipe": "Scale Mail",
+  "material": "Iron",
+  "type": "medium",
   "defenses": [
     {
       "type": "blunt",
-      "amount": 2
-    },
-    {
-      "type": "cutting",
       "amount": 5
     },
     {
+      "type": "cutting",
+      "amount": 9
+    },
+    {
       "type": "piercing",
-      "amount": 2
+      "amount": 5
     }
   ],
   "attributes": [
-    {
-      "type": "over"
-    },
-    {
-      "type": "under"
-    },
     {
       "type": "pockets",
       "amount":  2,
       "size": "S"
     }
   ],
-  "size": "M",
-  "value": 700
+  "size": "L",
+  "value": 1540
 }

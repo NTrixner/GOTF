@@ -1,34 +1,31 @@
 {
-  "name": "Linen Gambeson",
-  "type": "light",
+  "recipe": "Half Plate",
+  "material": "Steel",
+  "type": "heavy",
   "defenses": [
     {
       "type": "blunt",
-      "amount": 3
+      "amount": 8
     },
     {
       "type": "cutting",
-      "amount": 2
+      "amount": 11
     },
     {
       "type": "piercing",
-      "amount": 1
+      "amount": 11
     }
   ],
   "attributes": [
     {
-      "type": "warming",
-      "amount": 1
-    },
-    {
-      "type": "under"
+      "type": "over"
     },
     {
       "type": "pockets",
-      "amount":  3,
+      "amount":  2,
       "size": "S"
     }
   ],
   "size": "L",
-  "value": 180
+  "value": 2500
 }
