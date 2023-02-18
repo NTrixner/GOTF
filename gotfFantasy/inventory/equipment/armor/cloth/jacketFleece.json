@@ -1,5 +1,6 @@
 {
-  "name": "Linen Robes",
+  "recipe": "Jacket",
+  "material": "Fleece",
   "type": "cloth",
   "defenses": [
     {
@@ -9,18 +10,15 @@
   ],
   "attributes": [
     {
-      "type": "over"
+      "type": "warming",
+      "amount": 1
     },
     {
       "type": "pockets",
-      "amount":  2,
+      "amount":  4,
       "size": "S"
-    },
-    {
-      "type": "enchantable",
-      "amount":  2
     }
   ],
   "size": "M",
-  "value": 85
+  "value": 60
 }

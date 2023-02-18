@@ -1,0 +1,28 @@
+{
+  "recipe": "Brigandine",
+  "material": "Bronze",
+  "type": "medium",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 5
+    },
+    {
+      "type": "cutting",
+      "amount": 5
+    },
+    {
+      "type": "piercing",
+      "amount": 4
+    }
+  ],
+  "attributes": [
+    {
+      "type": "pockets",
+      "amount":  2,
+      "size": "S"
+    }
+  ],
+  "size": "L",
+  "value": 700
+}

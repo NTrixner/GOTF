@@ -1,0 +1,31 @@
+{
+  "recipe": "Half Plate",
+  "material": "Bronze",
+  "type": "heavy",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 5
+    },
+    {
+      "type": "cutting",
+      "amount": 8
+    },
+    {
+      "type": "piercing",
+      "amount": 8
+    }
+  ],
+  "attributes": [
+    {
+      "type": "over"
+    },
+    {
+      "type": "pockets",
+      "amount":  2,
+      "size": "S"
+    }
+  ],
+  "size": "L",
+  "value": 350
+}

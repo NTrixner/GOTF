@@ -1,0 +1,39 @@
+{
+  "recipe": "Jacket",
+  "material": "Leather",
+  "type": "light",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 2
+    },
+    {
+      "type": "cutting",
+      "amount": 2
+    },
+    {
+      "type": "piercing",
+      "amount": 2
+    }
+  ],
+  "attributes": [
+    {
+      "type": "warming",
+      "amount": 1
+    },
+    {
+      "type": "cooling",
+      "amount": 1
+    },
+    {
+      "type": "under"
+    },
+    {
+      "type": "pockets",
+      "amount":  4,
+      "size": "S"
+    }
+  ],
+  "size": "M",
+  "value": 250
+}

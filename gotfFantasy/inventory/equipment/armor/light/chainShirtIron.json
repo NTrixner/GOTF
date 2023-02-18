@@ -1,0 +1,42 @@
+{
+  "recipe": "Chain Shirt",
+  "material": "Iron",
+  "type": "light",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 3
+    },
+    {
+      "type": "cutting",
+      "amount": 7
+    },
+    {
+      "type": "piercing",
+      "amount": 3
+    }
+  ],
+  "attributes": [
+    {
+      "type": "warming",
+      "amount": 1
+    },
+    {
+      "type": "cooling",
+      "amount": 1
+    },
+    {
+      "type": "under"
+    },
+    {
+      "type": "over"
+    },
+    {
+      "type": "pockets",
+      "amount":  2,
+      "size": "S"
+    }
+  ],
+  "size": "M",
+  "value": 1200
+}

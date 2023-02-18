@@ -1,0 +1,39 @@
+{
+  "recipe": "Gambeson",
+  "material": "Leather",
+  "type": "medium",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 5
+    },
+    {
+      "type": "cutting",
+      "amount": 4
+    },
+    {
+      "type": "piercing",
+      "amount": 2
+    }
+  ],
+  "attributes": [
+    {
+      "type": "warming",
+      "amount": 1
+    },
+    {
+      "type": "cooling",
+      "amount": 1
+    },
+    {
+      "type": "under"
+    },
+    {
+      "type": "pockets",
+      "amount":  3,
+      "size": "S"
+    }
+  ],
+  "size": "L",
+  "value": 450
+}

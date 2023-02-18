@@ -1,14 +1,15 @@
 {
-  "name": "Leather Jacket",
+  "recipe": "Gambeson",
+  "material": "Fleece",
   "type": "light",
   "defenses": [
     {
       "type": "blunt",
-      "amount": 2
+      "amount": 4
     },
     {
       "type": "cutting",
-      "amount": 2
+      "amount": 3
     },
     {
       "type": "piercing",
@@ -21,18 +22,14 @@
       "amount": 1
     },
     {
-      "type": "cooling",
-      "amount": 1
-    },
-    {
       "type": "under"
     },
     {
       "type": "pockets",
-      "amount":  4,
+      "amount":  3,
       "size": "S"
     }
   ],
-  "size": "M",
+  "size": "L",
   "value": 250
 }
