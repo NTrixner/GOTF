@@ -1,0 +1,30 @@
+{
+  "name": "Fleece Robes",
+  "type": "cloth",
+  "defenses": [
+    {
+      "type": "cutting",
+      "amount": 1
+    }
+  ],
+  "attributes": [
+    {
+      "type": "over"
+    },
+    {
+      "type": "warming",
+      "amount": 1
+    },
+    {
+      "type": "pockets",
+      "amount":  2,
+      "size": "S"
+    },
+    {
+      "type": "enchantable",
+      "amount":  2
+    }
+  ],
+  "size": "M",
+  "value": 70
+}

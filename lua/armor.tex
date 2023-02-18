@@ -1,0 +1,36 @@
+\begin{luacode}
+	function print_armor(item)
+		tex.sprint(item['name'])
+		tex.sprint(" & ")
+		for i, defense in ipairs(item['defenses'])
+		do
+			tex.sprint(defense['amount']..RESISTANCE_SHORTS[defense['type']])
+			if item['defenses'][i+1]
+			then
+				tex.sprint(", ")
+			end
+		end
+		tex.sprint(" & ")
+		for i, attribute in ipairs(item['attributes'])
+		do
+			tex.sprint(attribute['type'])
+			if attribute['amount'] then
+				tex.sprint("("..attribute['amount'])
+				if attribute['size'] then
+					tex.sprint(attribute['size'])
+				end
+				tex.sprint(")")
+			end
+			if item['attributes'][i+1]
+			then
+				tex.sprint(", ")
+			end
+		end
+		tex.sprint(" & ")
+		tex.sprint(item['size'])
+		tex.sprint(" & ")
+		tex.sprint(item['value'].."C")
+	end
+
+
+\end{luacode}
