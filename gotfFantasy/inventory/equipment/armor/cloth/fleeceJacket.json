@@ -1,0 +1,23 @@
+{
+  "name": "Fleece Jacket",
+  "type": "cloth",
+  "defenses": [
+    {
+      "type": "cutting",
+      "amount": 1
+    }
+  ],
+  "attributes": [
+    {
+      "type": "warming",
+      "amount": 1
+    },
+    {
+      "type": "pockets",
+      "amount":  4,
+      "size": "S"
+    }
+  ],
+  "size": "M",
+  "value": 60
+}

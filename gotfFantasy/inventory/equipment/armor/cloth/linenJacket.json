@@ -1,0 +1,22 @@
+{
+  "name": "Linen Jacket",
+  "type": "cloth",
+  "defenses": [
+    {
+      "type": "cutting",
+      "amount": 1
+    }
+  ],
+  "attributes": [
+    {
+      "type": "under"
+    },
+    {
+      "type": "pockets",
+      "amount":  4,
+      "size": "S"
+    }
+  ],
+  "size": "M",
+  "value": 40
+}

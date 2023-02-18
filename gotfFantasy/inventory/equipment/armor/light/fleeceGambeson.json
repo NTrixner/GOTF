@@ -1,0 +1,34 @@
+{
+  "name": "Fleece Gambeson",
+  "type": "light",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 4
+    },
+    {
+      "type": "cutting",
+      "amount": 3
+    },
+    {
+      "type": "piercing",
+      "amount": 2
+    }
+  ],
+  "attributes": [
+    {
+      "type": "warming",
+      "amount": 1
+    },
+    {
+      "type": "under"
+    },
+    {
+      "type": "pockets",
+      "amount":  3,
+      "size": "S"
+    }
+  ],
+  "size": "L",
+  "value": 250
+}
