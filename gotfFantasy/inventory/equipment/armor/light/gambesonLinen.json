@@ -14,13 +14,13 @@
     {
       "type": "piercing",
       "amount": 1
+    },
+    {
+      "type": "cold",
+      "amount": 1
     }
   ],
   "attributes": [
-    {
-      "type": "warming",
-      "amount": 1
-    },
     {
       "type": "under"
     },

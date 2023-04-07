@@ -4,7 +4,14 @@
 		tex.sprint(" & ")
 		for i, defense in ipairs(item['defenses'])
 		do
-			tex.sprint(defense['amount']..RESISTANCE_SHORTS[defense['type']])
+		    if RESISTANCE_SHORTS[defense['type']]
+		    then
+			    tex.sprint(defense['amount']..RESISTANCE_SHORTS[defense['type']])
+            else
+			    tex.sprint(defense['amount'])
+			    tex.sprint(" ")
+			    tex.sprint(defense['type'])
+			end
 			if item['defenses'][i+1]
 			then
 				tex.sprint(", ")
@@ -35,7 +42,7 @@
     function printArmorHead()
         tex.print("\\rowcolors{2}{lightgray}{white}")
         tex.print("\\renewcommand*{\\arraystretch}{1.4}")
-        tex.print("\\begin{longtable}{|c | c | >{\\raggedright}p{5cm} | c | r |}")
+        tex.print("\\begin{longtable}{|c | p{4cm} | >{\\raggedright}p{3cm} | c | r |}")
         tex.print("\\hline Name & Resistances & Attributes & Size & Price (in Coins)\\\\ \\hline")
     end
 

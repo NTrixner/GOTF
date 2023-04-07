@@ -20,23 +20,6 @@ While wearing medium armor, a character's Agility can not exceed 8.
 Heavy Armor is slow and clunky, but also adds the biggest bonus to armor of any type.
 It requires at least 10 minutes to don and doff such a piece of armor, and while wearing Heavy Armor, the wearer's Agility can not exceed a value of 6.
 
-\subsection{Warming}\label{armor:warming}
-An Armor with this attribute helps against the cold.
-It grants resistance to cold by the value specified.
-
-\subsection{Cooling}\label{armor:cooling}
-An Armor with this attribute helps against the heat.
-It grants resistance to heat by the value specified.
-
-\subsection{Shielding}\label{armor:shielding}
-An Armor with this attribute grants damage resistance to Radiation damage by the amount specified.
-
-\subsection{Insulating}\label{armor:insulating}
-An Armor with this attribute grants damage resistance to Electrical damage by the amount specified.
-
-\subsection{Living}\label{armor:living}
-An Armor with this attribute grants damage resistance to Necrotic damage by the amount specified.
-
 \subsection{Flammable}\label{armor:flammable}
 An Armor with this attribute easily catches fire.
 Whenever a character wearing it would take heat damage, the armor starts to burn.\\
@@ -60,21 +43,13 @@ This means that any armor that doesn't have the "Enchantable" attribute specifie
 An Armor with the Leightweight attribute reduces the wearer's Agility as if it were one Weight class lower.
 Additionally, if the wearer of said armor is more proficient in the lower weight class than the armor's actual weight class, they can benefit from the lower proficiency as if the armor was one weight class lower.
 
-\subsection{Magic Defense}\label{armor:magicDefense}
-An Armor with this attribute grants additional damage resistance to damage from spells, by the amount specified.
-
-\subsection{Elemental Defense}\label{armor:elementalDefense}
-An Armor with this attribute grants damage resistance to elemental damage by the amount specified, if no other aspect of the armor already grants larger resistance to that element.
-
-\subsection{Indestructible}\label{armor:indestructible}
-An Armor with this attribute grants damage resistance to Corrosion and Nihilation damage by the amount specified.
-
 \subsection{Over and Under}\label{armor:under}
 An armor with the "under" attribute can be worn under any "over" armor.\\
 An armor with the "over" attribute can be worn over any "under" armor.\\
 When both armors grant resistances to a damage type, do not add them together.
 Instead, the larger respective resistance count.\\
-Wearing two pieces of armor reduces a character's Agility by 2, to a minimum of 1.
+Wearing two pieces of armor inflicts a -2 equipment malus to character's Agility.
+This malus can not reduce a character's agility to less than 1.
 
 \subsection{Pockets}\label{armor:pockets}
 An armor with Pockets has the ability to hold a certain amount of items in its pockets.
