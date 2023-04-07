@@ -5,15 +5,15 @@
   "defenses": [
     {
       "type": "blunt",
-      "amount": 6
+      "amount": 7
     },
     {
       "type": "cutting",
-      "amount": 9
+      "amount": 10
     },
     {
       "type": "piercing",
-      "amount": 6
+      "amount": 7
     }
   ],
   "attributes": [

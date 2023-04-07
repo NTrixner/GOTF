@@ -5,7 +5,7 @@
   "defenses": [
     {
       "type": "cutting",
-      "amount": 1
+      "amount": 2
     },
     {
       "type": "cold",
@@ -27,5 +27,5 @@
     }
   ],
   "size": "M",
-  "value": 70
+  "value": 90
 }

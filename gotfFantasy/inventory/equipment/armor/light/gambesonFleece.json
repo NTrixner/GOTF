@@ -17,13 +17,10 @@
     },
     {
       "type": "cold",
-      "amount": 1
+      "amount": 2
     }
   ],
   "attributes": [
-    {
-      "type": "under"
-    },
     {
       "type": "pockets",
       "amount":  3,
@@ -31,5 +28,5 @@
     }
   ],
   "size": "L",
-  "value": 250
+  "value": 220
 }

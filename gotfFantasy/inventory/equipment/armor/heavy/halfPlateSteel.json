@@ -5,15 +5,15 @@
   "defenses": [
     {
       "type": "blunt",
-      "amount": 8
+      "amount": 9
     },
     {
       "type": "cutting",
-      "amount": 11
+      "amount": 14
     },
     {
       "type": "piercing",
-      "amount": 11
+      "amount": 14
     }
   ],
   "attributes": [
@@ -27,5 +27,5 @@
     }
   ],
   "size": "L",
-  "value": 2500
+  "value": 1350
 }

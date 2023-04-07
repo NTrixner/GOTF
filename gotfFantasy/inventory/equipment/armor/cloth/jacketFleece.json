@@ -4,8 +4,8 @@
   "type": "cloth",
   "defenses": [
     {
-      "type": "cutting",
-      "amount": 1
+      "type": "blunt",
+      "amount": 2
     },
     {
       "type": "cold",
@@ -20,5 +20,5 @@
     }
   ],
   "size": "M",
-  "value": 60
+  "value": 55
 }
