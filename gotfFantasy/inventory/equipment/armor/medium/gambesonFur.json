@@ -17,7 +17,7 @@
     },
     {
       "type": "cold",
-      "amount": 2
+      "amount": 3
     }
   ],
   "attributes": [
@@ -31,5 +31,5 @@
     }
   ],
   "size": "L",
-  "value": 225
+  "value": 230
 }

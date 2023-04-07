@@ -9,19 +9,11 @@
     },
     {
       "type": "cutting",
-      "amount": 7
+      "amount": 8
     },
     {
       "type": "piercing",
       "amount": 3
-    },
-    {
-      "type": "cold",
-      "amount": 1
-    },
-    {
-      "type": "heat",
-      "amount": 1
     }
   ],
   "attributes": [
