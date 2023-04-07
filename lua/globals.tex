@@ -3,7 +3,7 @@
 
     require "lfs"
 
-	RESISTANCE_SHORTS = {blunt = "b", cutting = "c", piercing = "p", heat = "ht", cold = "cld", electrical = "elec", corrosive = "crs", necrose = "ncr", radiation = "rad", nihilation = "nihil"}
+	RESISTANCE_SHORTS = {blunt = "b", cutting = "c", piercing = "p"}
 
     function format_int(number)
         local i, j, minus, int, fraction = tostring(number):find('([-]?)(%d+)([.]?%d*)')
@@ -44,5 +44,15 @@
 
     function GetFileExtension(path)
         return path:match("^.+(%..+)$")
+    end
+
+    function has_value (tab, val)
+        for index, value in ipairs(tab) do
+            if value == val then
+                return true
+            end
+        end
+
+        return false
     end
 \end{luacode}
