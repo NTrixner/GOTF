@@ -1,0 +1,23 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Monster Compendium" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+    <texify>
+      <compiler>LUALATEX</compiler>
+      <compiler-path />
+      <sumatra-path />
+      <pdf-viewer>NONE</pdf-viewer>
+      <viewer-command />
+      <compiler-arguments />
+      <envs />
+      <main-file>$PROJECT_DIR$/gotf_fantasy.tex</main-file>
+      <output-path>{projectDir}/out</output-path>
+      <auxil-path>{projectDir}/auxil</auxil-path>
+      <compile-twice>false</compile-twice>
+      <output-format>PDF</output-format>
+      <latex-distribution>TEXLIVE</latex-distribution>
+      <has-been-run>false</has-been-run>
+      <bib-run-config>[]</bib-run-config>
+      <makeindex-run-config>[]</makeindex-run-config>
+    </texify>
+    <method v="2" />
+  </configuration>
+</component>
