@@ -1,0 +1,33 @@
+{
+  "name": "Enchanting",
+  "label": "enchanting",
+  "type": "Perk",
+  "cost": 300,
+  "requirements": [],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You can combine mundane objects, soul shards and alchemical essences into enchanted items.",
+      "To do so, you have to learn the enchantments.",
+      "Some Enchantments also require to cast a spell on the item while enchanting.",
+      "This can be done by you, or by someone else.",
+      "You can learn Tier 1 Enchantments.",
+      "The check to create an enchanted item is an Intellect check, and you have a Skill Bonus equals to your Crafting level on it."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 250",
+    "description": {
+      "text": [
+        "You can learn Tier {{newRank}} Enchantments",
+        "You gain a +{{oldRank}}d4 Skill Bonus to Enchanting checks"
+      ]
+    },
+    "amountWritten": 4
+  }
+}

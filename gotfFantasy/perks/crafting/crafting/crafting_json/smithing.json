@@ -1,0 +1,42 @@
+{
+  "name": "Smithing",
+  "label": "smithing",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [
+    {
+      "type": "perk",
+      "label": "metallurgy",
+      "rank": 1
+    }
+  ],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You can combine Metals and other Ingredients into Metal Items.",
+      "To do so, you have to learn smithing designs.",
+      "You can learn smithing designs of Tier 1.",
+      "Most smithing designs require a smithy, and can be improved by higher quality items or additional tools as noted on the smithing designs.",
+      "The check required to smith something is a Strength check, and you can add a Skill bonus equals to your Crafting level to it, and any other checks regarding smithed items."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 50",
+    "description": {
+      "text": [
+        "You can learn Tier {{newRank}} Smithing designs",
+        {
+          "conditional": "{{newRank}} % 3 == 0",
+          "value": "you gain a +{{param1}}d4 Skill Bonus to Smithing checks",
+          "param1": "{{newRank}}/3"
+        }
+      ]
+    },
+    "amountWritten": 10
+  }
+}

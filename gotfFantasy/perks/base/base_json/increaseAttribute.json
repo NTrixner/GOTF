@@ -1,0 +1,22 @@
+{
+	"name": "Increase Attribute",
+	"label": "increaseAttribute",
+	"type": "Perk",
+	"cost": 100,
+	"requirements": [],
+	"tags": [
+		"passive", "repeatable"
+	],
+	"description": {
+		"text": [
+			"You increase one of your Attribute values by one.",
+			"If you increase Strength, Intellect, Vitality, or Charisma, then your Stamina, Mana, Health, or Faith respectively also increase by 1, plus 1 for each rank of ~\\nameref{perk:increaseStamina},~\\nameref{perk:increaseMana},~\\nameref{perk:increaseHealth}, or ~\\nameref{perk:increaseFaith} you have.",
+			"Each time you gain a higher rank for this perk, you increase an Attribute value by one point."
+		]
+	},
+	"progression": {
+		"type": "formula",
+		"value": "{{costOldRank}} + {{newRank}} * 100",
+		"amountWritten": 21
+	}
+}

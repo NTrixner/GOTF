@@ -1,0 +1,23 @@
+{
+    "name": "Increase {{value}}",
+    "label": "increase{{value}}",
+    "type": "multiPerk",
+    "cost": 50,
+    "requirements": [],
+    "value": ["Faith", "Health", "Mana", "Stamina"],
+    "param1": ["Empathy", "Vitality", "Intellect", "Strength"],
+    "tags": [
+        "passive", "repeatable"
+    ],
+    "description": {
+        "text": [
+            "You increase your Maximum (and current) {{value}} by 1D6 + {{param1}}.",
+            "Each time you gain a higher Rank for this perk, your {{value}} is increased again."
+        ]
+    },
+    "progression": {
+        "type": "formula",
+        "value": "{{costOldRank}} + {{newRank}} * 50",
+        "amountWritten": 18
+    }
+}
