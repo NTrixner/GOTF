@@ -1,0 +1,38 @@
+\\rowcolors{2}{lightgray}{white}
+\\renewcommand*{\\arraystretch}{1.4}
+\\begin{longtable}{|c | p{4cm} | >{\\raggedright}p{3cm} | c | r |}
+\\hline Name & Resistances & Attributes & Size & Price (in Coins)\\\\
+
+\\hline
+\\rowcolor{white} \\multicolumn{5}{c}{\\textbf{"Clothing"}}\\\\
+\\hline
+
+<#items clothArmor as armor>
+  ${armor.recipe} (${armor.recipe}) & ${armor.defenses} & ${armor.attributes} & ${armor.size} & ${armor.cost}C\\
+</#items>
+
+\\hline
+\\rowcolor{white} \\multicolumn{5}{c}{\\textbf{"Light"}}\\\\
+\\hline
+
+<#items lightArmor as armor>
+  ${armor.recipe} (${armor.recipe}) & ${armor.defenses} & ${armor.attributes} & ${armor.size} & ${armor.cost}C\\
+</#items>
+
+\\hline
+\\rowcolor{white} \\multicolumn{5}{c}{\\textbf{"Medium"}}\\\\
+\\hline
+
+<#items mediumArmor as armor>
+  ${armor.recipe} (${armor.recipe}) & ${armor.defenses} & ${armor.attributes} & ${armor.size} & ${armor.cost}C\\
+</#items>
+
+\\hline
+\\rowcolor{white} \\multicolumn{5}{c}{\\textbf{"Heavy"}}\\\\
+\\hline
+
+<#items heavyArmor as armor>
+  ${armor.recipe} (${armor.recipe}) & ${armor.defenses} & ${armor.attributes} & ${armor.size} & ${armor.cost}C\\
+</#items>
+
+\\hline \\end{longtable}

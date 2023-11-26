@@ -1,0 +1,17 @@
+\section{${name}}\label{perk:${label}}
+\textbf{Cost:} <#if cost??>${cost}<#else>-</#if> LP\\
+\textbf{Requirements:} <#if requirements??>${requirements}<#else>-</#if>\\
+\textbf{${tags}}\\
+${description}
+\\
+<#if ranks?? && ranks?size gt 0>
+    Rank Progression:\\
+    \\
+    \rowcolors{2}{lightgray}{white}
+    \begin{longtable}{l | l | p{9cm}}
+        Rank & LP Cost & Effect\\
+        <#list ranks as rank>
+        ${rank.rank} & ${rank.cost} & ${rank.description} \\
+        </#list>
+    \end{longtable}
+</#if>

@@ -1,25 +1,36 @@
 package at.trixner.gotf;
 
+import at.trixner.gotf.mapper.PerkToTemplate;
 import at.trixner.gotf.model.GotfType;
+import at.trixner.gotf.model.Perk;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import freemarker.template.Configuration;
+import freemarker.template.Template;
+import freemarker.template.Version;
 import org.apache.commons.io.FileUtils;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class Main {
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
     private static final ArrayList<GotfType> convertedTypes = new ArrayList<>();
 
+    private static final Configuration cfg = new Configuration();
+
     static {
         OBJECT_MAPPER.enable(MapperFeature.ACCEPT_CASE_INSENSITIVE_ENUMS);
         OBJECT_MAPPER.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        cfg.setClassForTemplateLoading(Main.class, "/templates");
+        cfg.setIncompatibleImprovements(new Version(2, 3, 20));
+        cfg.setDefaultEncoding("UTF-8");
+        cfg.setLocale(Locale.of("en", "AT"));
     }
 
     public static void main(String[] args) throws IOException {
@@ -54,21 +65,32 @@ public class Main {
                 if (f.getName().endsWith(".tex")) {
                     FileUtils.copyFile(f, Path.of(outputFolderFile.getPath(), f.getName()).toFile());
                 } else if (f.getName().endsWith(".json")) {
-                    File processed = parseFile(f);
+                    String targetFileName = f.getName();
+                    targetFileName = targetFileName.substring(0, targetFileName.lastIndexOf(".json")) + ".tex";
+                    File targetFile = Path.of(outputFolderFile.getPath(), targetFileName).toFile();
+                    File processed = parseFile(f, targetFile);
                 }
             }
         }
     }
 
-    private static File parseFile(File f) {
+    private static File parseFile(File f, File targetFile) {
         try {
             GotfType gotf = OBJECT_MAPPER.readValue(f, GotfType.class);
+            if(gotf instanceof Perk perk)
+            {
+                at.trixner.gotf.templatemodel.Perk templatePerk = PerkToTemplate.map(perk);
+                Template template = cfg.getTemplate("perk.fmk");
+                Writer fileWriter = new FileWriter(targetFile);
+                template.process(templatePerk, fileWriter);
+                return targetFile;
+            }
             convertedTypes.add(gotf);
         } catch (Exception e) {
             System.out.println("Error while trying to parse file " + f.getName() + ": " + e.getMessage());
             e.printStackTrace();
         }
-        return f;
+        return null;
     }
 
     private static void printChildren(File[] files, int depth) {
