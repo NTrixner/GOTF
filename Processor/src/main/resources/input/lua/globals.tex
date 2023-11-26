@@ -1,0 +1,58 @@
+\begin{luacode}
+	require("lualibs.lua")
+
+    require "lfs"
+
+	RESISTANCE_SHORTS = {blunt = "b", cutting = "c", piercing = "p"}
+
+    function format_int(number)
+        local i, j, minus, int, fraction = tostring(number):find('([-]?)(%d+)([.]?%d*)')
+
+        int = int:reverse():gsub("(%d%d%d)", "%1,")
+
+        return minus .. int:reverse():gsub("^,", "") .. fraction
+    end
+
+	function read(file)
+		local handler = io.open(file, "rb")
+		local content = handler:read("*all")
+		handler:close()
+		return utilities.json.tolua(content)
+	end
+
+    function dirtree(dir)
+        assert(dir and dir ~= "", "Please pass directory parameter")
+        if string.sub(dir, -1) == "/" then
+            dir=string.sub(dir, 1, -2)
+        end
+
+        local function yieldtree(dir)
+            for entry in lfs.dir(dir) do
+                if entry ~= "." and entry ~= ".." then
+                    entry=dir.."/"..entry
+                    local attr=lfs.attributes(entry)
+                    coroutine.yield(entry,attr)
+                    if attr.mode == "directory" then
+                        yieldtree(entry)
+                    end
+                end
+            end
+        end
+
+        return coroutine.wrap(function() yieldtree(dir) end)
+    end
+
+    function GetFileExtension(path)
+        return path:match("^.+(%..+)$")
+    end
+
+    function has_value (tab, val)
+        for index, value in ipairs(tab) do
+            if value == val then
+                return true
+            end
+        end
+
+        return false
+    end
+\end{luacode}

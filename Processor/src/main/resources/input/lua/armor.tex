@@ -1,0 +1,71 @@
+\begin{luacode}
+	function print_armor(item)
+		tex.sprint(item['recipe'].." ("..item['material']..")")
+		tex.sprint(" & ")
+		for i, defense in ipairs(item['defenses'])
+		do
+		    if RESISTANCE_SHORTS[defense['type']]
+		    then
+			    tex.sprint(defense['amount']..RESISTANCE_SHORTS[defense['type']])
+            else
+			    tex.sprint(defense['amount'])
+			    tex.sprint(" ")
+			    tex.sprint(defense['type'])
+			end
+			if item['defenses'][i+1]
+			then
+				tex.sprint(", ")
+			end
+		end
+		tex.sprint(" & ")
+		for i, attribute in ipairs(item['attributes'])
+		do
+			tex.sprint(attribute['type'])
+			if attribute['amount'] then
+				tex.sprint("("..attribute['amount'])
+				if attribute['size'] then
+					tex.sprint(attribute['size'])
+				end
+				tex.sprint(")")
+			end
+			if item['attributes'][i+1]
+			then
+				tex.sprint(", ")
+			end
+		end
+		tex.sprint(" & ")
+		tex.sprint(item['size'])
+		tex.sprint(" & ")
+		tex.sprint(format_int(item['value']).."C")
+	end
+
+    function printArmorHead()
+        tex.print("\\rowcolors{2}{lightgray}{white}")
+        tex.print("\\renewcommand*{\\arraystretch}{1.4}")
+        tex.print("\\begin{longtable}{|c | p{4cm} | >{\\raggedright}p{3cm} | c | r |}")
+        tex.print("\\hline Name & Resistances & Attributes & Size & Price (in Coins)\\\\ \\hline")
+    end
+
+    function printArmorFoot()
+		tex.print{"\\hline \\end{longtable}"}
+    end
+
+
+    function printArmorOver(title)
+        tex.print("\\hline")
+        tex.print("\\rowcolor{white} \\multicolumn{5}{c}{\\textbf{"..title.."}}\\\\")
+        tex.print("\\hline")
+    end
+
+    function printAllArmors(dir)
+		for filename, attri in dirtree(dir)
+		do
+			if GetFileExtension(filename) == '.json'
+			then
+				print_armor(read(filename))
+			    tex.print("\\\\")
+			end
+		end
+	end
+
+\end{luacode}

@@ -1,0 +1,32 @@
+{
+  "gotfType": "Armor",
+  "recipe": "Robes",
+  "material": "Fleece",
+  "type": "cloth",
+  "defenses": [
+    {
+      "type": "cutting",
+      "amount": 2
+    },
+    {
+      "type": "cold",
+      "amount": 1
+    }
+  ],
+  "attributes": [
+    {
+      "type": "over"
+    },
+    {
+      "type": "pockets",
+      "amount":  2,
+      "size": "S"
+    },
+    {
+      "type": "enchantable",
+      "amount":  2
+    }
+  ],
+  "size": "M",
+  "value": 90
+}

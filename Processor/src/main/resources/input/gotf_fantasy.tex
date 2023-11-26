@@ -1,0 +1,101 @@
+\documentclass[a4paper]{book}
+\textwidth=15cm
+\oddsidemargin=0.5cm
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\usepackage[margin=3cm]{geometry}
+\usepackage[toc,page]{appendix}
+\usepackage[toc]{multitoc}
+\usepackage[table]{xcolor}
+\usepackage{makecell, multicol, wrapfig, longtable}
+\usepackage{hyperref}
+\usepackage{pgf}
+\usepackage{siunitx}
+\usepackage{xfrac}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{cleveref}
+\usepackage{color}
+\usepackage{luacode}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{1}
+\renewcommand*{\multicolumntoc}{2}
+
+
+\begin{document}
+    \title{GOTF \\ Generic Open Tabletop Framework}
+    \author{Nikolaus Trixner}
+
+    \maketitle
+
+    \tableofcontents
+
+    \input{./lua/parent}
+
+    \part{Introduction}\label{part:intrudction}
+    \input{./intro/ttrpg}
+
+
+    \part{Basic Rules}\label{part:basicRules}
+    \input{./basicRules/baseMechanic}
+
+
+    \part{Game Modes}\label{part:gameModes}
+    \input{./gotfFantasy/gameModes/overview}
+    \input{./gotfFantasy/gameModes/combat}
+    \input{./gotfFantasy/gameModes/adventuring}
+    \input{./gotfFantasy/gameModes/social}
+    \input{./gotfFantasy/gameModes/crafting}
+
+    \part{Creating a character}\label{part:characterCreation}
+    \input{./gotfFantasy/charCreation}
+
+    \part{Attributes}\label{part:attributes}
+    \input{./gotfFantasy/attributes/mainAttributes}
+    \input{./gotfFantasy/attributes/poolValues}
+    \input{./gotfFantasy/attributes/defensiveAttributes}
+
+    \part{Origins}\label{part:origins}
+    \input{./gotfFantasy/origins/species}
+    \input{./gotfFantasy/origins/cultures}
+    \input{./gotfFantasy/origins/backgrounds}
+
+    \part{Perks}\label{part:perks}
+    \input{./gotfFantasy/perks/description}
+    \input{./gotfFantasy/perks/base}
+    \input{./gotfFantasy/perks/martial}
+    \input{./gotfFantasy/perks/divine}
+    \input{./gotfFantasy/perks/magic}
+    \input{./gotfFantasy/perks/skills}
+    \input{./gotfFantasy/perks/crafting}
+
+    \part{Inventory}\label{part:inventory}
+    \input{./gotfFantasy/inventory/coins}
+    \input{gotfFantasy/inventory/craftingDescription}
+    \input{gotfFantasy/inventory/equipment/overview}
+    \input{gotfFantasy/inventory/items/overview}
+
+    \addcontentsline{toc}{part}{Appendices}
+    \begin{appendices}
+        \input{./gotfFantasy/appendices/damage}
+        \input{./gotfFantasy/appendices/conditions}
+        \input{./gotfFantasy/appendices/biomes}
+
+        \chapter{Disclaimer}\label{chapter:disclaimer}
+        Parts of this document contain AI generated text.
+
+        \chapter{License}\label{chapter:license}
+        Copyright © 2000 Nikolaus Trixner\\
+        This work is free.
+        You can redistribute it and/or modify> it under the terms of the Do What The Fuck You Want To Public License, Version 2, as published by Sam Hocevar.
+    \end{appendices}
+
+\end{document}

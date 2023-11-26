@@ -1,0 +1,74 @@
+{
+  "gotfType": "Weapon",
+  "name": "Arming Sword",
+  "tags": ["Weapon", "Sword", "One-Handed", "Regular", "Melee"],
+  "size": "M",
+  "draw": 3,
+  "value": 250,
+  "actions": [
+    {
+      "name": "Thrust",
+      "type": "off",
+      "ap": 3,
+      "attributes": ["STR", "AGI"],
+      "tags": [
+        {
+          "name": "critrange",
+          "value": 19
+        }
+      ],
+      "damages": [
+        {
+          "type": "piercing",
+          "die": 8,
+          "dienum": 1,
+          "frac": 3,
+          "attributes": ["STR", "AGI"]
+        }
+      ]
+    },
+    {
+      "name": "Slash",
+      "type": "off",
+      "ap": 4,
+      "attributes": ["STR", "AGI"],
+      "reach": 1.5,
+      "tags": [
+        {
+          "name": "critrange",
+          "value": 19
+        }
+      ],
+      "damages": [
+        {
+          "type": "cutting",
+          "die": 6,
+          "dienum": 3,
+          "frac": 3,
+          "attributes": ["STR", "AGI"]
+        }
+      ]
+    },
+    {
+      "name": "Block",
+      "type": "def",
+      "attributes": ["STR"],
+      "reach": 1.5,
+      "tags": [
+        {
+          "name": "critrange",
+          "value": 19
+        }
+      ],
+      "damages": [
+        {
+          "types": ["blunt", "cutting", "piercing"],
+          "die": 6,
+          "dienum": 1,
+          "frac": 3,
+          "attributes": ["STR"]
+        }
+      ]
+    }
+  ]
+}

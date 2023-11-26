@@ -1,0 +1,40 @@
+{
+  "gotfType": "Perk",
+  "name": "Cooking",
+  "label": "cooking",
+  "type": "Perk",
+  "cost": 50,
+  "requirements": [],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You can combine ingredients into food.",
+      "To do so, you have to learn recipes.",
+      "You can learn Tier 1 recipes.",
+      "Most recipes require some type of cooking equipment, and can be improved by higher quality items or additional tools as noted on the recipe.",
+      "Cooking usually involves a Dexterity check.",
+      "You gain a Skill bonus equals to your Crafting Skill to Cooking checks, and checks regarding cooking, and food in general.",
+      "Cooking is also possible without this perk, but only if you have the recipe with you."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 50",
+    "description": {
+      "text": [
+        "You can learn Tier {{newRank}} Cooking recipes",
+        "{{conditionalText[0]}}"
+      ],
+      "conditionalText": [{
+        "conditional": "{{newRank}} % 3 == 0",
+        "value": "you gain a +{{param1}}d4 Skill Bonus to Cooking checks",
+        "param1": "{{newRank}}/3"
+      }]
+    },
+    "amountWritten": 10
+  }
+}
