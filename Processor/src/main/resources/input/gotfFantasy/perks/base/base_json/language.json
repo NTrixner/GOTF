@@ -18,11 +18,11 @@
     "progression": {
         "type": "families",
         "itemHeaders": [
-            "language", "alphabet"
+            "language", "alphabet", "cost"
         ],
         "value": [
             {
-                "family": "common",
+                "family": "Common",
                 "values": [
                     {
                         "language": "Common",
@@ -32,7 +32,7 @@
                 ]
             },
             {
-                "family": "halfling",
+                "family": "Halfling",
                 "values": [
                     {
                         "language": "Halfling",
@@ -42,7 +42,7 @@
                 ]
             },
             {
-                "family": "elven",
+                "family": "Elven",
                 "values": [
                     {
                         "language": "Elven",
@@ -57,7 +57,7 @@
                 ]
             },
             {
-                "family": "dwarven",
+                "family": "Dwarven",
                 "values": [
                     {
                         "language": "Dwarven",
@@ -72,7 +72,7 @@
                 ]
             },
             {
-                "family": "orcish",
+                "family": "Orcish",
                 "values": [
                     {
                         "language": "Orcish",
@@ -92,7 +92,7 @@
                 ]
             },
             {
-                "family": "draconic",
+                "family": "Draconic",
                 "values": [
                     {
                         "language": "Draconic",
@@ -102,7 +102,7 @@
                 ]
             },
             {
-                "family": "shamanic",
+                "family": "Shamanic",
                 "values": [
                     {
                         "language": "Shamanic",

@@ -5,13 +5,27 @@
 ${description}
 \\
 <#if ranks?? && ranks?size gt 0>
-    Rank Progression:\\
-    \\
-    \rowcolors{2}{lightgray}{white}
-    \begin{longtable}{l | l | p{9cm}}
-        Rank & LP Cost & Effect\\
-        <#list ranks as rank>
-        ${rank.rank} & ${rank.cost} & ${rank.description} \\
+Rank Progression:\\
+\\
+\rowcolors{2}{lightgray}{white}
+\begin{longtable}{l | l | p{9cm}}
+    Rank & LP Cost & Effect\\
+    <#list ranks as rank>
+    ${rank.rank} & ${rank.cost} & ${rank.description} \\
+    </#list>
+\end{longtable}
+
+<#elseif families?? >
+
+Rank Progression:\\
+\\
+\rowcolors{2}{lightgray}{white}
+\begin{longtable}{l | l | p{9cm}}
+    Family <#list families.headers as header> & ${header} </#list>\\
+    <#list families.entries as family, entries>
+    \hline
+    ${family}<#list entries as entry><#list entry as column> & ${column}</#list> \\
         </#list>
-    \end{longtable}
+    </#list>
+\end{longtable}
 </#if>
