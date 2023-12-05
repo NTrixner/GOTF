@@ -1,8 +1,11 @@
 package at.trixner.gotf;
 
+import at.trixner.gotf.mapper.MultiPerkToTemplate;
 import at.trixner.gotf.mapper.PerkToTemplate;
 import at.trixner.gotf.model.GotfType;
+import at.trixner.gotf.model.MultiPerk;
 import at.trixner.gotf.model.Perk;
+import at.trixner.gotf.templatemodel.TemplatePerk;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,6 +19,7 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class Main {
@@ -77,9 +81,20 @@ public class Main {
     private static File parseFile(File f, File targetFile) {
         try {
             GotfType gotf = OBJECT_MAPPER.readValue(f, GotfType.class);
+            if(gotf instanceof MultiPerk perk)
+            {
+                List<TemplatePerk> templatePerks = MultiPerkToTemplate.map(perk);
+                Writer fileWriter = new FileWriter(targetFile);
+                for(TemplatePerk templatePerk : templatePerks)
+                {
+                    Template template = cfg.getTemplate("perk.fmk");
+                    template.process(templatePerk, fileWriter);
+                }
+                return targetFile;
+            }
             if(gotf instanceof Perk perk)
             {
-                at.trixner.gotf.templatemodel.Perk templatePerk = PerkToTemplate.map(perk);
+                TemplatePerk templatePerk = PerkToTemplate.map(perk);
                 Template template = cfg.getTemplate("perk.fmk");
                 Writer fileWriter = new FileWriter(targetFile);
                 template.process(templatePerk, fileWriter);

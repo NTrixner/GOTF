@@ -3,11 +3,11 @@ package at.trixner.gotf.mapper;
 import at.trixner.gotf.model.FamiliesProgression;
 import at.trixner.gotf.model.FormulaProgression;
 import at.trixner.gotf.model.ListProgression;
-import at.trixner.gotf.templatemodel.Perk;
+import at.trixner.gotf.templatemodel.TemplatePerk;
 
 public class PerkToTemplate {
-    public static Perk map(at.trixner.gotf.model.Perk model) {
-        Perk template = new Perk();
+    public static TemplatePerk map(at.trixner.gotf.model.Perk model) {
+        TemplatePerk template = new TemplatePerk();
         template.setName(model.getName());
         template.setLabel(model.getLabel());
         template.setTags(String.join(", ", model.getTags()));

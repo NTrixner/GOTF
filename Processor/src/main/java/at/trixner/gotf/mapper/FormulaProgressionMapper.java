@@ -7,7 +7,9 @@ import com.google.code.mathparser.MathParser;
 import com.google.code.mathparser.impl.MathParserImpl;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class FormulaProgressionMapper {
     public static final MathParser parser = new MathParserImpl();
@@ -18,10 +20,12 @@ public class FormulaProgressionMapper {
         List<Rank> ranks = new ArrayList<>();
         long costOldRank = model.getCost();
         for (long newRank = 2; newRank < amount - 1; newRank++) {
-            String rp1 = value.replace("{{costOldRank}}", costOldRank + "");
-            String rp2 = rp1.replace("{{newRank}}", newRank + "");
-
-            long costNewRank = parser.calculate(rp2).doubleValue().longValue();
+            Map<String, String> replaceVals = new HashMap<>();
+            replaceVals.put("costOldRank", costOldRank + "");
+            replaceVals.put("newRank", newRank + "");
+            long costNewRank = parser.calculate(StringReplacer.replace(value, replaceVals))
+                    .doubleValue()
+                    .longValue();
 
             Rank rank = new Rank();
             rank.setRank(RomanNumeralMapper.roman(newRank));
