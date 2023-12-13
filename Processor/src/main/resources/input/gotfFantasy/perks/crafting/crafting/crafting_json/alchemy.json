@@ -38,8 +38,7 @@
     "value": "{{costOldRank}} + {{newRank}} * 100",
     "description": {
       "text": [
-        "You can learn Tier {{newRank}} alchemical recipes",
-        "{{conditionalText[0]}}"
+        "You can learn Tier {{newRank}} alchemical recipes, {{conditionalText[0]}}"
       ],
       "conditionalText": [
         {

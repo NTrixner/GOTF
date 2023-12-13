@@ -24,8 +24,7 @@
     "value": "{{costOldRank}} + {{newRank}} * 150",
     "description": {
       "text": [
-        "You can learn Tier {{newRank}} Leather Patterns",
-        "You gain a +{{oldRank}}d4 Skill Bonus to Leatherworking checks"
+        "You can learn Tier {{newRank}} Leather Patterns, you gain a +{{oldRank}}d4 Skill Bonus to Leatherworking checks"
       ]
     },
     "amountWritten": 4

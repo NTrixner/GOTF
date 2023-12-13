@@ -1,0 +1,16 @@
+\section{Death Burst}\label{prayer:deathBurst}
+\textbf{Cost:} 100 LP\\
+\textbf{Requirements:} Disciple of Death, Destruction or Evil \\
+\textbf{Active, Prayer, Repeatable, Source, Preparation}\\
+Pray for 5 AP and pay 4 Faith.
+You emit a burst of necrotic energy around you, hurting everyone in a radius of 3m around yourself.
+Make a Charisma check against a creature's willpower.
+If the target can roll willpower and succeeds, they only take half damage.
+If you are below the target's lower willpower, they take no damage.
+The burst deals 3D4 Necrotic damage.\\
+\\
+Rank Progression:\\
+II: 500 LP, 7 Faith, 3D6 instead\\
+III: 1,000 LP, 10 Faith, 3D8 instead\\
+IV: 2,500 LP, 13 Faith, 3D10 instead\\
+V: 5,000 LP, 15 Faith, 3D12 instead\\

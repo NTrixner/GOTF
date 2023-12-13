@@ -3,14 +3,17 @@ package at.trixner.gotf.mapper;
 import at.trixner.gotf.model.MultiPerk;
 import at.trixner.gotf.model.Perk;
 import at.trixner.gotf.templatemodel.TemplatePerk;
+import com.ezylang.evalex.EvaluationException;
+import com.ezylang.evalex.parser.ParseException;
 
+import javax.script.ScriptException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class MultiPerkToTemplate {
-    public static List<TemplatePerk> map(MultiPerk perk) {
+    public static List<TemplatePerk> map(MultiPerk perk) throws EvaluationException, ParseException {
         List<TemplatePerk> outputPerk = new ArrayList<>();
         List<String> values = perk.getValue();
         for(int i = 0; i < values.size(); i++)

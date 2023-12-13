@@ -1,0 +1,18 @@
+\section{Prayer of Healing}\label{prayer:healing}
+\textbf{Cost:} 100 LP\\
+\textbf{Requirements:} Disciple of a faith OTHER than Death, Destruction, or Evil\\
+\textbf{Active, Prayer, Weapon, Repeatable, Source, Preparation}\\
+Pray for 4 AP and pay 3 Faith.
+A creature of your choice in a radius of 15m around you is healed by 2d4.\\
+If you target an Undead with this ability, they take the same amount of radiant damage instead.\\
+Any creature that wants to resist this effect can do so.
+In such a case, make a CHA check targeting their Willpower.\\
+If you are above their Higher Willpower or the roll and fail, you deal full damage or heal the full amount.\\
+If they roll and win, the damage and healing is halved.\\
+If you are below their Lower Willpower, your prayer fails.\\
+\\
+Rank Progression:\\
+II: 500 LP, 6 Faith, 4d4\\
+III: 1,000 LP, 9 Faith, 6d4\\
+IV: 2,500 LP, 12 Faith, 8d4\\
+V: 5,000 LP, 15 Faith, 10d4\\

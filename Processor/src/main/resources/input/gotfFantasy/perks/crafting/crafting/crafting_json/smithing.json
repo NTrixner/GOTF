@@ -30,8 +30,7 @@
     "value": "{{costOldRank}} + {{newRank}} * 50",
     "description": {
       "text": [
-        "You can learn Tier {{newRank}} Smithing designs",
-        "{{conditionalText[0]}}"
+        "You can learn Tier {{newRank}} Smithing designs, {{conditionalText[0]}}"
       ],
       "conditionalText": [{
         "conditional": "{{newRank}} % 3 == 0",

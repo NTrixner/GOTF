@@ -1,0 +1,31 @@
+{
+  "gotfType": "Perk",
+  "name": "Beacon of Light",
+  "label": "beaconOfLight",
+  "cost": 100,
+  "requirements": [{
+    "description": "Disciple of the Light or the Sun"
+  }],
+  "tags": [
+    "active", "prayer", "weapon", "source", "upkeep", "preparation", "repeatable"
+  ],
+  "description": {
+    "text": [
+      "Pray for 4 AP and pay 3 Faith.",
+      "You become engulfed in a radiant glow, shedding bright light in a radius of 10m.",
+      "You can then point at a creature of your choice, shooting a bolt of radiant light at them.",
+      "This costs another 2 AP, and ends the effect of the prayer, including the lighting.",
+      "The bolt is a ranged weapon attack with a range of 15m that deals 1d12 radiant damage."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 100",
+    "amountWritten": 5,
+    "description": {
+      "text": [
+        "You can shoot {{newRank}} bolts before the prayer ends"
+      ]
+    }
+  }
+}

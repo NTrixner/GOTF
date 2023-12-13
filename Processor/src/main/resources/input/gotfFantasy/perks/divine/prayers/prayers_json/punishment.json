@@ -1,0 +1,15 @@
+\section{Punishment}\label{prayer:punishment}
+\textbf{Cost:} 200 LP\\
+\textbf{Requirements:} Divine Disciple \\
+\textbf{Active, Prayer, Weapon, Repeatable, Source, Preparation}\\
+For 4 AP and 2 Faith, you target a creature that you can see, and they are subject of your god's divine punishment.
+Make an Empathy check, contested by the creatures's Willpower check.
+If they fail, the targeted creature takes 1D10 radiation damage.
+If they roll and succeed, they take half that amount instead.
+Creatures that are protected by your faith, or share your faith, take 1D6 radiation damage instead.\\
+\\
+Rank Progression:\\
+II: 600 LP, 4 Faith, 2D10 or 2D6 per prayer.\\
+III: 1,000 LP, 6 Faith, 3D10 or 3D6 per prayer.\\
+IV: 3,000 LP, 8 Faith, 4D10 or 4D6 per prayer.\\
+V: 8,000 LP, 10 Faith, 5D10 or 5D6 per prayer.\\

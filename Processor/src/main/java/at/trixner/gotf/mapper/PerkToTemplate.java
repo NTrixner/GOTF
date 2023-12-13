@@ -4,9 +4,13 @@ import at.trixner.gotf.model.FamiliesProgression;
 import at.trixner.gotf.model.FormulaProgression;
 import at.trixner.gotf.model.ListProgression;
 import at.trixner.gotf.templatemodel.TemplatePerk;
+import com.ezylang.evalex.EvaluationException;
+import com.ezylang.evalex.parser.ParseException;
+
+import javax.script.ScriptException;
 
 public class PerkToTemplate {
-    public static TemplatePerk map(at.trixner.gotf.model.Perk model) {
+    public static TemplatePerk map(at.trixner.gotf.model.Perk model) throws EvaluationException, ParseException {
         TemplatePerk template = new TemplatePerk();
         template.setName(model.getName());
         template.setLabel(model.getLabel());

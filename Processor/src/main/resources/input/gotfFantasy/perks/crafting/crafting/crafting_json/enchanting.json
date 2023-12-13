@@ -25,8 +25,7 @@
     "value": "{{costOldRank}} + {{newRank}} * 250",
     "description": {
       "text": [
-        "You can learn Tier {{newRank}} Enchantments",
-        "You gain a +{{oldRank}}d4 Skill Bonus to Enchanting checks"
+        "You can learn Tier {{newRank}} Enchantments, you gain a +{{oldRank}}d4 Skill Bonus to Enchanting checks"
       ]
     },
     "amountWritten": 4

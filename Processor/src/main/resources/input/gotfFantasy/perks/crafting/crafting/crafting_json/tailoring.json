@@ -24,8 +24,7 @@
     "value": "{{costOldRank}} + {{newRank}} * 100",
     "description": {
       "text": [
-        "You can learn Tier {{newRank}} Cloth Patterns",
-        "You gain a +{{oldRank}}d4 Skill Bonus to Tailoring checks"
+        "You can learn Tier {{newRank}} Cloth Patterns, you gain a +{{oldRank}}d4 Skill Bonus to Tailoring checks"
       ]
     },
     "amountWritten": 4

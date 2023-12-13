@@ -52,9 +52,9 @@
             <version>1.18.30</version>
         </dependency>
         <dependency>
-            <groupId>com.google.code.mathparser-java</groupId>
-            <artifactId>mathparser-java</artifactId>
-            <version>1.0.0</version>
+            <groupId>com.ezylang</groupId>
+            <artifactId>EvalEx</artifactId>
+            <version>3.1.0</version>
         </dependency>
     </dependencies>
 
