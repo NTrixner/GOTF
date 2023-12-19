@@ -1,11 +1,53 @@
-\section{Vision of Courage}\label{prayer:courage}
-\textbf{Cost:} 100 LP\\
-\textbf{Requirements:} Disciple of Good, Love, Protection, War or Motherhood\\
-\textbf{Active, Prayer, Weapon, Repeatable, Source, Upkeep, Preparation}\\
-Pray for 10 AP and pay 5 Faith, in addition to 1 Faith per every hour that the prayer is active.
-While this prayer is active, creatures of your choice that can see you gain a Divine Bonus to their Willpower equals to 1/4 of your CHA.
-\\
-Rank Progression:\\
-II: 300 LP, 10 Piety Points, the bonus is 1/3 of your CHA.\\
-III: 900 LP, 15 Piety Points, the bonus is 1/2 of your CHA.\\
-IV: 2,700 LP, 20 Piety Points, the bonus is your whole CHA.\\
+{
+  "gotfType": "Perk",
+  "name": "Vision of Courage",
+  "label": "courage",
+  "cost": 100,
+  "requirements": [
+    {
+      "description": "Disciple of Good, Love, Protection, War or Motherhood"
+    }
+  ],
+  "tags": [
+    "active",
+    "prayer",
+    "source",
+    "upkeep",
+    "weapon",
+    "preparation",
+    "repeatable"
+  ],
+  "description": {
+    "text": [
+      "Pray for 10 AP and pay 5 Faith, in addition to 1 Faith per every hour that the prayer is active.",
+      "While this prayer is active, creatures of your choice that can see you gain a Divine Bonus to their Willpower equals to 1/4 of your CHA."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{oldRank}} * 200",
+    "amountWritten": 4,
+    "description": {
+      "text": [
+        "{{conditionalText[0]}} Faith, the bonus is {{conditionalText[1]}}{{conditionalText[2]}} CHA"
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{newRank}}*5"
+        },
+        {
+          "conditional": "{{newRank}} < 4",
+          "value": "\\sfrac{1}{{{param1}}} of your",
+          "param1": "4 - {{oldRank}}"
+        },
+        {
+          "conditional": "{{newRank}} >= 4",
+          "value": "your full"
+        }
+      ]
+    }
+  }
+}
+

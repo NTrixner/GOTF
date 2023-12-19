@@ -1,12 +1,51 @@
-\section{Divine Rest}\label{prayer:divineRest}
-\textbf{Cost:} 50 LP\\
-\textbf{Requirements:} Disciple of a faith OTHER than Chaos, Death, Destruction, Evil, Fire, or Storm.\\
-\textbf{Active, Prayer, Weapon, Repeatable, Source, Upkeep, Preparation}\\
-You can supervise the healing process of a resting creature by sitting by their side, chanting this prayer in a rosary-like way.
-While this happens, they gain a +1 divine bonus to their natural hourly health regeneration.\\
-While praying in this manner, you don't get the benefits of resting, and have to pay 1 Faith per hour.\\
-You can simultaneously supervise an amount of creatures equal to 1/3 your CHA.\\
-\\
-Rank Progression:\\
-II: 1,000 LP, 2 hourly Faith, +2 divine bonus to natural health regeneration instead.\\
-III: 3,000 LP, 3 hourly Faith, +3 divine bonus to natural health regeneration instead.\\
+{
+  "gotfType": "Perk",
+  "name": "Divine Rest",
+  "label": "divineRest",
+  "cost": 50,
+  "requirements": [
+    {
+      "description": "Disciple of a faith OTHER than Chaos, Death, Destruction, Evil, Fire, or Storm."
+    }
+  ],
+  "tags": [
+    "active",
+    "prayer",
+    "source",
+    "upkeep",
+    "weapon",
+    "preparation",
+    "repeatable"
+  ],
+  "description": {
+    "text": [
+      "You can supervise the healing process of a resting creature by sitting by their side, chanting this prayer in a rosary-like way.",
+      "While this happens, they gain a +1 divine bonus to their natural hourly health regeneration.",
+      "While praying in this manner, you don't get the benefits of resting, and have to pay 1 Faith per hour.",
+      "You can simultaneously supervise an amount of creatures equal to 1/3 your CHA."
+    ]
+  },
+  "progression": {
+    "type": "list",
+    "value": [
+      {
+        "rank": 2,
+        "cost": 1000,
+        "description": {
+          "text": [
+            "2 hourly Faith, +2 divine bonus to natural health regeneration instead."
+          ]
+        }
+      },
+      {
+        "rank": 3,
+        "cost": 3000,
+        "description": {
+          "text": [
+            "3 hourly Faith, +3 divine bonus to natural health regeneration instead."
+          ]
+        }
+      }
+    ]
+  }
+}

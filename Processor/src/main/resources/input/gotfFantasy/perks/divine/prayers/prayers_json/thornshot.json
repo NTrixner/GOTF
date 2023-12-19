@@ -1,21 +1,51 @@
-\section{Thorn Shot}\label{prayer:thornShot}
-\textbf{Cost:} 100 LP\\
-\textbf{Requirements:} Disciple of Nature, Plants, or Earth \\
-\textbf{Active, Prayer, Weapon, Repeatable, Source, Preparation}\\
-Pray for 4 APand pay 4 Faith.
-Make a ranged weapon attack against a creature of your choice in a 20m radius.
-A thorn grows on the palm of your hand and shoots forward, hitting the creature.
-The thorn deals 1D8 piercing damage.
-If the creature is a humanoid, the thorn deals 1d10 damage instead.
-If the creature is a construct, the thorn deals 1d12 damage instead.
-If the creature is dealt any damage, make a Charisma check, contested by the creature's Strength check.
-If you succeed, the creature becomes bound by a growth of vines growing from the point of impact.
-While being bound, a creature can not move.
-To remove the vines, the target must spend 1 AP for every point of damage that they took from the original thorn.
-Other creatures can help the target, but must stand next to it to do so, and also spend AP.
-\\
-Rank Progression:\\
-II: 500 LP, 7 Piety Points, 2 dice instead\\
-III: 1,000 LP, 12 Piety Points, 3 dice instead\\
-IV: 2,500 LP, 18 Piety Points, 4 dice instead\\
-V: 5,000 LP, 25 Piety Points, 5 dice instead\\
+{
+  "gotfType": "Perk",
+  "name": "Prayer of Thorns",
+  "label": "thornShot",
+  "cost": 100,
+  "requirements": [
+    {
+      "description": "Disciple of Nature, Plants, or Earth."
+    }
+  ],
+  "tags": [
+    "active",
+    "prayer",
+    "source",
+    "weapon",
+    "preparation",
+    "repeatable"
+  ],
+  "description": {
+    "text": [
+      "Pray for 4 AP and pay 4 Faith.",
+      "Make a ranged weapon attack against a creature of your choice in a 20m radius.",
+      "A thorn grows on the palm of your hand and shoots forward, hitting the creature.",
+      "The thorn deals 1D8 piercing damage.",
+      "If the creature is a humanoid, the thorn deals 1d10 damage instead.",
+      "If the creature is a construct, the thorn deals 1d12 damage instead.",
+      "If the creature is dealt any damage, make a Charisma check, contested by the creature's Strength check.",
+      "If you succeed, the creature becomes bound by a growth of vines growing from the point of impact.",
+      "While being bound, a creature can not move.",
+      "To remove the vines, the target must spend 1 AP for every point of damage that they took from the original thorn.",
+      "Other creatures can help the target, but must stand next to it to do so, and also spend AP."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 250",
+    "amountWritten": 5,
+    "description": {
+      "text": [
+        "{{conditionalText[0]}} Piety Points, {{newRank}} dice instead"
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{newRank}}*4"
+        }
+      ]
+    }
+  }
+}
