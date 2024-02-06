@@ -1,0 +1,47 @@
+{
+  "gotfItem": "Perk",
+  "name": "Careful Style",
+  "label": "carefulStyle",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [
+    {
+      "type": "attribute",
+      "stat": "agility",
+      "value": 8
+    }
+  ],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "While having either a Weapon or Shield drawn in this style, you gain a +2 Attention bonus to Dodge and Notice."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 200",
+    "description": {
+      "text": [
+        "Requires {{conditionalText[0]}} agility.",
+        "The bonus is now +{{conditionalText[1]}} Attention bonus."
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{newRank}} + 7"
+        },
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{newRank}} * 2"
+        }
+      ]
+    },
+    "amountWritten": 5
+  }
+}

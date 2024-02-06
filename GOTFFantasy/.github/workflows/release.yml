@@ -1,0 +1,47 @@
+name: Auto-Release
+
+on: 
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+      - name: Github Action for LaTeX main build
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: gotf.tex
+          latexmk_use_lualatex: true
+      - name: Github Action for LaTeX GOTF Fantasy
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: gotf_fantasy.tex
+          latexmk_use_lualatex: true
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.run_number }}
+          release_name: Release ${{ github.run_number }}
+          draft: false
+          prerelease: false
+      - name: Upload Release Asset GOTF Fantasy
+        id: upload-release-asset-gotf_fantasy
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{github.token}}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./gotf_fantasy.pdf
+          asset_name: gotf_fantasy.pdf
+          asset_content_type: application/pdf
+      
+

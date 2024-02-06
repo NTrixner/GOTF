@@ -1,0 +1,33 @@
+{
+  "gotfItem": "Perk",
+  "name": "Kaleidoscope",
+  "label": "kaleidoscope",
+  "type": "Perk",
+  "cost": 1000,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "source",
+    "preparation"
+  ],
+  "description": {
+    "text": [
+      "You can create a burst of colours around you, dazzling and confusing each creature in the area.",
+      "Make an Intellect Check, targeting the Notice of all creatures in a 10m radius around you.",
+      "Any creature in a radius of 10m around you must make a Perception Check contested by your Intellect Check.",
+      "If a creature fails, they are affected by a random Condition for 2D6 + your Intellect AP.",
+      "If they roll and succeed, the effect lasts half as long.",
+      "",
+      "\\rowcolors{2}{lightgray}{white}",
+      "\\begin{tabular}{r | l || r | l}",
+      "1D8 & Condition & 1D8 & Condition\\",
+      "\\hline\\",
+      "1 & Entranced & 5 & Unconscious\\",
+      "2 & Frightened & 6 & Enraged\\",
+      "3 & Sleeping & 7 & Calmed\\",
+      "4 & Paralyzed & 8 & Now your ally\\",
+      "\\end{tabular}"
+    ]
+  }
+}

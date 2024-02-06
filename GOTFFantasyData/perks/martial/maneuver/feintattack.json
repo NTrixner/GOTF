@@ -1,0 +1,22 @@
+{
+  "gotfItem": "Perk",
+  "name": "Feint Attack",
+  "label": "feintAttack",
+  "type": "Perk",
+  "cost": 200,
+  "requirements": [],
+  "tags": [
+    "maneuver",
+    "active",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You can spend 2 additional AP to create an opening in your opponent's defenses, to be able to hit easier.",
+      "When making a melee weapon attack, make a Charisma check adding bonuses for deception, contested by the defender's Notice.",
+      "If your roll is above the defender's maximum Notice, the target can not react to your attack.",
+      "If the defender makes a Notice check and succeeds, their Dodge (as well as Maximum and Minimum Dodge) suffers a Distraction Malus equals to your Deception Roll minus their Minimum Notice.",
+      "If your Deception roll is below their minimum Notice, the target can react normally."
+    ]
+  }
+}

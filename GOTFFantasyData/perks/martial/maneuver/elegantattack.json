@@ -1,0 +1,49 @@
+{
+  "gotfItem": "Perk",
+  "name": "Elegant Attack",
+  "label": "elegantAttack",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [
+    {
+      "stat": "agility",
+      "value": 2
+    }
+  ],
+  "tags": [
+    "maneuver",
+    "active",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "When making a weapon attack based on Agility, you can pay up to 4 Stamina and gain a Skill Bonus to Weapon Damage equal to half that number.",
+      "This Bonus is doubled for unarmed strikes."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 350",
+    "description": {
+      "text": [
+        "Requires {{conditionalText[0]}} Agility",
+        "You now pay up to {{conditionalText[1]}} Stamina to increase the Weapon damage by half that number."
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{newRank}} * 2"
+        },
+
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{newRank}} * 4"
+        }
+      ]
+    },
+    "amountWritten": 6
+  }
+}

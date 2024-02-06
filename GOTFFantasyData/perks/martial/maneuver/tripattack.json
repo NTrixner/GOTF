@@ -1,0 +1,18 @@
+{
+  "gotfItem": "Perk",
+  "name": "Trip Attack",
+  "label": "tripAttack",
+  "type": "Perk",
+  "cost": 1000,
+  "requirements": [],
+  "tags": [
+    "maneuver",
+    "active",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "When making a melee weapon attack with a weapon you are proficient with, if that attack deals at least 1 damage, you can spend 10 Stamina to make an additional trip attempt (You don't have to pay the usual Stamina for that attempt).\\"
+    ]
+  }
+}

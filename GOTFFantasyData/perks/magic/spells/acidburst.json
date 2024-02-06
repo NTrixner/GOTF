@@ -1,0 +1,48 @@
+{
+  "gotfItem": "Perk",
+  "name": "Acid Burst",
+  "label": "acidBurst",
+  "type": "Perk",
+  "cost": 250,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation"
+  ],
+  "description": {
+    "text": [
+      "For 3 AP and 7 Mana you create a burst of acid emanating from you, and damaging creatures surrounding you.",
+      "Make an Intellect check, adding your Level to it.",
+      "This roll is contested by the Dodge of any creature in a radius of 5m around you.",
+      "Making a dodge roll against this effect does not cost Stamina.",
+      "If a creature fails, it takes 4d6 corrosive damage.",
+      "If it succeeds, it takes no damage instead."
+    ]
+  },
+  "progression": {
+    "type": "list",
+    "value": [
+      {
+        "rank": 2,
+        "cost": 750,
+        "description": {
+          "text": [
+            "12 Mana for 6d6 corrosive damage"
+          ]
+        }
+      },
+      {
+        "rank": 3,
+        "cost": 1500,
+        "description": {
+          "text": [
+            "20 Mana for 8d6 corrosive damage"
+          ]
+        }
+      }
+    ]
+  }
+}

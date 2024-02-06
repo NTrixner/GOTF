@@ -1,0 +1,45 @@
+{
+  "gotfItem": "Perk",
+  "name": "Vampiric Ray",
+  "label": "vampiricRay",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation"
+  ],
+  "description": {
+    "text": [
+      "You cast for 3 AP and 4 Mana, and drain the life of a creature.",
+      "Make a ranged magic weapon attack against a creature in a range of 35m.",
+      "When you hit, the target takes 1d6 necrotic damage.",
+      "You are healed by the same amount, to a maximum of your maximum Health."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 150",
+    "description": {
+      "text": [
+        "The ray now deals {{conditionalText[0]}}d{{conditionalText[1]}} damage"
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "1 + floor({{oldRank}}/3)"
+        },
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "4 + ({{oldRank}}%3 + 1) * 2"
+        }
+      ]
+    },
+    "amountWritten": 20
+  }
+}

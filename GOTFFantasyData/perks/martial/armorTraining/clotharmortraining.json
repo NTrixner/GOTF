@@ -1,0 +1,36 @@
+{
+  "gotfItem": "Perk",
+  "name": "Cloth Armor Training",
+  "label": "clothArmorTraining",
+  "type": "Perk",
+  "cost": 10,
+  "requirements": [],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You are trained with armor made of cloth.",
+      "You add your level to your Dodge bonus while naked, or equipped with armor with the \"Cloth\" descriptor."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 250",
+    "description": {
+      "text": [
+        "You gain a +{{oldRank}}d4 Skill Bonus on Dodge checks, a +{{oldRank}} Skill Bonus to Lower, and a +{{conditionalText[0]}} Skill Bonus to Higher Dodge."
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{oldRank}} * 4"
+        }
+      ]
+    },
+    "amountWritten": 4
+  }
+}

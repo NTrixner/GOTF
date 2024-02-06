@@ -1,0 +1,54 @@
+{
+  "gotfItem": "Origin",
+  "type": "species",
+  "name": "Gnome",
+  "label": "gnomeSpecies",
+  "description": {
+    "text": [
+      "Gnomes are a very short species of empathic people that have a deep bond with nature.",
+      "Gnomes mature at the age of 40, and can live to the age of 350.",
+      "At their best, gnomes are friendly, calm and wise.",
+      "At their worst, gnomes are stubborn, close-minded and vengeful.",
+      "Gnomes have a supernatural gift that allows them to understand and talk to animals as if they were speaking their language.",
+      "In most situations however, animals have a very short memory and aren't intelligent enough for deep conversation."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "racialBonus",
+      "attribute": "charisma",
+      "value": 2
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "agility",
+      "value": 1
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "strength",
+      "value": -2
+    }
+    {
+      "type": "resources",
+      "value": [
+        {
+          "resource": "health",
+          "value": 20
+        },
+        {
+          "resource": "stamina",
+          "value": 20
+        },
+        {
+          "resource": "mana",
+          "value": 25
+        },
+        {
+          "resource": "faith",
+          "value": 25
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+	"gotfItem": "Perk",
+	"name": "Boon",
+	"label": "boon",
+	"cost": 500,
+	"requirements": [{
+		"type": "perk",
+		"perk": "divineDisciple",
+		"rank": 1,
+		"description": "Divine Disciple"
+	}],
+	"tags": [
+		"active", "prayer", "source", "upkeep", "preparation", "repeatable"
+	],
+	"description": {
+		"text": [
+			"You pray for 6 AP and 5 Faith, and one creature of your choice in a range of 15m around you, gains one of the following benefits of your choice:",
+			"\\begin{itemize}",
+			"\\item +1d6 divine bonus on every attack and defense roll for the next 15 minutes",
+			"\\item Immunity to the frightened condition for the next hour",
+			"\\item +1d6 divine bonus on their next check, or until one hour has passed",
+			"\\item +1 divine damage resistance against all types for the next hour.",
+			"\\end{itemize}"
+		]
+	},
+	"progression": {
+		"type": "formula",
+		"value": "{{costOldRank}} + {{newRank}} * 500",
+		"amountWritten": 5,
+		"description": {
+			"text": [
+				"{{conditionalText[0]}} Faith, you can apply {{newRank}} effects per prayer, even to different creatures."
+			],
+			"conditionalText" : [
+				{
+					"conditional": "true",
+					"value": "{{param1}}",
+					"param1": "4 + {{oldRank}} * 3"
+				}
+			]
+		}
+	}
+}

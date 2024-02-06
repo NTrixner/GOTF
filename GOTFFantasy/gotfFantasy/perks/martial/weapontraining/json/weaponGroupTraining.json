@@ -1,0 +1,60 @@
+{
+  "gotfItem": "MultiPerk",
+  "name": "{{value}} Training",
+  "label": "{{value}}Traning",
+  "type": "multiPerk",
+  "cost": "{{param1}}",
+  "requirements": [],
+  "value": [
+    "Axe",
+    "Blunt",
+    "Bow",
+    "Crossbow",
+    "Polearm",
+    "Shield",
+    "Sword",
+    "Thrown"
+  ],
+  "params": [
+    [
+      "200"
+    ],
+    [
+      "200"
+    ],
+    [
+      "150"
+    ],
+    [
+      "100"
+    ],
+    [
+      "200"
+    ],
+    [
+      "200"
+    ],
+    [
+      "200"
+    ],
+    [
+      "80"
+    ]
+  ],
+  "tags": [
+    "passive",
+    "repeatable"
+  ],
+  "description": {
+    "text": [
+      "You are trained with {{value}} weapons.",
+      "This includes all weapons with the \"{{value}}\" and without the \"Unusual\" descriptor.",
+      "You add your level to attack and block rolls made with these weapons."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * {{param1}}",
+    "amountWritten": 4
+  }
+}

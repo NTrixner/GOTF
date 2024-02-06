@@ -1,0 +1,49 @@
+{
+  "gotfItem": "Perk",
+  "name": "Protective Style",
+  "label": "protectiveStyle",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [
+    {
+      "type": "attribute",
+      "stat": "vitality",
+      "value": 8
+    }
+  ],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "While having a shield drawn in this style, whenever a creature next to you is attacked and would take damage, you can check the attack against your own Notice.",
+      "If you succeed, you can block damage against the original target creature, as if you had been attacked.",
+      "You have to pay the regular amount of Stamina to do so."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 200",
+    "description": {
+      "text": [
+        "Requires {{conditionalText[0]}} vitality.",
+        "You gain +{{conditionalText[1]}} Observation Bonus on Block rolls when blocking for other creatures."
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{newRank}} + 7"
+        },
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{oldRank}} * 2"
+        }
+      ]
+    },
+    "amountWritten": 5
+  }
+}

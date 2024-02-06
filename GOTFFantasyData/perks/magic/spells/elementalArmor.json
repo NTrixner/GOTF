@@ -1,0 +1,30 @@
+{
+  "gotfItem": "Perk",
+  "name": "Elemental Armor",
+  "label": "elementalArmor",
+  "type": "Perk",
+  "cost": 50,
+  "requirements": [
+    {
+      "type": "perk",
+      "rank": 1,
+      "perk": "arcaneArmor"
+    }
+  ],
+  "tags": [
+    "spell variation",
+    "active",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "When casting Elemental Armor instead of Arcane Armor, the armor instead grants Armor Reduction against elemental damage types.",
+      "Pay the Mana casting cost for each damage type that the Elemental Armor should defend against.",
+      "For example, a rank II Elemental Armor that defends against Heat and Cold, the casting cost would be 20 Mana, and it would grant Heat and Cold Resistance 4.",
+      "A creature can benefit from multiple different Elemental and Arcane Armors at a time, but the effects don't stack.",
+      "Instead, only the highest gained Damage Reduction per Damage Type applies."
+    ]
+  }
+}

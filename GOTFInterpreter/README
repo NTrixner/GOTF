@@ -1,0 +1,5 @@
+# GOTF Interpreter
+## The Generic, Open Tabletop Framework - Data Interpreter
+
+This is the JSON interpreter for the GOTF. It is used in separate repositories to convert JSON data to LaTex files
+For more information regarding the GOTF check out the corresponding Repository (https://github.com/NTrixner/GOTF).

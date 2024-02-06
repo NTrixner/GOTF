@@ -1,0 +1,54 @@
+{
+  "gotfItem": "Perk",
+  "name": "Arcane Sense",
+  "label": "arcaneSense",
+  "type": "Perk",
+  "cost": 500,
+  "requirements": [
+    {
+      "type": "tagRanks",
+      "value": 5,
+      "tags": [
+        "spell"
+      ]
+    }
+  ],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "Thanks to your atonement with the arcane energies, you can feel the presence of magic.",
+      "After casting a spell for 5 AP, any enchanted item you see glows slightly, revealing it's magic to you.",
+      "While this sense is active, you have to pay 1 Mana per Minute."
+    ]
+  },
+  "progression": {
+    "type": "list",
+    "value": [
+      {
+        "rank": 2,
+        "cost": 1000,
+        "description": {
+          "text": [
+            "2 Mana per Minute, you can now sense the lingering presence of spells that have been cast recently in the area. For every point of Mana spent in an area, the lingering aura lasts for an additional 10 minutes."
+          ]
+        }
+      },
+      {
+        "rank": 3,
+        "cost": 5000,
+        "description": {
+          "text": [
+            "You now have the ability to see magical energies circulating around you. In order to do so, you must close your eyes and spend 1 Mana per Action Point. Magical Energies swirl around the Universe like a web or radiation, allowing you to discern shapes of most creatures and objects. This type of Sight detects invisible creatures and is nearly 360 degrees."
+          ]
+        }
+      }
+    ]
+  }
+}

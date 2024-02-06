@@ -1,0 +1,35 @@
+{
+  "gotfItem": "Perk",
+  "name": "Divine Training",
+  "label": "divineTraining",
+  "type": "Perk",
+  "cost": 50,
+  "requirements": [
+    {
+      "type": "perk",
+      "perk": "divineDisciple",
+      "rank": 1
+    }
+  ],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You are trained with prayers.",
+      "Whenever a Prayer requires you to make a check (such as attack or block rolls, or an EMP check that targets a defensive attribute), you can add your level."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 250",
+    "description": {
+      "text": [
+        "You also gain a +{{oldRank}}d4 Skill Bonus on mining checks."
+      ]
+    },
+    "amountWritten": 4
+  }
+}

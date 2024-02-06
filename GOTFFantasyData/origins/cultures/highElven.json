@@ -1,0 +1,31 @@
+{
+  "gotfItem": "Origin",
+  "type": "culture",
+  "name": "High Elven Culture",
+  "label": "highElvenCulture",
+  "description": {
+    "text": [
+      "You lived in one of the many alabaster cities and dined on the finest food in the lands.",
+      "You were most likely taught poetry, magic and arts at a very young age."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "skillBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 6
+      },
+      "description": {
+        "text": [
+          "social interactions with the high elven culture, as well as other checks regarding this culture."
+        ]
+      }
+    },
+    {
+      "type": "freePerk",
+      "perk": "language",
+      "choice": "High Elven"
+    }
+  ]
+}

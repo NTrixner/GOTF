@@ -1,0 +1,35 @@
+{
+  "gotfItem": "Perk",
+  "name": "Vitomancer",
+  "label": "vitomancer",
+  "type": "Perk",
+  "cost": 250,
+  "requirements": [
+    {
+      "type": "perk",
+      "perk": "spellPowerTraining",
+      "rank": 1
+    }
+  ],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You have become able to heal more effectively.",
+      "You gain a +1 confidence bonus to spell healing rolls."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 250",
+    "amountWritten": 4,
+    "description": {
+      "text": [
+        "+{{newRank}} confidence bonus"
+      ]
+    }
+  }
+}

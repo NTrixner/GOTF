@@ -1,0 +1,30 @@
+{
+  "gotfItem": "Origin",
+  "type": "culture",
+  "name": "Northern Culture",
+  "label": "northernCulture",
+  "description": {
+    "text": [
+      "In the North, rolling hills of grass and fields are replaced by more rugged and cold planes, strewn with large rocks moved by glaciers ages ago.",
+      "You most likely learned to appreciate the taste of mead and fish, and berries and wild game."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "skillBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 6
+      },
+      "description": {
+        "text": [
+          "social interactions with the northern culture, as well as other checks regarding this culture."
+        ]
+      }
+    },
+    {
+      "type": "freePerk",
+      "perk": "language"
+    }
+  ]
+}

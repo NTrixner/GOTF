@@ -1,0 +1,25 @@
+{
+  "gotfItem": "Armor",
+  "recipe": "Jacket",
+  "material": "Fleece",
+  "type": "cloth",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 2
+    },
+    {
+      "type": "cold",
+      "amount": 1
+    }
+  ],
+  "attributes": [
+    {
+      "type": "pockets",
+      "amount":  4,
+      "size": "S"
+    }
+  ],
+  "size": "M",
+  "value": 55
+}

@@ -1,0 +1,7 @@
+# GOTF Fantasy
+## The Generic, Open Tabletop Framework - Fantasy System
+
+This is the generic fantasy variant of the GOTF (generic, open tabletop framework).
+For more information regarding the GOTF check out the corresponding Repository (https://github.com/NTrixner/GOTF).
+For the raw data of the GOTF Fantasy GAPOI data, check out the data Repository (https://github.com/NTrixner/GOTFFantasyData)
+For the interpreter of the raw data that creates the LaTex files being imported on release for this document, check out the GOTF Interpreter (https://github.com/NTrixner/GOTFInterpreter)

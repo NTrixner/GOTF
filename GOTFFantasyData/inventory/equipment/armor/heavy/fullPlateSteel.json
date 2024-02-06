@@ -1,0 +1,32 @@
+{
+  "gotfItem": "Armor",
+  "recipe": "Full Plate",
+  "material": "Steel",
+  "type": "heavy",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 13
+    },
+    {
+      "type": "cutting",
+      "amount": 16
+    },
+    {
+      "type": "piercing",
+      "amount": 16
+    }
+  ],
+  "attributes": [
+    {
+      "type": "over"
+    },
+    {
+      "type": "pockets",
+      "amount":  2,
+      "size": "S"
+    }
+  ],
+  "size": "L",
+  "value": 2700
+}

@@ -1,0 +1,67 @@
+{
+  "gotfItem": "Origin",
+  "type": "species",
+  "name": "Dwarves",
+  "label": "dwarveSpecies",
+  "description": {
+    "text": [
+      "Dwarves are a stout, short species of beings that live near and inside of mountains in their large fortresses.",
+      "Dwarves mature at an age of 23, and live up to 300 years.",
+      "They tend to become extremely fragile and senile in the process, but reaching such an extreme age is widely respected in Dwarf culture.",
+      "At their best, Dwarves are friendly, crafty and resourceful.",
+      "At their worst, Dwarves are bashful, blunt and devious."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "racialBonus",
+      "attribute": "vitality",
+      "value": 2
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "agility",
+      "value": -2
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "strength",
+      "value": 1
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "check",
+      "value": 2,
+      "description": {
+        "text": [
+          "vs. poisons"
+        ]
+      }
+    },
+    {
+      "type": "lowLightVision",
+      "value": 20
+    },
+    {
+      "type": "resources",
+      "value": [
+        {
+          "resource": "health",
+          "value": 25
+        },
+        {
+          "resource": "stamina",
+          "value": 20
+        },
+        {
+          "resource": "mana",
+          "value": 20
+        },
+        {
+          "resource": "faith",
+          "value": 25
+        }
+      ]
+    }
+  ]
+}

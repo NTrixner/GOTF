@@ -1,0 +1,36 @@
+{
+  "gotfItem": "Armor",
+  "recipe": "Gambeson",
+  "material": "Fur",
+  "type": "medium",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 3
+    },
+    {
+      "type": "cutting",
+      "amount": 2
+    },
+    {
+      "type": "piercing",
+      "amount": 1
+    },
+    {
+      "type": "cold",
+      "amount": 3
+    }
+  ],
+  "attributes": [
+    {
+      "type": "under"
+    },
+    {
+      "type": "pockets",
+      "amount":  3,
+      "size": "S"
+    }
+  ],
+  "size": "L",
+  "value": 230
+}

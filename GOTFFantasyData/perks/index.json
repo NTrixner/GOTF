@@ -1,0 +1,38 @@
+[
+  {
+    "category": "base",
+    "value": {
+      "$ref": "/base/index.json"
+    }
+  },
+  {
+    "category": "martial",
+    "value": {
+      "$ref": "/martial/index.json"
+    }
+  },
+  {
+    "category": "divine",
+    "value": {
+      "$ref": "/divine/index.json"
+    }
+  },
+  {
+    "category": "magic",
+    "value": {
+      "$ref": "/magic/index.json"
+    }
+  },
+  {
+    "category": "crafting",
+    "value": {
+      "$ref": "/crafting/index.json"
+    }
+  },
+  {
+    "category": "skills",
+    "value": {
+      "$ref": "/skills/index.json"
+    }
+  }
+]

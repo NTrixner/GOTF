@@ -1,0 +1,135 @@
+{
+  "gotfItem": "Origin",
+  "type": "species",
+  "name": "Elves",
+  "label": "elvenSpecies",
+  "description": {
+    "text": [
+      "Elves are a species of tall-standing, fair skinned creatures that have adapted to different environments through magical means.",
+      "Elves mature at an age of 50, and can live up to 500 years - there is however no known case of an Elf dying of old age.",
+      "At their best, Elves are reliable, honest and knowledgeable.",
+      "At their worst, Elves are hard-headed, aloof and emotionless."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "racialBonus",
+      "attribute": "dexterity",
+      "value": 2
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "vitality",
+      "value": -2
+    },
+    {
+      "type": "conditionImmunity",
+      "condition": "sleep",
+      "description": {
+        "text": [
+          "Elves cannot be put to sleep, and don't require sleep in general.",
+          "Instead, they simply have to meditate for 4 hours per day.",
+          "While doing so, they suffer a -6 concentration malus to perception"
+        ]
+      }
+    }
+    },
+    {
+      "type": "resources",
+      "value": [
+        {
+          "resource": "health",
+          "value": 20
+        },
+        {
+          "resource": "stamina",
+          "value": 20
+        },
+        {
+          "resource": "mana",
+          "value": 30
+        },
+        {
+          "resource": "faith",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "type": "subspecies",
+      "description": {
+        "text": [
+          "As an Elf, you are part of one of three subspecies"
+        ],
+        "values": [
+          {
+            "name": "High Elf",
+            "description": {
+              "text": [
+                "High Elves live in cities of art and splendor, and love magic and poetry."
+              ],
+              "bonuses": [
+                {
+                  "type": "racialBonus",
+                  "attribute": "intellect",
+                  "value": 2
+                },
+                {
+                  "type": "resourceRecoveryBonus",
+                  "resource": "mana",
+                  "value": 1
+                }
+              ]
+            }
+          },
+          {
+            "name": "Wood Elf",
+            "description": {
+              "text": [
+                "Woodland Elves are excellent hunters, climbers, and can swing from tree to tree without effort."
+              ],
+              "bonuses": [
+                {
+                  "type": "skillBonus",
+                  "diceBonus": {
+                    "amount": 1,
+                    "size": 6
+                  },
+                  "description": {
+                    "text": [
+                      "not being noticed while in a forest"
+                    ]
+                  }
+                },
+                {
+                  "type": "racialBonus",
+                  "attribute": "agility",
+                  "value": 2
+                }
+              ]
+            }
+          },
+          {
+            "name": "Dark Elf",
+            "description": {
+              "text": [
+                "Dark Elves have adapted to their subterranean life excellently"
+              ],
+              "bonuses": [
+                {
+                  "type": "darkVision",
+                  "value": 20
+                },
+                {
+                  "type": "racialBonus",
+                  "attribute": "charisma",
+                  "value": 2
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

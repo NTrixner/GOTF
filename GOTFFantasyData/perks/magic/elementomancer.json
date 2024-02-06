@@ -1,0 +1,74 @@
+{
+  "gotfItem": "MultiPerk",
+  "name": "{{value}}",
+  "label": "{{value}}",
+  "type": "multiPerk",
+  "cost": 250,
+  "requirements": [
+    {
+      "type": "perk",
+      "perk": "spellPowerTraining",
+      "rank": 1
+    }
+  ],
+  "value": [
+    "aceromancer",
+    "cryomancer",
+    "fulgomancer",
+    "luctomancer",
+    "mensomancer",
+    "necromancer",
+    "pyromancer"
+  ],
+  "params": [
+    [
+      "corrosive",
+      "summon more potent acids and bases"
+    ],
+    [
+      "cold",
+      "summon harsher cold"
+    ],
+    [
+      "electrical",
+      "summon stronger lightning"
+    ],
+    [
+      "radiant",
+      "summon brighter light"
+    ],
+    [
+      "psychic",
+      "cause more devastating mental damage"
+    ],
+    [
+      "necrose",
+      "cause more cell death"
+    ],
+    [
+      "hot",
+      "create hotter flames"
+    ]
+  ],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text":[
+      "You have become able to {{param2}}.",
+      "You gain a +1 confidence bonus to spell damage rolls that deal {{param1}} damage."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 250",
+    "amountWritten": 4,
+    "description": {
+      "text": [
+        "+{{newRank}} confidence bonus"
+      ]
+    }
+  }
+}

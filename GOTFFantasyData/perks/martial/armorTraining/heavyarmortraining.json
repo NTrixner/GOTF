@@ -1,0 +1,43 @@
+{
+  "gotfItem": "Perk",
+  "name": "Heavy Armor Training",
+  "label": "heavyArmorTraining",
+  "type": "Perk",
+  "cost": 1500,
+  "requirements": [
+    {
+      "type": "perk",
+      "perk": "clothArmorTraining",
+      "rank": 1
+    }
+  ],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You add your level to your Dodge bonus while equipped with armor with the \\lq Heavy \\rq descriptor.",
+      "Additionally, while wearing such armor, you gain a Skill Bonus to Damage Resistance against blunt, cutting and piercing of +1."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 750",
+    "description": {
+      "text": [
+        "You gain a +{{oldRank}}d4 Skill Bonus on Dodge checks, a +{{oldRank}} Skill Bonus to Lower, and a +{{conditionalText[0]}} Skill Bonus to Higher Dodge.",
+        "The resistances increase to +{{newRank}}"
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{oldRank}} * 4"
+        }
+      ]
+    },
+    "amountWritten": 4
+  }
+}

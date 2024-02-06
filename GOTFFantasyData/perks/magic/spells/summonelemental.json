@@ -1,0 +1,50 @@
+{
+  "gotfItem": "Perk",
+  "name": "Summon Elemental",
+  "label": "summonElemental",
+  "type": "Perk",
+  "cost": 250,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "You cast for 4 AP and 5 Mana and summon forth a Combat Tier 1 elemental from one of the four prime elemental planes.",
+      "The elemental follows your mental commands, but you can only command it if you're able to perceive it.",
+      "The summon disappears after 1 minute, until it is slain, or until you dismiss it.",
+      "If your Upkeep is interrupted, or if you chose to relinquish control over the elemental, the elemental goes rogue.",
+      "As a result, you can not command it anymore, and it starts attacking indiscriminately.",
+      "A summoned elemental that has become rogue stays until the spell runs out.",
+      "When you gain higher ranks of this spell, you can use those spell variations to summon a single elemental of a higher tier, or an amount of elementals of a lower rank in steps of two.",
+      "For example, with the rank 3 spell, you can summon one Tier 3 elemental, two Tier 2 elementals or four Tier 1 elementals."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 250",
+    "description": {
+      "text": [
+        "For {{conditionalText[0]}} Mana, you can summon a Combat Tier {{newRank}} elemental, or an amount of lower Tier elementals equals to {{conditionalText[1]}} Tier 1 elementals."
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "5/2 * ({{newRank}}^2 + {{newRank}})"
+        },
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "2^{{oldRank}}"
+        }
+      ]
+    },
+    "amountWritten": 5
+  }
+}

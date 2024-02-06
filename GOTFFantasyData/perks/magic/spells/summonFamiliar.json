@@ -1,0 +1,35 @@
+{
+  "gotfItem": "Perk",
+  "name": "Summon Familiar",
+  "label": "summonFamiliar",
+  "type": "Perk",
+  "cost": 250,
+  "requirements": [
+    {
+      "type": "perk",
+      "rank": 1,
+      "perk": "summonSoul"
+    }
+  ],
+  "tags": [
+    "spell variation",
+    "active",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "When casting Summon Familiar instead of Summon Soul on a soul shard, you do not summon it.",
+      "Instead, you bind the soul to become your familiar.",
+      "From then on, whenever you summon that soul, it can deliver melee spell attacks, and spells which require you touching someone or something, instead of you.",
+      "However, doing so costs 2 AP, and you have to concentrate on the spell until the Familiar acts.",
+      "It uses your statistics to deliver melee spell attacks.",
+      "You can also spend 1 to 5 Mana per Minute - depending on the Soul Shard Size - to enter a trance and perceive anything that the Familiar perceives.",
+      "The Familiar follows your mental commands, and the soul it is bound to is not shattered when it dies.",
+      "Instead, if a familiar dies, your Maximum Mana is reduced by the amount you paid to summon it.",
+      "This reduction lasts for 10 days, and you can not bind a new soul to be your familiar until then.",
+      "When you cast Summon Familiar on another soul while having a familiar, the first loses its status as familiar, and the new soul becomes your familiar."
+    ]
+  }
+}

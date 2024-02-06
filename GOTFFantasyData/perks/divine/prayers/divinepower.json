@@ -1,0 +1,55 @@
+{
+  "gotfItem": "Perk",
+  "name": "Divine Power",
+  "label": "divinePower",
+  "cost": 50,
+  "requirements": [
+    {
+      "type": "perk",
+      "perk": "divineDisciple",
+      "rank":  1,
+      "description": "Disciple of Good, Evil, Destruction, Healing, Life, Power, Protection, Storm, or War"
+    }
+  ],
+  "tags": [
+    "active",
+    "prayer",
+    "source",
+    "upkeep",
+    "weapon",
+    "preparation",
+    "repeatable"
+  ],
+  "description": {
+    "text": [
+      "Pray for 5 AP and 5 Faith, and pay an additional 1 Faith for every hour afterwards, while the prayer is active.",
+      "While this prayer is active, you gain a Divine Bonus equals to \\sfrac{1}{4} of your CHA to any damage or healing rolls you make with prayers or wonders if you want."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 150",
+    "amountWritten": 4,
+    "description": {
+      "text": [
+        "{{conditionalText[0]}} Faith and {{newRank}} hourly Faith, {{conditionalText[1]}}{{conditionalText[2]}} CHA"
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{newRank}}*5"
+        },
+        {
+          "conditional": "{{newRank}} < 4",
+          "value": "\\sfrac{1}{{{param1}}} of your",
+          "param1": "4 - {{oldRank}}"
+        },
+        {
+          "conditional": "{{newRank}} >= 4",
+          "value": "your full"
+        }
+      ]
+    }
+  }
+}

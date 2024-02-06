@@ -1,0 +1,66 @@
+{
+  "gotfItem": "Origin",
+  "type": "species",
+  "name": "Half-Elves",
+  "label": "halfElvenSpecies",
+  "description": {
+    "text": [
+      "Half-Elves are the result of a relationship between a human and an elf.",
+      "Oftentimes, this results in them feeling not very at home in either of those two societies.",
+      "Half-Elves mature at the age of 18, at which point their aging slows down, and they can reach up to 250 years of age.",
+      "At their best, Half-Elves are open, friendly and charismatic.",
+      "At their worst, they are reclusive, sad and jealous."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "racialBonus",
+      "attribute": "charisma",
+      "value": 2
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "choice",
+      "value": 1
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "choice",
+      "value": 1
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "check",
+      "diceBonus": {
+        "amount": 1,
+        "size": 6
+      },
+      "description": {
+        "text": [
+          "vs. sleep effects"
+        ]
+      }
+    },
+    {
+      "type": "resources",
+      "value": [
+        {
+          "resource": "health",
+          "value": 25
+        },
+        {
+          "resource": "stamina",
+          "value": 20
+        },
+        {
+          "resource": "mana",
+          "value": 25
+        },
+        {
+          "resource": "faith",
+          "value": 20
+        }
+      ]
+    }
+  ]
+}

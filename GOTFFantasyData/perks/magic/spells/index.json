@@ -1,0 +1,104 @@
+[
+  {
+    "$ref": "elementalArmor.json"
+  },
+  {
+    "$ref": "summonsoul.json"
+  },
+  {
+    "$ref": "boostattribute.json"
+  },
+  {
+    "$ref": "readmind.json"
+  },
+  {
+    "$ref": "elementalBolt.json"
+  },
+  {
+    "$ref": "telekinesis.json"
+  },
+  {
+    "$ref": "createundead.json"
+  },
+  {
+    "$ref": "mirage.json"
+  },
+  {
+    "$ref": "windgust.json"
+  },
+  {
+    "$ref": "hastenhinder.json"
+  },
+  {
+    "$ref": "orboflight.json"
+  },
+  {
+    "$ref": "lightburst.json"
+  },
+  {
+    "$ref": "shapeearth.json"
+  },
+  {
+    "$ref": "arcanesight.json"
+  },
+  {
+    "$ref": "reduceattribute.json"
+  },
+  {
+    "$ref": "summonFamiliar.json"
+  },
+  {
+    "$ref": "firespray.json"
+  },
+  {
+    "$ref": "dispelmagic.json"
+  },
+  {
+    "$ref": "blindingtouch.json"
+  },
+  {
+    "$ref": "summonelemental.json"
+  },
+  {
+    "$ref": "bindsoul.json"
+  },
+  {
+    "$ref": "shapewater.json"
+  },
+  {
+    "$ref": "shadowform.json"
+  },
+  {
+    "$ref": "icytouch.json"
+  },
+  {
+    "$ref": "kaleidoscope.json"
+  },
+  {
+    "$ref": "arcaneblast.json"
+  },
+  {
+    "$ref": "arcanesense.json"
+  },
+  {
+    "$ref": "arcanearmor.json"
+  },
+  {
+    "$ref": "acidburst.json"
+  },
+  {
+    "$ref": "invisibility.json"
+  },
+  {
+    "$ref": "magicshield.json"
+  },
+  {
+    "$ref": "arcanebolt.json"
+  },
+  {
+    "$ref": "vampiricray.json"
+  },
+  {
+    "$ref": "shadowtread.json"
+  }
+]

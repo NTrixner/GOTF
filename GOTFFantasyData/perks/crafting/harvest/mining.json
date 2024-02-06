@@ -1,0 +1,33 @@
+{
+  "gotfItem": "Perk",
+  "name": "Mining",
+  "label": "mining",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [],
+  "tags": [
+    "skill",
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You can search for minerals when you are scavenging an area.",
+      "Doing so requires a STR check, a pickaxe, and you can add your crafting level as a Skill Bonus to it.",
+      "When doing so, the GM compares your check to the Mining table of the Biome or Area that you're currently in.",
+      "You can roll once per 4-hour interval, and the amount and quality of items you find is based on your roll.",
+      "You can also use your level to gather minerals that you find in dungeons, towns and other areas."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 150",
+    "description": {
+      "text": [
+        "You also gain a +{{oldRank}}d4 Skill Bonus on mining checks."
+      ]
+    },
+    "amountWritten": 4
+  }
+}

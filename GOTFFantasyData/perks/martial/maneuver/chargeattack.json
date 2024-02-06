@@ -1,0 +1,20 @@
+{
+  "gotfItem": "Perk",
+  "name": "Charge Attack",
+  "label": "chargeAttack",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [],
+  "tags": [
+    "maneuver",
+    "active",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You can run towards an enemy and attack them with a melee weapon attack.",
+      "To do so, you spend 5 additional Stamina, and you only spend the AP of the Run or the Attack Action, whichever is higher.",
+      "For example, if the run costs 5 AP, and the Attack costs 6 AP, you spend 6 AP instead of 11, in addition to 13 Stamina."
+    ]
+  }
+}

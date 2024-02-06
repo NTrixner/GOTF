@@ -1,0 +1,44 @@
+{
+  "gotfItem": "Perk",
+  "name": "Arcane Sight",
+  "label": "arcaneSight",
+  "type": "Perk",
+  "cost": 1000,
+  "requirements": [
+    {
+      "type": "tagRanks",
+      "value": 10,
+      "tags": [
+        "spell"
+      ]
+    }
+  ],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "You cast a spell for 5 AP and 10 Mana and touch one willing creature",
+      "For a duration of 1 hour, the creature gains the ability to see in dim light as if it were bright light."
+    ]
+  },
+  "progression": {
+    "type": "list",
+    "value": [
+      {
+        "rank": 2,
+        "cost": 2500,
+        "description": {
+          "text": [
+            "20 Mana, and the creature is also able to see in complete darkness, but without being able to discern colours"
+          ]
+        }
+      }
+    ]
+  }
+}

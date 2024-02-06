@@ -1,0 +1,46 @@
+{
+    "gotfItem": "Perk",
+    "name": "Spell Power Training",
+    "label": "spellPowerTraining",
+    "type": "Perk",
+    "cost": 50,
+    "requirements": [{
+        "type": "tagRanks",
+        "value": 2,
+        "tags": ["spell"]
+    }],
+    "tags": [
+        "skill",
+        "passive",
+        "repeatable",
+        "source"
+    ],
+    "description": {
+        "text": [
+            "You have learned to channel your mental power into your spells.",
+            "You gain a Skill bonus equal to \\sfrac{1}{4} of your IN to spell damage or healing rolls.",
+            "You can decide to not use this bonus if you want."
+        ]
+    },
+    "progression": {
+        "type": "formula",
+        "value": "{{costOldRank}} + {{newRank}} * 250",
+        "description": {
+            "text": [
+                "Bonus of {{conditionalText[0]}}{{conditionalText[1]}}."
+            ],
+            "conditionalText": [
+                {
+                    "conditional": "{{newRank}} != 4",
+                    "value": "\\sfrac{1}{{{param1}}} your IN",
+                    "param1": "5 - {{newRank}}"
+                },
+                {
+                    "conditional": "{{newRank}} == 4",
+                    "value": "your whole IN"
+                }
+            ]
+        },
+        "amountWritten": 4
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "gotfItem": "Perk",
+  "name": "Boost Attribute",
+  "label": "boostAttribute",
+  "type": "Perk",
+  "cost": 500,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "You cast a spell for 10 Mana and 6 AP and target a creature you can see in a range of 10m, giving them a +2 Arcane bonus to one of their Ability values for an amount of minutes equals to your IN.",
+      "One creature can only benefit from one attribute boost per attribute at a time, and it doesn't stack with other temporary attribute increases, neither from Items, Perks nor Equipment."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 500",
+    "description": {
+      "text": [
+        "bonus of +{{conditionalText[1]}} for {{conditionalText[0]}} Mana"
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "10 + 5/2 * ({{newRank}}^2 + {{newRank}})"
+        },
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "1 + {{newRank}}"
+        }
+      ]
+    },
+    "amountWritten": 5
+  }
+}

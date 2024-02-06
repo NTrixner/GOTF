@@ -1,0 +1,26 @@
+[
+  {
+    "$ref": "feintattack.json"
+  },
+  {
+    "$ref": "brutalattack.json"
+  },
+  {
+    "$ref": "elegantattack.json"
+  },
+  {
+    "$ref": "tripattack.json"
+  },
+  {
+    "$ref": "aimedattack.json"
+  },
+  {
+    "$ref": "sneakattack.json"
+  },
+  {
+    "$ref": "chargeattack.json"
+  },
+  {
+    "$ref": "disarmingattack.json"
+  }
+]

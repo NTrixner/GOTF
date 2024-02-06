@@ -1,0 +1,50 @@
+{
+  "gotfItem": "Perk",
+  "name": "Brutal Attack",
+  "label": "brutalAttack",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [
+    {
+      "type": "attribute",
+      "stat": "strength",
+      "value": 2
+    }
+  ],
+  "tags": [
+    "maneuver",
+    "active",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "When making a melee weapon attack based on Strength, you can pay 4 Stamina and suffer a Skill Malus to that Attack of up to -2, while gaining a Skill Bonus to Weapon Damage equal to the same amount, but positive.",
+      "For example, if your weapon would deal 2D4 damage, and you had 8 Strength, you could pay 4 Stamina and Suffer a Skill Malus to the attack roll of -2, changing the weapon's damage to 2d4+2.",
+      "When using this weapon with a two-handed weapon attack, the Skill Damage bonus is doubled."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 350",
+    "description": {
+      "text": [
+        "Requires {{conditionalText[0]}} Strength",
+        "{{conditionalText[1]}} Stamina for up to {{conditionalText[0]}} points."
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{newRank}} * 2"
+        },
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{newRank}} * 4"
+        }
+      ]
+    },
+    "amountWritten": 6
+  }
+}

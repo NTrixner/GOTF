@@ -1,0 +1,62 @@
+{
+  "gotfItem": "Perk",
+  "name": "Telekinesis",
+  "label": "telekinesis",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "You spend 6 AP and 5 Mana to slightly lift a remote object or creature that is the equivalent of one small or smaller object.",
+      "You can move the lifted item around freely in the air, taking 1 Mana and 1 AP per 1.5m moved.",
+      "You can also just keep it in the air, which doesn't cost you AP or Mana.",
+      "The effect ends when you decide to, or when you lose sight of the object.",
+      "Another person can try to also control the same object.",
+      "If they are doing so manually, they make a Strength check against your Intellect check.",
+      "If they also try to manipulate the object with a Telekinesis spell, you make opposing Intellect checks similar to the effect of a \"Dispel Magic\" spell.",
+      "If you lose, the spell also ends and the other person gains control of the item."
+    ]
+  },
+  "progression": {
+    "type": "list",
+    "value": [
+      {
+        "rank": 2,
+        "cost": 500,
+        "description": {
+          "text": [
+            "10 initial Mana for a medium object."
+          ]
+        }
+      },
+      {
+        "rank": 3,
+        "cost": 1000,
+        "description": {
+          "text": [
+            "20 initial Mana for a large object.",
+            "Also, moving lifted items that are small or smaller doesn't cost additional Mana anymore."
+          ]
+        }
+      },
+      {
+        "rank": 4,
+        "cost": 2500,
+        "description": {
+          "text": [
+            "30 initial Mana for an extra-large object.",
+            "Also, moving lifted items that are medium or smaller doesn't cost additional Mana anymore."
+          ]
+        }
+      }
+    ]
+  }
+}

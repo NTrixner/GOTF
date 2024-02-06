@@ -1,0 +1,23 @@
+[
+  {
+    "$ref": "halflings.json"
+  },
+  {
+    "$ref": "dwarves.json"
+  },
+  {
+    "$ref": "humans.json"
+  },
+  {
+    "$ref": "half_elves.json"
+  },
+  {
+    "$ref": "elves.json"
+  },
+  {
+    "$ref": "gnomes.json"
+  },
+  {
+    "$ref": "half_orcs.json"
+  }
+]

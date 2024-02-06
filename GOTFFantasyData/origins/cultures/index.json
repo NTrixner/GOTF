@@ -1,0 +1,38 @@
+[
+  {
+    "$ref": "northern.json"
+  },
+  {
+    "$ref": "midlands.json"
+  },
+  {
+    "$ref": "steppes.json"
+  },
+  {
+    "$ref": "woodElven.json"
+  },
+  {
+    "$ref": "gnomish.json"
+  },
+  {
+    "$ref": "eastern.json"
+  },
+  {
+    "$ref": "bazaar.json"
+  },
+  {
+    "$ref": "desert.json"
+  },
+  {
+    "$ref": "highElven.json"
+  },
+  {
+    "$ref": "orcish.json"
+  },
+  {
+    "$ref": "darkElven.json"
+  },
+  {
+    "$ref": "dwarvish.json"
+  }
+]

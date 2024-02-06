@@ -1,0 +1,53 @@
+{
+  "gotfItem": "Perk",
+  "name": "Death Burst",
+  "label": "deathBurst",
+  "cost": 100,
+  "requirements": [
+    {
+      "type": "perk",
+      "perk": "divineDisciple",
+      "rank": 1,
+      "description": "Disciple of Death, Destruction or Evil"
+    }
+  ],
+  "tags": [
+    "active",
+    "prayer",
+    "source",
+    "preparation",
+    "repeatable"
+  ],
+  "description": {
+    "text": [
+      "Pray for 5 AP and pay 4 Faith.",
+      "You emit a burst of necrotic energy around you, hurting everyone in a radius of 3m around yourself.",
+      "Make a Charisma check against a creature's willpower.",
+      "If the target can roll willpower and succeeds, they only take half damage.",
+      "If you are below the target's lower willpower, they take no damage.",
+      "The burst deals 3D4 Necrotic damage."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 500",
+    "amountWritten": 5,
+    "description": {
+      "text": [
+        "{{conditionalText[0]}} Faith, the burst deals 3D{{conditionalText[1]}} Damage instead."
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "4 + {{oldRank}} * 3"
+        },
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "4 + {{oldRank}} * 2"
+        }
+      ]
+    }
+  }
+}

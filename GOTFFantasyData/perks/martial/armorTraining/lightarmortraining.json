@@ -1,0 +1,41 @@
+{
+  "gotfItem": "Perk",
+  "name": "Light Armor Training",
+  "label": "lightArmorTraining",
+  "type": "Perk",
+  "cost": 150,
+  "requirements": [
+    {
+      "type": "perk",
+      "perk": "clothArmorTraining",
+      "rank": 1
+    }
+  ],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You add your level to your Dodge bonus while equipped with armor with the \\lq Light \\rq descriptor."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 300",
+    "description": {
+      "text": [
+        "You gain a +{{oldRank}}d4 Skill Bonus on Dodge checks, a +{{oldRank}} Skill Bonus to Lower, and a +{{conditionalText[0]}} Skill Bonus to Higher Dodge."
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{oldRank}} * 4"
+        }
+      ]
+    },
+    "amountWritten": 4
+  }
+}

@@ -1,0 +1,34 @@
+{
+	"gotfItem": "Perk",
+	"name": "Spell Attack Training",
+	"label": "spellAttackTraining",
+	"type": "Perk",
+	"cost": 50,
+	"requirements": [{
+		"type": "tagRanks",
+		"value": 2,
+		"tags": ["spell"]
+	}],
+	"tags": [
+		"skill",
+		"passive",
+		"repeatable",
+		"source"
+	],
+	"description": {
+		"text": [
+			"You are trained with spell attacks.",
+			"Whenever a Spell requires you to make a check (such as attack or block rolls, or an INT check that targets a defensive attribute), you can add your level."
+		]
+	},
+	"progression": {
+		"type": "formula",
+		"value": "{{costOldRank}} + {{newRank}} * 150",
+		"description": {
+			"text": [
+				"You also add a +{{oldRank}}d4 Skill Bonus on spell checks."
+			]
+		},
+		"amountWritten": 4
+	}
+}

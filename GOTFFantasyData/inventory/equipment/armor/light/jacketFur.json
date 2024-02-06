@@ -1,0 +1,36 @@
+{
+  "gotfItem": "Armor",
+  "recipe": "Jacket",
+  "material": "Fur",
+  "type": "light",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 1
+    },
+    {
+      "type": "cutting",
+      "amount": 1
+    },
+    {
+      "type": "piercing",
+      "amount": 1
+    },
+    {
+      "type": "cold",
+      "amount": 2
+    }
+  ],
+  "attributes": [
+    {
+      "type": "under"
+    },
+    {
+      "type": "pockets",
+      "amount":  2,
+      "size": "S"
+    }
+  ],
+  "size": "M",
+  "value": 90
+}

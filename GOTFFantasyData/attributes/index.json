@@ -1,0 +1,53 @@
+{
+  "defensive": [
+    {
+      "$ref": "/defensive/dodge.json"
+    },
+    {
+      "$ref": "/defensive/notice.json"
+    },
+    {
+      "$ref": "/defensive/willpower.json"
+    },
+    {
+      "$ref": "/defensive/fortitude.json"
+    }
+  ],
+  "resources": [
+    {
+      "$ref": "/resource/health.json"
+    },
+    {
+      "$ref": "/resource/stamina.json"
+    },
+    {
+      "$ref": "/resource/mana.json"
+    },
+    {
+      "$ref": "/resource/faith.json"
+    }
+  ],
+  "active": [
+    {
+      "$ref": "/active/strength.json"
+    },
+    {
+      "$ref": "/active/vitality.json"
+    },
+    {
+      "$ref": "/active/dexterity.json"
+    },
+    {
+      "$ref": "/active/agility.json"
+    },
+    {
+      "$ref": "/active/intellect.json"
+    },
+    {
+      "$ref": "/active/perception.json"
+    },
+    {
+      "$ref": "/active/charisma.json"
+    }
+  ]
+}

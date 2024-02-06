@@ -1,0 +1,21 @@
+{
+  "gotfItem": "Perk",
+  "name": "Blinding Touch",
+  "label": "blindingTouch",
+  "type": "Perk",
+  "cost": 250,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "source",
+    "preparation"
+  ],
+  "description": {
+    "text": [
+      "For 3 AP and 6 Mana, you can temporarily impair the vision of a creature.",
+      "Make a melee magic weapon attack against the target creature.",
+      "If you hit, the target creature's Perception, Dodge Bonus and Attack Rolls suffer a -1d6 Arcane Malus for 1 minute."
+    ]
+  }
+}

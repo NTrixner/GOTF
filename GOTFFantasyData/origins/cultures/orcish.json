@@ -1,0 +1,31 @@
+{
+  "gotfItem": "Origin",
+  "type": "culture",
+  "name": "Orcish Culture",
+  "label": "orcishCulture",
+  "description": {
+    "text": [
+      "You learned early, that the strong eat, mate and speak, while the weak hunger, are alone and hold their tongue.",
+      "As such, you most likely can wield and axe, and a bow, and know how to stand up to those that try to put you down."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "skillBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 6
+      },
+      "description": {
+        "text": [
+          "social interactions with the orcish culture, as well as other checks regarding this culture."
+        ]
+      }
+    },
+    {
+      "type": "freePerk",
+      "perk": "language",
+      "choice": "Orcish"
+    }
+  ]
+}

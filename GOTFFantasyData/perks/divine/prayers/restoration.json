@@ -1,0 +1,67 @@
+{
+  "gotfItem": "Perk",
+  "name": "Prayer of Restoration",
+  "label": "restoration",
+  "cost": 200,
+  "requirements": [
+    {
+      "description": "Disciple of Beauty, Fertility, Good, Healing, Life, Light, Love, Moon, Motherhood, Nature, Plants, Protection, Sun, or Water."
+    }
+  ],
+  "tags": [
+    "active",
+    "prayer",
+    "source",
+    "weapon",
+    "preparation",
+    "repeatable"
+  ],
+  "description": {
+    "text": [
+      "Pray for 4 AP and pay 10 Faith.",
+      "You touch a willing creature, and they are healed of 1d4 points of Attribute damage in one attribute, 1 point of mnemonic damage, an unfavorable condition of your choosing (except \\lq ~\\nameref{condition:wounded} \\rq and  \\lq ~\\nameref{condition:heavilywounded} \\rq), or they can re-roll a check against poison or disease that they previously failed.",
+      "Only one of these effects work."
+    ]
+  },
+  "progression": {
+    "type": "list",
+    "value": [
+      {
+        "rank": 2,
+        "cost": 1000,
+        "description": {
+          "text": [
+            "20 Faith, You can choose to remove a minor disease."
+          ]
+        }
+      },
+      {
+        "rank": 3,
+        "cost": 5000,
+        "description": {
+          "text": [
+            "30 Faith, You can choose to remove a major disease, as well as the \\lq ~\\nameref{condition:wounded} \\rq condition."
+          ]
+        }
+      },
+      {
+        "rank": 4,
+        "cost": 7500,
+        "description": {
+          "text": [
+            "40 Faith, You can choose to remove the \\lq ~\\nameref{condition:heavilywounded} \\rq condition."
+          ]
+        }
+      },
+      {
+        "rank": 5,
+        "cost": 5000,
+        "description": {
+          "text": [
+            "50 Faith, You can choose to heal a permanent disability, such as permanent blindness, deafness, muteness, a malformed or missing limb, etc."
+          ]
+        }
+      }
+    ]
+  }
+}

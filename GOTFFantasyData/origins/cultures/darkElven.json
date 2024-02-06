@@ -1,0 +1,31 @@
+{
+  "gotfItem": "Origin",
+  "type": "culture",
+  "name": "Dark Elven Culture",
+  "label": "darkElvenCulture",
+  "description": {
+    "text": [
+      "You grew up in a fortified cities of obsidian and iron underneath a granit sky.",
+      "You were most likely taught about cavern ecology, followed the rigid traditions and hierarchies of Dark Elven society, and learned some form of martial combat."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "skillBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 6
+      },
+      "description": {
+        "text": [
+          "social interactions with the dark elven culture, as well as other checks regarding this culture."
+        ]
+      }
+    },
+    {
+      "type": "freePerk",
+      "perk": "language",
+      "choice": "Dark Elven"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# GOTF
+## The Generic, Open Tabletop Framework
+
+This is the generic, open tabletop framework.
+This framework was designed to create TTRPG rules systems that follow the GAPOI structure (Game Modes, Attributes, Perks, Origins, and Inventory).
+It was inspired by the licensing actions of certain TTRPG companies during the last years.
+The GOTF is completely open and developed under the WTFPL (The Do What the Fuck you want public license).
+You can do with the GOTF whatever the fuck you want. Copy it, modify it, sell it, produce homebrew content for it.
+For an example of a GOTF-based system, check out the GOTF Fantasy (https://github.com/NTrixner/GOTFFantasy)

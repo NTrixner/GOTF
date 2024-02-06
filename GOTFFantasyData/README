@@ -1,0 +1,7 @@
+# GOTF Fantasy Data
+## The Generic, Open Tabletop Framework - Fantasy System Data
+
+This is the GAPOI (Game Mode, Attribute, Perks, Origins, Inventory) data for the generic fantasy variant of the GOTF (generic, open tabletop framework).
+For more information regarding the GOTF check out the corresponding Repository (https://github.com/NTrixner/GOTF).
+For the completed GOTF Fantasy, check out the corresponding repository (https://github.com/NTrixner/GOTFFantasy)
+For the interpreter of the raw data that creates the LaTex files being imported on release for this document, check out the GOTF Interpreter (https://github.com/NTrixner/GOTFInterpreter)

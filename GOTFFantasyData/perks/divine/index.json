@@ -1,0 +1,14 @@
+[
+  {
+      "$ref": "divinedisciple.json"
+  },
+  {
+    "$ref": "divinetraining.json"
+  },
+  {
+    "category": "prayers",
+    "value": {
+      "$ref": "/prayers/index.json"
+    }
+  }
+]

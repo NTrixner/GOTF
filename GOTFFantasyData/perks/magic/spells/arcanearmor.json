@@ -1,0 +1,64 @@
+{
+  "gotfItem": "Perk",
+  "name": "Arcane Armor",
+  "label": "arcaneArmor",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "You target one willing creature in a range of 10m that you can see.",
+      "For 8 AP and 5 Mana, you create a visible, magical force field around that creature's body that gives it an Arcane Bonus of +2 to its Armor Reduction against Blunt, Cutting, and Piercing Damage.",
+      "The force field can be active for up to your Intellect in hours."
+    ]
+  },
+  "progression": {
+    "type": "list",
+    "value": [
+      {
+        "rank": 2,
+        "cost": 350,
+        "description": {
+          "text": [
+            "10 Mana for +4 Arcane Armor Reduction against Blunt, Cutting, and Piercing"
+          ]
+        }
+      },
+      {
+        "rank": 3,
+        "cost": 750,
+        "description": {
+          "text": [
+            "15 Mana for +6 Arcane Armor Reduction against Blunt, Cutting, and Piercing"
+          ]
+        }
+      },
+      {
+        "rank": 4,
+        "cost": 1500,
+        "description": {
+          "text": [
+            "20 Mana for +8 Arcane Armor Reduction against Blunt, Cutting, and Piercing"
+          ]
+        }
+      },
+      {
+        "rank": 5,
+        "cost": 3500,
+        "description": {
+          "text": [
+            "25 Mana for +10 Arcane Armor Reduction against Blunt, Cutting, and Piercing"
+          ]
+        }
+      }
+    ]
+  }
+}

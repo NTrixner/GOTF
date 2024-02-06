@@ -1,0 +1,49 @@
+{
+  "gotfItem": "Perk",
+  "name": "Medium Armor Training",
+  "label": "mediumArmorTraining",
+  "type": "Perk",
+  "cost": 350,
+  "requirements": [
+    {
+      "type": "perk",
+      "perk": "clothArmorTraining",
+      "rank": 1
+    }
+  ],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You are trained with medium armor.",
+      "You add your level to your Dodge Bonus while equipped with armor with the \\lq Medium \\rq descriptor.",
+      "Additionally, your Agility can not exceed 9 while wearing this type of armor."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 450",
+    "description": {
+      "text": [
+        "You gain a +{{oldRank}}d4 Skill Bonus on Dodge checks, a +{{oldRank}} Skill Bonus to Lower, and a +{{conditionalText[0]}} Skill Bonus to Higher Dodge.",
+        "Your Agility can now not exceed {{conditionalText[1]}} while wearing medium armor."
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{oldRank}} * 4"
+        },
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "8 + {{newRank}}"
+        }
+      ]
+    },
+    "amountWritten": 4
+  }
+}

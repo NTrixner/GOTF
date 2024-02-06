@@ -1,0 +1,31 @@
+{
+  "gotfItem": "Origin",
+  "type": "culture",
+  "name": "Wood Elven Culture",
+  "label": "woodElvenCulture",
+  "description": {
+    "text": [
+      "You spent your days tracking animals, learning about the forests, and listening to the teachings of the trees.",
+      "You were most likely taught hunting, lore about fauna and flora, and how to move unseen."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "skillBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 6
+      },
+      "description": {
+        "text": [
+          "social interactions with the wood elven culture, as well as other checks regarding this culture."
+        ]
+      }
+    },
+    {
+      "type": "freePerk",
+      "perk": "language",
+      "choice": "Wood Elven"
+    }
+  ]
+}

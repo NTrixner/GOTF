@@ -1,0 +1,30 @@
+{
+  "gotfItem": "Origin",
+  "type": "culture",
+  "name": "Midlands Culture",
+  "label": "midlandsCulture",
+  "description": {
+    "text": [
+      "The midlands are a mostly forested area, with rolling, grassy hills and farmsteads where civilization was able to carve out a humble, but fruitful livelihood.",
+      "Dotted in between are the walled towns and castles of local lords and rulers, who busy themselves with keeping the citizens safe from the dangers of nature, and their neighbours."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "skillBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 6
+      },
+      "description": {
+        "text": [
+          "social interactions with the midlands culture, as well as other checks regarding this culture."
+        ]
+      }
+    },
+    {
+      "type": "freePerk",
+      "perk": "language"
+    }
+  ]
+}

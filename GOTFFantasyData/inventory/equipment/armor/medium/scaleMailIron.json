@@ -1,0 +1,29 @@
+{
+  "gotfItem": "Armor",
+  "recipe": "Scale Mail",
+  "material": "Iron",
+  "type": "medium",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 6
+    },
+    {
+      "type": "cutting",
+      "amount": 12
+    },
+    {
+      "type": "piercing",
+      "amount": 6
+    }
+  ],
+  "attributes": [
+    {
+      "type": "pockets",
+      "amount":  2,
+      "size": "S"
+    }
+  ],
+  "size": "L",
+  "value": 1550
+}

@@ -1,0 +1,29 @@
+{
+  "gotfItem": "Armor",
+  "recipe": "Brigandine",
+  "material": "Steel",
+  "type": "medium",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 7
+    },
+    {
+      "type": "cutting",
+      "amount": 7
+    },
+    {
+      "type": "piercing",
+      "amount": 6
+    }
+  ],
+  "attributes": [
+    {
+      "type": "pockets",
+      "amount":  2,
+      "size": "S"
+    }
+  ],
+  "size": "L",
+  "value": 2300
+}

@@ -1,0 +1,29 @@
+{
+  "gotfItem": "Origin",
+  "type": "culture",
+  "name": "Bazaar Culture",
+  "label": "bazaarCulture",
+  "description": {
+    "text": [
+      "You were born in a rich society of poets, traders, philosophers and magicians, that created a bustling society around one of the few permanent sources of water in an otherwise arid land."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "skillBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 6
+      },
+      "description": {
+        "text": [
+          "social interactions with the bazaar culture, as well as other checks regarding this culture."
+        ]
+      }
+    },
+    {
+      "type": "freePerk",
+      "perk": "language"
+    }
+  ]
+}

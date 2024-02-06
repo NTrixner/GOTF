@@ -1,0 +1,40 @@
+{
+  "gotfItem": "Armor",
+  "recipe": "Jacket",
+  "material": "Leather",
+  "type": "light",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 2
+    },
+    {
+      "type": "cutting",
+      "amount": 2
+    },
+    {
+      "type": "piercing",
+      "amount": 2
+    },
+    {
+      "type": "cold",
+      "amount": 1
+    },
+    {
+      "type": "heat",
+      "amount": 1
+    }
+  ],
+  "attributes": [
+    {
+      "type": "under"
+    },
+    {
+      "type": "pockets",
+      "amount":  4,
+      "size": "S"
+    }
+  ],
+  "size": "M",
+  "value": 150
+}

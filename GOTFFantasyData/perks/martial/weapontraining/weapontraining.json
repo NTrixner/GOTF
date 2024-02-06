@@ -1,0 +1,33 @@
+{
+  "gotfItem": "Perk",
+  "name": "Weapon Training",
+  "label": "weaponTraining",
+  "type": "Perk",
+  "cost": 50,
+  "requirements": [],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "This is a set of different perks.",
+      "You are trained with one type of weapon (Like \"Arming Sword\" or \"Light Crossbow\") that does not have the \"Unusual\" descriptor.",
+      "You add your level to attack and block rolls made with that weapon.",
+      "You choose the weapon type that you are proficient in when you choose this perk.",
+      "You can gain another instance of this perk by choosing a different weapon."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 100",
+    "description": {
+      "text": [
+        "You also gain a +{{oldRank}}d4 Skill Bonus to attack and block rolls with these weapons."
+      ],
+      "conditionalText": []
+    },
+    "amountWritten": 4
+  }
+}

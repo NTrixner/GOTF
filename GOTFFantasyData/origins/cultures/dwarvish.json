@@ -1,0 +1,31 @@
+{
+  "gotfItem": "Origin",
+  "type": "culture",
+  "name": "Dwarvish Culture",
+  "label": "dwarvishCulture",
+  "description": {
+    "text": [
+      "You either grew up in one of the many mountain homes, or in one of the smaller hillside settlements.",
+      "As a dwarf, learning a trade and how to defend your home was important to your people, and you probably can hold your liquor."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "skillBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 6
+      },
+      "description": {
+        "text": [
+          "social interactions with the dwarvish culture, as well as other checks regarding this culture."
+        ]
+      }
+    },
+    {
+      "type": "freePerk",
+      "perk": "language",
+      "choice": "Dwarven"
+    }
+  ]
+}

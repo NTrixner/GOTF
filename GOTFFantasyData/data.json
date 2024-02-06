@@ -1,0 +1,32 @@
+{
+  "systemName": "GOTF Fantasy",
+  "authors": [
+    "Nikolaus Trixner"
+  ],
+  "created": "2023-01-09",
+  "description": "This is the generic fantasy system for the GOTF (Generic open tabletop framework",
+  "gapoi": {
+    "gameModes": {
+      "$ref": "/gameModes/index.json"
+    },
+    "attributes": {
+      "$ref": "/attributes/index.json"
+    },
+    "perks": {
+      "$ref": "/perks/index.json"
+    },
+    "origins": {
+      "$ref": "/origins/index.json"
+    },
+    "inventory": {
+      "$ref": "/origins/index.json"
+    },
+    "additionalData": [
+      {
+        "npcs": {
+          "$ref": "npcs/index.json"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "gotfItem": "Perk",
+  "name": "Aimed Attack",
+  "label": "aimedAttack",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [
+    {
+      "type": "attribute",
+      "stat": "dexterity",
+      "value": 2
+    }
+  ],
+  "tags": [
+    "maneuver",
+    "active",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "When making a weapon attack based on Dexterity, you can increase the AP cost of the attack by up to 2.",
+      "If you do so, you gain a Skill Bonus to attack and damage for that attack equal to that value.",
+      "If the attack is ranged, this Bonus is doubled."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 350",
+    "description": {
+      "text": [
+        "Requires {{conditionalText[0]}} Dexterity",
+        "You can use increase the attack's cost by up to {{conditionalText[0]}} AP"
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{newRank}} * 2"
+        }
+      ]
+    },
+    "amountWritten": 6
+  }
+}

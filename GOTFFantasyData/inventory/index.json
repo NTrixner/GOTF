@@ -1,0 +1,68 @@
+[
+  {
+    "category": "armor",
+    "items": {
+      "$ref": "/equipment/armor/index.json"
+    }
+  },
+  {
+    "category": "weapons",
+    "items": {
+      "$ref": "/equipment/weapons/index.json"
+    }
+  },
+  {
+    "category": "accessories",
+    "items": {
+      "$ref": "/equipment/accessories/index.json"
+    }
+  },
+  {
+    "category": "mundane",
+    "items": {
+      "$ref": "/items/mundane/index.json"
+    }
+  },
+  {
+    "category": "consumables",
+    "items": {
+      "$ref": "/items/consumables/index.json"
+    }
+  },
+  {
+    "category": "containers",
+    "items": {
+      "$ref": "/items/containers/index.json"
+    }
+  },
+  {
+    "category": "mountsAndVehicles",
+    "items": {
+      "$ref": "/items/mountsAndVehicles/index.json"
+    }
+  },
+  {
+    "category": "tools",
+    "items": {
+      "$ref": "/items/tools/index.json"
+    }
+  },
+  {
+    "category": "ingredients",
+    "items": {
+      "$ref": "/items/ingredients/index.json"
+    }
+  },
+  {
+    "category": "potions",
+    "items": {
+      "$ref": "/items/potions/index.json"
+    }
+  },
+  {
+    "category": "enchantments",
+    "items": {
+      "$ref": "/items/enchantments/index.json"
+    }
+  }
+]

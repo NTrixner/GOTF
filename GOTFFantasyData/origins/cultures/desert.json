@@ -1,0 +1,29 @@
+{
+  "gotfItem": "Origin",
+  "type": "culture",
+  "name": "Desert Culture",
+  "label": "desertCulture",
+  "description": {
+    "text": [
+      "You travelled the rolling dunes and rocky bluffs of the hot, arid lands of the world, and learned how to survive on the small water you found in the few oases on the way."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "skillBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 6
+      },
+      "description": {
+        "text": [
+          "social interactions with the desert culture, as well as other checks regarding this culture."
+        ]
+      }
+    },
+    {
+      "type": "freePerk",
+      "perk": "language"
+    }
+  ]
+}

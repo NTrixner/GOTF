@@ -1,0 +1,43 @@
+{
+  "gotfItem": "Perk",
+  "name": "Create Undead",
+  "label": "createUndead",
+  "type": "Perk",
+  "cost": 150,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "You cast for 10 AP and spend 5 Mana, and touch the remains of a humanoid or animal that you can see.",
+      "The remains are animated as a corporeal undead of Combat Tier 1, following your mental commands.",
+      "The form of the creature - if it is a zombie or a skeleton - depends on the state of decay that the remains were in when you cast the spell.",
+      "The body is animated by your magic, and doesn't need sinew, sustenance, air or sleep to function.",
+      "While the spell is active, your maximum Mana is reduced by the 5 Mana you spent to cast the spell.",
+      "You can release the undead from your service at any time without using AP or Mana, but doing so doesn't end it's unlife, instead setting it free to attack you or any other living creature in it's vicinity."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 350",
+    "description": {
+      "text": [
+        "{{conditionalText[0]}} Mana for Tier {{newRank}} Undead"
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{newRank}} * 5"
+        }
+      ]
+    },
+    "amountWritten": 4
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "gotfItem": "Perk",
+  "name": "Shadowtread",
+  "label": "shadowtread",
+  "type": "Perk",
+  "cost": 250,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "source",
+    "preparation"
+  ],
+  "description": {
+    "text": [
+      "You spend 2 AP and an amount of mana of your choice to \\lq enter \\rq a shadow that you are touching.",
+      "You then immediately emerge in a free spot that you can see that also is covered by shadow.",
+      "The range between your entering and emerging spots can not exceed a range that is equal to 1.5m per mana that you spent for this spell.",
+      "It is possible to use this spell at night or in complete darkness."
+    ]
+  }
+}

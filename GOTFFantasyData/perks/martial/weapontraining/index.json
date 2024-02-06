@@ -1,0 +1,14 @@
+[
+  {
+    "$ref": "simpleweapontraining.json"
+  },
+  {
+    "$ref": "unusualweapontraining.json"
+  },
+  {
+    "$ref": "weaponGroupTraining.json"
+  },
+  {
+    "$ref": "weapontraining.json"
+  }
+]

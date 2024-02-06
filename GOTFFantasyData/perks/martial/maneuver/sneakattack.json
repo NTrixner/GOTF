@@ -1,0 +1,31 @@
+{
+  "gotfItem": "Perk",
+  "name": "Sneak Attack",
+  "label": "sneakAttack",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [],
+  "tags": [
+    "maneuver",
+    "active",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "When you hit a creature with a weapon attack based on DEX or AGI, and the creature cannot react (for example, if they're not aware of you, or if the attack roll was above their maximum dodge), you can spend 3 additional Stamina.",
+      "If you do so, you gain an additional +1d6 Skill Bonus to the damage of the attack, and you bypass any damage reduction the target gains from armor.",
+      "Enemies immune to critical hits are immune to this effect."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 150",
+    "description": {
+      "text": [
+        "Skill Bonus is now +{{newRank}}d6 damage."
+      ]
+    },
+    "amountWritten": 6
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "gotfItem": "Perk",
+  "name": "Arcane Bolt",
+  "label": "arcaneBolt",
+  "type": "Perk",
+  "cost": 50,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation"
+  ],
+  "description": {
+    "text": [
+      "For 3 AP and 2 Mana, you create a bolt of magic out of thin air and hurl it towards an enemy.",
+      "Make a ranged magic weapon attack against a creature in a range of 35m.",
+      "The bolt deals 2d4 piercing damage."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 350",
+    "description": {
+      "text": [
+        "{{conditionalText[0]}} Mana for {{newRank}} bolts, each requiring their own attack."
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "2 + {{oldRank}} * 4"
+        }
+      ]
+    },
+    "amountWritten": 5
+  }
+}

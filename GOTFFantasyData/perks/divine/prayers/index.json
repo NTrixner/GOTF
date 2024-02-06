@@ -1,0 +1,41 @@
+[
+  {
+    "$ref": "divinepower.json"
+  },
+  {
+    "$ref": "thornshot.json"
+  },
+  {
+    "$ref": "divinerest.json"
+  },
+  {
+    "$ref": "restoration.json"
+  },
+  {
+    "$ref": "deathburst.json"
+  },
+  {
+    "$ref": "beaconoflight.json"
+  },
+  {
+    "$ref": "healing.json"
+  },
+  {
+    "$ref": "visionofcourage.json"
+  },
+  {
+    "$ref": "protection.json"
+  },
+  {
+    "$ref": "smiting.json"
+  },
+  {
+    "$ref": "punishment.json"
+  },
+  {
+    "$ref": "boon.json"
+  },
+  {
+    "$ref": "truebalance.json"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "category": "background",
+    "amountPerChar": "1",
+    "value": {
+      "$ref": "/backgrounds/index.json"
+    }
+  },
+  {
+    "category": "cultures",
+    "amountPerChar": "1",
+    "value": {
+      "$ref": "/cultures/index.json"
+    },
+    "description": {
+      "text": [
+        "Every player character was raised in a certain environment which might not be directly linked to their species.",
+        "Choose one of these cultural backgrounds when creating a new character."
+      ]
+    }
+  },
+  {
+    "category": "species",
+    "amountPerChar": "1",
+    "value": {
+      "$ref": "/species/index.json"
+    }
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "gotfItem": "Perk",
+  "name": "Reduce Attribute",
+  "label": "reduceAttribute",
+  "type": "Perk",
+  "cost": 500,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "You cast a spell for 15 Mana and 6 AP and then target a creature that you can see.",
+      "If the creature isn't willing, it can try to resist you.",
+      "Make an intellect check targeting the target's willpower.",
+      "If you win or if the creature is willing, it suffers a -2 arcane malus to one of its attribute values of your choice for 5d6 AP.",
+      "If the target rolls and succeeds, the duration is halved.",
+      "You can not temporarily reduce an attribute to a value of 0 or lower with this spell."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 500",
+    "description": {
+      "text": [
+        "Malus of {{conditionalText[1]}} for {{conditionalText[0]}} Mana"
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "15 + 5/2 * ({{newRank}}^2 + {{newRank}})"
+        },
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "1 + {{newRank}}"
+        }
+      ]
+    },
+    "amountWritten": 5
+  }
+}

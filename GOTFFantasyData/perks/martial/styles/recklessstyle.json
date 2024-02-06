@@ -1,0 +1,65 @@
+{
+  "gotfItem": "Perk",
+  "name": "Reckless Style",
+  "label": "recklessStyle",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [
+    {
+      "type": "attribute",
+      "stat": "strength",
+      "value": 8
+    }
+  ],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "When making a strength-based melee attack, you add your combat level to damage.",
+      "Additionally, when you enter this combat style, you gain a temporary amount of hit points equals to ten times your combat level.",
+      "Lastly, you gain a +1d6 Rage Bonus to Willpower (+1 and +6 to Lower and Higher, respectively)",
+      "However, you suffer a -1d6 Rage Malus to Notice and Dodge (-1 and -6 to Lower and Higher, respectively)",
+      "Once you leave Reckless Style, you become ~\\nameref{condition:exhausted} for one hour.",
+      "While being exhausted, you can not enter Reckless Style."
+    ]
+  },
+  "progression": {
+    "type": "list",
+    "value": [
+      {
+        "rank": 2,
+        "cost": 500,
+        "description": {
+          "text": [
+            "Requires 9 Strength.",
+            "You now gain +1.5 times your combat level to damage when using two-handed attacks."
+          ]
+        }
+      },
+      {
+        "rank": 3,
+        "cost": 1000,
+        "description": {
+          "text": [
+            "Requires 10 Strength.",
+            "You now 15 times your combat level as temporary hit points."
+          ]
+        }
+      },
+      {
+        "rank": 4,
+        "cost": 2500,
+        "description": {
+          "text": [
+            "Requires 11 Strength.",
+            "You now gain twice your combat level to damage when using two-handed attacks, and 1.5 times your combat level to damage with one-handed attacks.",
+            "Additionally, your exhaustion now ends after 30 minutes."
+          ]
+        }
+      }
+    ]
+  }
+}

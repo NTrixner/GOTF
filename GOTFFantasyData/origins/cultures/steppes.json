@@ -1,0 +1,30 @@
+{
+  "gotfItem": "Origin",
+  "type": "culture",
+  "name": "Steppe Culture",
+  "label": "steppeCulture",
+  "description": {
+    "text": [
+      "You travelled the eastern grasslands with your herds of pack animals, and learned how to ride horses (or potentially other beasts) at a very young age.",
+      "You know how to track, fight - especially how to shoot a bow from a moving mount - and the importance of kinship and tradition has been taught to you from a young age."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "skillBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 6
+      },
+      "description": {
+        "text": [
+          "social interactions with the steppe culture, as well as other checks regarding this culture."
+        ]
+      }
+    },
+    {
+      "type": "freePerk",
+      "perk": "language"
+    }
+  ]
+}

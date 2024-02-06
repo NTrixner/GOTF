@@ -1,0 +1,32 @@
+{
+  "gotfItem": "Origin",
+  "type": "culture",
+  "name": "Eastern Culture",
+  "label": "easternCulture",
+  "description": {
+    "text": [
+      "Your culture is rich, and full of amazing and great inventions.",
+      "Your kings are guarded by the stewardship of great dragons and spirits, and your arts are manifold and fantastical.",
+      "Your history is full of terrible battles, catastrophes, and famines.",
+      "However, your culture has prevailed over the ages, producing philosophers, poets, artists, warrior monks, and futuristic feats of engineering."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "skillBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 6
+      },
+      "description": {
+        "text": [
+          "social interactions with the eastern culture, as well as other checks regarding this culture."
+        ]
+      }
+    },
+    {
+      "type": "freePerk",
+      "perk": "language"
+    }
+  ]
+}

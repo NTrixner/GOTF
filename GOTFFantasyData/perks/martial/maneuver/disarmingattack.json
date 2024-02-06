@@ -1,0 +1,18 @@
+{
+  "gotfItem": "Perk",
+  "name": "Disarming Attack",
+  "label": "disarmingAttack",
+  "type": "Perk",
+  "cost": 1000,
+  "requirements": [],
+  "tags": [
+    "maneuver",
+    "active",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "When making a melee weapon attack that deals at least 1 damage, you can spend 10 Stamina to gain a free disarm attempt without having to attack again or pay any additional AP or Stamina."
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "gotfItem": "Perk",
+  "name": "Hasten and Hinder",
+  "label": "hastenHinder",
+  "type": "Perk",
+  "cost": 1000,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "You cast a spell for 25 Mana and 6 AP and then target a creature of your choice that you can see (you can also target yourself).",
+      "If the creature isn't willing, it can try to resist you.",
+      "Make an intellect check contested by the target's willpower.",
+      "If you win or if the creature is willing, it is inflicted by one of two possible conditions:\"\\nameref{condition:hastened}\" or \"\\nameref{condition:hindered}\".",
+      "This condition applies for a duration of 5d6 AP.",
+      "If the creature made a Willpower check and succeeds, it is still affected, but the duration is halved.",
+      "You decide which condition to apply when casting the spell.",
+      "If a creature can identify your spell while you cast, it can discern which condition you are creating."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 1000",
+    "description": {
+      "text": [
+        "{{conditionalText[0]}} Mana for {{newRank}} Effects at the same time"
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "{{newRank}} * 25"
+        }
+      ]
+    },
+    "amountWritten": 4
+  }
+}

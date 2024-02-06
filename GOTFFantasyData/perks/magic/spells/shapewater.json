@@ -1,0 +1,24 @@
+{
+  "gotfItem": "Perk",
+  "name": "Shape Water",
+  "label": "shapeWater",
+  "type": "Perk",
+  "cost": 50,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "For 4 AP and 2 Mana, you can start moving water surrounding you.",
+      "Any liquid in a radius of 30m of you can be moved.",
+      "Doing so takes 1 Mana per Minute, and you can move a mass equal to 30kg per Minute.",
+      "You can not use this ability to move the liquid inside creatures.",
+      "You can use this ability to create small waves in ponds, change weak currents, or separate liquids"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "gotfItem": "Perk",
+  "name": "Magic Shield",
+  "label": "magicShield",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation"
+  ],
+  "description": {
+    "text": [
+      "When targeted by magic that would deal damage to you, you can block that magic.",
+      "Doing so requires a block roll that uses your INT, as well as an amount of Mana (instead of Stamina) equal to 2 per AP that the Attacker used.",
+      "If you succeed, you reduce the spell damage dealt by 1d6.",
+      "The amount blocked like this improves from the~\\nameref{perk:spellpowertraining} perk.",
+      "This action counts as a defensive Action for all other related perks."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 200",
+    "description": {
+      "text": [
+        "The spell blocks 1d{{conditionalText[0]}} now"
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "4 + {{newRank}}*2"
+        }
+      ]
+    },
+    "amountWritten": 4
+  }
+}

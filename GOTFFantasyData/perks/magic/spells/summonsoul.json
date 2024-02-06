@@ -1,0 +1,45 @@
+{
+  "gotfItem": "Perk",
+  "name": "Summon Soul",
+  "label": "summonSoul",
+  "type": "Perk",
+  "cost": 250,
+  "requirements": [
+    {
+      "type": "perk",
+      "perk": "bindSoul",
+      "rank": 1,
+      "description": "Bind Soul"
+    }
+  ],
+  "tags": [
+    "spell",
+    "active",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "The spell costs an amount of Mana depending on Soul Shard size (See below)",
+      "",
+      "You summon for 4 AP and a certain amount of Mana to summon forth the soul trapped in one of your soul shards.",
+      "The summon keeps the form and statistics it had in life, but it gains the Etherealness descriptor and its Damage Reduction against Blunt, Cutting and Piercing is replaced by values depending on their Soul Shard Size (See below).",
+      "The summon follows your mental commands, but you can only command it if you're able to perceive it.",
+      "It is at full health every time it is summoned.",
+      "If the creature had equipment while dying, it is adorned with ethereal copies of the equipment it had on its body directly before death (e.g.if the creature was disarmed and then killed before it could pick this weapon up again, the ethereal creature doesn't have that weapon).",
+      "The summon stays for up to 10 minutes, or until it is slain.",
+      "If it is slain, the soul shard shatters and ceases to function.",
+      "",
+      "\\rowcolors{2}{lightgray}{white}",
+      "\\begin{longtable}{l | l | p{5.5cm} | p{2.5cm}}",
+      "Soul Shard Size & Mana Cost & DR against B, C, P\\",
+      "Tiny & 10 Mana & 2\\",
+      "Small & 25 Mana & 4\\",
+      "Normal & 40 Mana & 6\\",
+      "Large & 60 Mana & 8\\",
+      "Massive & 90 Mana & 10\\",
+      "\\end{longtable}"
+    ]
+  }
+}

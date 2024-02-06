@@ -1,0 +1,30 @@
+{
+  "gotfItem": "Perk",
+  "name": "Simple Weapon Training",
+  "label": "simpleWeaponTraining",
+  "type": "Perk",
+  "cost": 10,
+  "requirements": [],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You are trained with all weapons that have the \"Simple\" descriptor.",
+      "You add your level to attack and block rolls made with that weapon."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 150",
+    "description": {
+      "text": [
+        "You also gain a +{{oldRank}}d4 Skill Bonus to attack and block rolls with these weapons."
+      ],
+      "conditionalText": []
+    },
+    "amountWritten": 4
+  }
+}

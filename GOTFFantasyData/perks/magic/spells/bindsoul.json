@@ -1,0 +1,69 @@
+{
+  "gotfItem": "Perk",
+  "name": "Bind Soul",
+  "label": "bindSoul",
+  "type": "Perk",
+  "cost": 200,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation"
+  ],
+  "description": {
+    "text": [
+      "You capture the soul of one recently deceased, non-humanoid creature by casting a spell that takes 12 AP and costs 5 Mana.",
+      "The spell only works up to 10 minutes after a creature's death, and a creature's soul can not be captured twice.",
+      "Casting this spell transforms a gem worth 50 Coins or more into a tiny soul shard.",
+      "You can only capture a creature whose encounter rating is Tier 1.",
+      "The GM knows this statistic.",
+      "If the creature is above encounter rating Tier 1, the casting fails, and you lose your Mana.",
+      "At higher ranks of the spell, you may be able to capture creatures whose encounter rating is above Tier 1.",
+      "If you don't have enough Mana to capture the creature, you can decide at the threshold of each Tier if you want to abort casting the spell.",
+      "For example, you might have 25 Mana left, and are trying to capture a creature's soul whose encounter Rating is Tier 3.",
+      "You spend an initial 5 Mana, and the GM tells you that the creature wasn't Tier 1.",
+      "You decide to pay an additional 10 Mana, and the GM tells you that it wasn't Tier 2 either.",
+      "At this point, you would have to stop casting, since the next rank would drain you below 0 Mana."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 100",
+    "description": {
+      "text": [
+        "{{conditionalText[0]}} Mana and a gem worth {{conditionalText[1]}} Coins to transform a Tier {{newRank}} soul into a {{conditionalText[2]}}{{conditionalText[3]}}{{conditionalText[4]}}{{conditionalText[5]}} soul shard"
+      ],
+      "conditionalText": [
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "5/2 * ({{newRank}}^2 + {{newRank}})"
+        },
+        {
+          "conditional": "true",
+          "value": "{{param1}}",
+          "param1": "5/2 * ({{newRank}}^2 + {{newRank}}) * 10"
+        },
+        {
+          "conditional": "{{newRank}} == 2",
+          "value": "small"
+        },
+        {
+          "conditional": "{{newRank}} == 3",
+          "value": "normal"
+        },
+        {
+          "conditional": "{{newRank}} == 4",
+          "value": "large"
+        },
+        {
+          "conditional": "{{newRank}} >= 5",
+          "value": "massive"
+        }
+      ]
+    },
+    "amountWritten": 5
+  }
+}

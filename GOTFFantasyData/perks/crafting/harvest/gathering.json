@@ -1,0 +1,33 @@
+{
+  "gotfItem": "Perk",
+  "name": "Gathering",
+  "label": "gathering",
+  "type": "Perk",
+  "cost": 50,
+  "requirements": [],
+  "tags": [
+    "skill",
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "You can use a salvaging knife to scavenge for plants, food, mushrooms and other ingredients when you are scavenging an area.",
+      "Doing so requires a PE check, and you can add your crafting level as a Skill Bonus to it.",
+      "When doing so, the GM compares your check to the Gathering table of the Biome or Area that you're currently in.",
+      "You can roll once per 4-hour interval, and the amount and quality of items you find is based on your roll.",
+      "You can also use your level to gather items that you find in dungeons, towns and other areas, as long as they are not wood, creature parts, or minerals."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 100",
+    "description": {
+      "text": [
+        "You also gain a +{{oldRank}}d4 Skill Bonus on gathering checks."
+      ]
+    },
+    "amountWritten": 4
+  }
+}

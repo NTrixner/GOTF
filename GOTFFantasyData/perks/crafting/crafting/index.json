@@ -1,0 +1,23 @@
+[
+  {
+    "$ref": "cooking.json"
+  },
+  {
+    "$ref": "woodworking.json"
+  },
+  {
+    "$ref": "tailoring.json"
+  },
+  {
+    "$ref": "alchemy.json"
+  },
+  {
+    "$ref": "leatherworking.json"
+  },
+  {
+    "$ref": "smithing.json"
+  },
+  {
+    "$ref": "enchanting.json"
+  }
+]

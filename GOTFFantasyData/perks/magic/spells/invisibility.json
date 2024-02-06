@@ -1,0 +1,47 @@
+{
+  "gotfItem": "Perk",
+  "name": "Invisibility",
+  "label": "invisibility",
+  "type": "Perk",
+  "cost": 500,
+  "requirements": [],
+  "tags": [
+    "spell",
+    "active",
+    "repeatable",
+    "source",
+    "preparation",
+    "upkeep"
+  ],
+  "description": {
+    "text": [
+      "For 4 AP and 10 Mana, you become invisible.",
+      "This costs 1 Mana per minute to uphold.",
+      "If you perform any other action than moving -- opening a door, attacking a creature, consuming a potion etc.",
+      "While being invisible, you need to pay one Mana per AP of that action, otherwise the invisibility ends."
+    ]
+  },
+  "progression": {
+    "type": "list",
+    "value": [
+      {
+        "rank": 2,
+        "cost": 1000,
+        "description": {
+          "text": [
+            "You can affect other creatures. You have to touch them to do this, but if they're not willing they can not resist you."
+          ]
+        }
+      },
+      {
+        "rank": 3,
+        "cost": 2500,
+        "description": {
+          "text": [
+            "You can pay 25 Mana instead. If you do so, you don't have pay mana for just keeping the spell up. You still have to pay Mana for performing actions other than moving. If you're casting the spell in this way, you can only affect yourself with it."
+          ]
+        }
+      }
+    ]
+  }
+}

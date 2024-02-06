@@ -1,0 +1,73 @@
+{
+  "gotfItem": "Perk",
+  "name": "Divine Disciple",
+  "label": "divineDisciple",
+  "type": "Perk",
+  "cost": 100,
+  "requirements": [
+    {
+      "type": "perk",
+      "perk": "divineDisciple",
+      "rank": 1
+    }
+  ],
+  "tags": [
+    "passive",
+    "repeatable"
+  ],
+  "description": {
+    "text": [
+      "You are a disciple of a certain religion or god.",
+      "As such, you are able to learn and use prayers that are either neutral, or associated with that religion or god.",
+      "Every prayer uses a certain amount of Faith.",
+      "Your GM can decide what religions are available in your games' setting, and each religion espouses one or more of these areas of responsibility:",
+      "",
+      "\\begin{itemize}",
+      "\\item Air",
+      "\\item Animals",
+      "\\item Arts",
+      "\\item Artisans",
+      "\\item Beauty",
+      "\\item Chaos",
+      "\\item Death",
+      "\\item Destruction",
+      "\\item Earth",
+      "\\item Evil",
+      "\\item Fertility",
+      "\\item Fire",
+      "\\item Freedom",
+      "\\item Good",
+      "\\item Healing",
+      "\\item Law",
+      "\\item Life",
+      "\\item Light",
+      "\\item Lightning",
+      "\\item Love",
+      "\\item Luck",
+      "\\item Magic",
+      "\\item Moon",
+      "\\item Motherhood",
+      "\\item Nature",
+      "\\item Plants",
+      "\\item Power",
+      "\\item Protection",
+      "\\item Storm",
+      "\\item Sun",
+      "\\item Travel (Overland)",
+      "\\item Travel (Overseas)",
+      "\\item War",
+      "\\item Water",
+      "\\item Weather",
+      "\\item Wisdom",
+      "\\item (This list is not exhaustive)",
+      "\\end{itemize}",
+      "For example, the head of the greek pantheon Zeus would be a god of Law, Lightning, Air, Protection, and Weather.",
+      "A major deity would have up to 5 areas of responsibility, while a minor deity would not have more than 3.",
+      "A prayer might require you to be the Disciple of a religion or deity that follows on of some of these responsibilities.",
+      "",
+      "You can choose to take this Perk again.",
+      "However, the cost doubles for each time you take it.",
+      "When you do so, you lose all Piety Points and chose a different deity as your new Patron deity."
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "required": [
+    {
+      "$ref": "/combat/index.json"
+    },
+    {
+      "$ref": "/social/index.json"
+    },
+    {
+      "$ref": "/survival/index.json"
+    }
+  ],
+  "optional": [
+    {
+      "$ref": "/crafting/index.json"
+    }
+  ]
+}

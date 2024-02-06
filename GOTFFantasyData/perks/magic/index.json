@@ -1,0 +1,20 @@
+[
+  {
+    "$ref": "spellPowertraining.json"
+  },
+  {
+    "$ref": "elementomancer.json"
+  },
+  {
+    "$ref": "vitomancer.json"
+  },
+  {
+    "$ref": "spellAttackTraining.json"
+  },
+  {
+    "category": "spells",
+    "value": {
+      "$ref": "/spells/index.json"
+    }
+  }
+]

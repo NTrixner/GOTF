@@ -1,0 +1,35 @@
+{
+  "gotfItem": "Armor",
+  "recipe": "Chain Shirt",
+  "material": "Bronze",
+  "type": "light",
+  "defenses": [
+    {
+      "type": "blunt",
+      "amount": 2
+    },
+    {
+      "type": "cutting",
+      "amount": 5
+    },
+    {
+      "type": "piercing",
+      "amount": 2
+    }
+  ],
+  "attributes": [
+    {
+      "type": "over"
+    },
+    {
+      "type": "under"
+    },
+    {
+      "type": "pockets",
+      "amount":  2,
+      "size": "S"
+    }
+  ],
+  "size": "M",
+  "value": 750
+}

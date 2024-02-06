@@ -1,0 +1,23 @@
+[
+  {
+    "$ref": "alert.json"
+  },
+  {
+    "$ref": "enhancePool.json"
+  },
+  {
+    "$ref": "increaseAttribute.json"
+  },
+  {
+    "$ref": "increasePool.json"
+  },
+  {
+    "$ref": "language.json"
+  },
+  {
+    "$ref": "mobile.json"
+  },
+  {
+    "$ref": "resilient.json"
+  }
+]

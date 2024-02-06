@@ -1,0 +1,40 @@
+{
+  "gotfItem": "Perk",
+  "name": "Unusual Weapon Training",
+  "label": "unusualWeaponTraining",
+  "type": "Perk",
+  "cost": 500,
+  "requirements": [
+    {
+      "type": "perk",
+      "perk": "simpleWeaponTraining",
+      "description": "Simple Weapon Training",
+      "rank": 2
+    }
+  ],
+  "tags": [
+    "passive",
+    "repeatable",
+    "source"
+  ],
+  "description": {
+    "text": [
+      "This is a set of different perks.",
+      "You are trained with a certain type of weapon that has the \"Unusual\" descriptor.",
+      "You add your level to attack and block rolls made with that weapon.",
+      "You choose the weapon type that you are proficient in when you choose this perk.",
+      "You can gain another instance of this perk by choosing a different weapon."
+    ]
+  },
+  "progression": {
+    "type": "formula",
+    "value": "{{costOldRank}} + {{newRank}} * 500",
+    "description": {
+      "text": [
+        "You also gain a +{{oldRank}}d4 Skill Bonus to attack and block rolls with these weapons."
+      ],
+      "conditionalText": []
+    },
+    "amountWritten": 4
+  }
+}
