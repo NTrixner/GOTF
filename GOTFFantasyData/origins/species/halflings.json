@@ -1,0 +1,86 @@
+{
+  "gotfItem": "Origin",
+  "type": "species",
+  "name": "Halflings",
+  "label": "halflingSpecies",
+  "description": {
+    "text": [
+      "Halflings are a very short species of nimble humanoids that enjoy the company of other Species, but also often have their own enclaves to call home.",
+      "Halflings mature at the age of 36, and live to be around 200.",
+      "At their best, Halflings are friendly, curious and open-minded.",
+      "At their worst, Halflings are naive, intrusive and dishonest."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "racialBonus",
+      "attribute": "agility",
+      "value": 2
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "dexterity",
+      "value": 1
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "strength",
+      "value": -2
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "check",
+      "diceBonus": {
+        "amount": 1,
+        "size": 4
+      },
+      "description": {
+        "text": [
+          "attack rolls with throwing weapons"
+        ]
+      }
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "check",
+      "diceBonus": {
+        "amount": 1,
+        "size": 4
+      },
+      "description": {
+        "text": [
+          "checks to not be noticed"
+        ]
+      }
+    },
+    {
+      "type": "racialBonusSpecial",
+      "description": {
+        "text": [
+          "Can reroll one Natural 1 on a d20 once every 24 hours."
+        ]
+      }
+    },
+    {
+      "type": "resources",
+      "value": [
+        {
+          "resource": "health",
+          "value": 25
+        },
+        {
+          "resource": "stamina",
+          "value": 25
+        },
+        {
+          "resource": "mana",
+          "value": 20
+        },
+        {
+          "resource": "faith",
+          "value": 20
+        }
+      ]
+    }
+  ]
+}

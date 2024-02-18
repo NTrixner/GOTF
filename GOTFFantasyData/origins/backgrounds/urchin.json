@@ -1,0 +1,38 @@
+{
+  "gotfItem": "Origin",
+  "type": "background",
+  "name": "Urchin",
+  "label": "urchinBackground",
+  "description": {
+    "text": [
+      "From back alleys to uncharted territories, you're a street urchin navigating a world shaped by survival and resourcefulness.",
+      "Raised in the shadows, your journey embodies the resilience forged in adversity.",
+      "Whether driven by a quest for stability, the yearning for connection, or the allure of the unexplored, your path is etched with grit and the pursuit of a better life.",
+      "",
+      "Adventures might be sought to rise above your origins, protect those who share your past, or uncover new horizons beyond the city's limits.",
+      "Your street-smart skills and ability to adapt make you adept at maneuvering through the challenges that await.",
+      "",
+      "Yet, concealed motivations might linger beneath your streetwise exterior.",
+      "Personal vendettas, debts to those who once offered a helping hand, or secrets that still tie you to your past could steer your course.",
+      "",
+      "Your goals encompass escape from poverty, forming genuine bonds, reconciling with your history, or even unveiling the hidden truths that shaped your upbringing.",
+      "Adventure becomes your refuge, where you prove that resilience can thrive in uncharted territories.",
+      "Will you overcome your origins, find belonging, or be consumed by the shadows that defined your early life?",
+      "The path ahead is a journey toward redefining your destiny."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "backgroundBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 4
+      },
+      "description": {
+        "text": [
+          "checks regarding stealth, pickpocketing, and deception."
+        ]
+      }
+    }
+  ]
+}

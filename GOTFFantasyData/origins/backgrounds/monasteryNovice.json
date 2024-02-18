@@ -1,0 +1,38 @@
+{
+  "gotfItem": "Origin",
+  "type": "background",
+  "name": "Monastery Novice",
+  "label": "monasteryNoviceBackground",
+  "description": {
+    "text": [
+      "Leaving the tranquil walls of your monastery, you're a novice monk on a journey for enlightenment.",
+      "Inner balance and self-discovery guide your steps.",
+      "Inspired by ancient teachings or a yearning for growth, your path unfolds through a harmonious blend of discipline and curiosity.",
+      "",
+      "Adventures might be pursued to challenge your physical and spiritual limits, to understand the world's complexities, or to share the monastery's wisdom with those beyond its walls.",
+      "Your martial prowess and mental clarity are your tools for navigating uncharted territories.",
+      "",
+      "Yet, hidden desires might stir beneath your serene exterior.",
+      "Personal quests for redemption, questions about your monastery's teachings, or the allure of a world you were sheltered from could be your silent guides.",
+      "",
+      "Your goals span from achieving spiritual mastery to embracing the world's diversity, finding your place within it, or even discovering truths that transcend your initial beliefs.",
+      "Adventure becomes your meditation, where you seek harmony between inner tranquility and the tumult of the outside world.",
+      "Will you find enlightenment, forge new paths, or be forever bound to the teachings of your monastery?",
+      "The journey ahead is a canvas for your mindful choices."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "backgroundBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 4
+      },
+      "description": {
+        "text": [
+          "checks regarding religious lore, as well as two additional types of lore of your choice."
+        ]
+      }
+    }
+  ]
+}

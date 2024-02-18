@@ -1,0 +1,47 @@
+[
+  {
+    "$ref": "mercenary.json"
+  },
+  {
+    "$ref": "veteran.json"
+  },
+  {
+    "$ref": "noble.json"
+  },
+  {
+    "$ref": "monasteryNovice.json"
+  },
+  {
+    "$ref": "ranger.json"
+  },
+  {
+    "$ref": "guard.json"
+  },
+  {
+    "$ref": "clericStudent.json"
+  },
+  {
+    "$ref": "mageApprentice.json"
+  },
+  {
+    "$ref": "urchin.json"
+  },
+  {
+    "$ref": "travellingMerchant.json"
+  },
+  {
+    "$ref": "artisan.json"
+  },
+  {
+    "$ref": "farmer.json"
+  },
+  {
+    "$ref": "slave.json"
+  },
+  {
+    "$ref": "sailor.json"
+  },
+  {
+    "$ref": "gladiator.json"
+  }
+]

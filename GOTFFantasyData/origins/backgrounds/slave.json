@@ -1,0 +1,38 @@
+{
+  "gotfItem": "Origin",
+  "type": "background",
+  "name": "Slave",
+  "label": "slaveBackground",
+  "description": {
+    "text": [
+      "Having lived a life of oppression, you're a former or current slave — somehow still bearing the weight of shackles, whether physical or metaphorical.",
+      "Your journey embraces the pursuit of freedom, self-discovery, or a yearning for justice.",
+      "With chains of various forms now guiding your path, you navigate uncharted territories with an unwavering resolve.",
+      "",
+      "Adventures might be pursued to liberate others from their chains, to reclaim a lost sense of identity, or to challenge the forces that still seek to keep you confined.",
+      "Your resourcefulness and inner strength, forged through adversity, equip you to navigate a range of challenges.",
+      "",
+      "Yet, even as you walk a new path, the echoes of your past linger.",
+      "Physical restraints, emotional scars, or unresolved vendettas might entwine with your motivations.",
+      "",
+      "Your goals encompass liberation, self-empowerment, confronting the shadows of your history, or even dismantling the systems that perpetuate oppression.",
+      "Adventure becomes your battleground for reclaiming your agency and rewriting the narrative of your life.",
+      "Will you break free from your shackles, find solace within your scars, or rise as a symbol of resistance against injustice?",
+      "The journey ahead is a tapestry you weave anew."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "backgroundBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 4
+      },
+      "description": {
+        "text": [
+          "checks regarding stealth, and one lore, performance, or artisan skill of your choice."
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "gotfItem": "Origin",
+  "type": "species",
+  "name": "Half-Orcs",
+  "label": "halfOrcSpecies",
+  "description": {
+    "text": [
+      "Half-Elves are the result of a relationship between a human and an orc.",
+      "Oftentimes, this results in them feeling not very at home in either of those two societies.",
+      "Half-Orcs mature at the age of 12, and can live to 50.",
+      "At their best, Half-Orcs are reliable, mindful and tenacious",
+      "At their worst, they are too direct, quick to anger and rough."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "racialBonus",
+      "attribute": "strength",
+      "value": 2
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "choice",
+      "value": 1
+    },
+    {
+      "type": "racialBonusSpecial",
+      "description": {
+        "text": [
+          "Fall to 1 Health instead of 0 once every 24 hours"
+        ]
+      }
+    },
+    {
+      "type": "resources",
+      "value": [
+        {
+          "resource": "health",
+          "value": 25
+        },
+        {
+          "resource": "stamina",
+          "value": 30
+        },
+        {
+          "resource": "mana",
+          "value": 15
+        },
+        {
+          "resource": "faith",
+          "value": 20
+        }
+      ]
+    }
+  ]
+}

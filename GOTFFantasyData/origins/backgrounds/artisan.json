@@ -1,0 +1,51 @@
+{
+  "gotfItem": "Origin",
+  "type": "background",
+  "name": "Artisan",
+  "label": "artisanBackground",
+  "description": {
+    "text": [
+      "From your workshop to the open road, you're an artisan who's embarked on a new adventure.",
+      "Craftsmanship is your creed, and the world is your canvas.",
+      "Driven by the desire to perfect your skills or the need to find new inspiration, your journey is a testament to the transformative power of creativity.",
+      "",
+      "A quest for rare materials and techniques might lead you to distant lands, where the unknown promises to elevate your craft to unprecedented heights.",
+      "Alternatively, a patron's recognition of your talents could fuel your journey, as you strive to meet their expectations and carve a name for yourself beyond the confines of your studio.",
+      "",
+      "Yet, not all motives are virtuous.",
+      "Desperate financial situations might drive you to adventure, seeking to turn your talents into coin and escape the clutches of debt.",
+      "Conversely, an underground organization could be intrigued by your abilities, pulling you into a world of hidden motives and clandestine agendas.",
+      "",
+      "Your aspirations span from perfecting your craft to gaining wealth and recognition.",
+      "The open road is your new workshop, where your skills are your most valuable tools.",
+      "Will you become a master of innovation, a pawn in secretive schemes, or a visionary who transcends artistic norms?",
+      "The adventure ahead is a tapestry waiting to be woven by your skilled hands."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "backgroundBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 4
+      },
+      "description": {
+        "text": [
+          "checks regarding a craft of your choice, both to artisanship and crafting checks."
+        ]
+      }
+    },
+    {
+      "type": "backgroundBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 4
+      },
+      "description": {
+        "text": [
+          "checks regarding haggling."
+        ]
+      }
+    }
+  ]
+}

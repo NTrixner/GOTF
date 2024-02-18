@@ -1,0 +1,36 @@
+{
+  "gotfItem": "Origin",
+  "type": "background",
+  "name": "Veteran",
+  "label": "veteranBackground",
+  "description": {
+    "text": [
+      "From warfronts to unexplored territories, you're a veteran embarking on a new journey.",
+      "Scarred by conflicts, you seek purpose beyond the battlefield.",
+      "Driven by a desire for redemption, a search for meaning, or a yearning for camaraderie, your path is a testament to resilience and the pursuit of a life anew.",
+      "Adventures might be pursued to find solace, protect the innocent, or uncover the hidden threats that the world now faces.",
+      "Your combat experience and survival instincts enable you to navigate a range of challenges with a steadfast resolve.",
+      "",
+      "However, beneath your battle-worn exterior, there might be concealed motivations.",
+      "Demons from your past, debts to fallen comrades, or the promise of one last mission could shape your trajectory.",
+      "Your goals span from finding peace, rebuilding what was lost, confronting your own trauma, or even safeguarding a world still scarred by conflict.",
+      "Adventure becomes your battleground for finding a new purpose and reclaiming your life beyond the battlefield.",
+      "Will you heal the wounds of war, forge bonds anew, or succumb to the shadows that haunt your past?",
+      "The journey ahead is a testament to the indomitable spirit that guides your steps."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "backgroundBonus",
+      "diceBonus": {
+        "amount": 1,
+        "size": 4
+      },
+      "description": {
+        "text": [
+          "checks regarding geography, medicine, and survival."
+        ]
+      }
+    }
+  ]
+}

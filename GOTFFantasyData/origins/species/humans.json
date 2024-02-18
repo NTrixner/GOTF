@@ -1,0 +1,65 @@
+{
+  "gotfItem": "Origin",
+  "type": "species",
+  "name": "Human",
+  "label": "humanSpecies",
+  "description": {
+    "text": [
+      "Humans are a widely spread species of different ethnicities.",
+      "No other species is as numerous as humans are.",
+      "This is due to their high versatility and tenacity, as well as their adaptability.",
+      "They mature at 16 and live to around 80."
+    ]
+  },
+  "bonuses": [
+    {
+      "type": "racialBonus",
+      "attribute": "choice",
+      "value": 1
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "choice",
+      "value": 1
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "choice",
+      "value": 1
+    },
+    {
+      "type": "racialBonus",
+      "attribute": "choice",
+      "value": 1
+    },
+    {
+      "type": "racialBonusSpecial",
+      "description": {
+        "text": [
+          "Can use 1800 instead of 1500 LP at character creation."
+        ]
+      }
+    },
+    {
+      "type": "resources",
+      "value": [
+        {
+          "resource": "health",
+          "value": 25
+        },
+        {
+          "resource": "stamina",
+          "value": 25
+        },
+        {
+          "resource": "mana",
+          "value": 25
+        },
+        {
+          "resource": "faith",
+          "value": 25
+        }
+      ]
+    }
+  ]
+}
