@@ -2,10 +2,12 @@ package at.trixner.gotf;
 
 import at.trixner.gotf.mapper.MultiPerkToTemplate;
 import at.trixner.gotf.mapper.PerkToTemplate;
+import at.trixner.gotf.model.GotfSystem;
 import at.trixner.gotf.model.structure.GotfType;
 import at.trixner.gotf.model.perks.MultiPerk;
 import at.trixner.gotf.model.perks.Perk;
 import at.trixner.gotf.texModel.TemplatePerk;
+import at.trixner.gotf.utils.JsonPreProcessor;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -31,7 +33,7 @@ public class Main {
 
     static {
         OBJECT_MAPPER.enable(MapperFeature.ACCEPT_CASE_INSENSITIVE_ENUMS);
-        OBJECT_MAPPER.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        OBJECT_MAPPER.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
         cfg.setClassForTemplateLoading(Main.class, "/templates");
         cfg.setIncompatibleImprovements(new Version(2, 3, 20));
         cfg.setDefaultEncoding("UTF-8");
@@ -39,25 +41,11 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        URL resFolder = Main.class.getResource("/input");
-        URL outFolder = Main.class.getResource("/output");
+        File resFile = new File("./GOTFFantasyData/data.json");
+        String resolvedJson = JsonPreProcessor.getResolvedJson(resFile.toPath(), 50);
+        GotfSystem system = OBJECT_MAPPER.readValue(resolvedJson, GotfSystem.class);
 
-        File inputFolderFile = new File(resFolder.getPath());
-        File outputFolderFile = new File(outFolder.getPath());
-
-        if (!FileUtils.isEmptyDirectory(outputFolderFile)) {
-            FileUtils.cleanDirectory(outputFolderFile);
-        }
-
-        //Parse and copy all tex and json files
-        copyAndParseFiles(inputFolderFile, outputFolderFile);
-
-
-        //Print the structure
-        System.out.println(inputFolderFile.getName());
-        if (inputFolderFile.isDirectory()) {
-            printChildren(outputFolderFile.listFiles(), 0);
-        }
+        System.out.println("Read system " + system);
 
     }
 

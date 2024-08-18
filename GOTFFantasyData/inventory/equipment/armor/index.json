@@ -1,0 +1,46 @@
+[
+  {
+    "category": "cloth",
+    "items": [
+      "$ref(cloth/jacketFleece.json)",
+      "$ref(cloth/jacketLinen.json)",
+      "$ref(cloth/robesFleece.json)",
+      "$ref(cloth/robesLinen.json)"
+    ]
+  },
+  {
+    "category": "light",
+    "items": [
+      "$ref(light/chainShirtBronze.json)",
+      "$ref(light/chainShirtIron.json)",
+      "$ref(light/gambesonFleece.json)",
+      "$ref(light/gambesonLinen.json)",
+      "$ref(light/jacketFur.json)",
+      "$ref(light/jacketLeather.json)"
+    ]
+  },
+  {
+    "category": "medium",
+    "items": [
+      "$ref(medium/brigandineBronze.json)",
+      "$ref(medium/brigandineIron.json)",
+      "$ref(medium/brigandineSteel.json)",
+      "$ref(medium/gambesonFur.json)",
+      "$ref(medium/gambesonLeather.json)",
+      "$ref(medium/scaleMailBronze.json)",
+      "$ref(medium/scaleMailIron.json)",
+      "$ref(medium/scaleMailSteel.json)"
+    ]
+  },
+  {
+    "category": "heavy",
+    "items": [
+      "$ref(heavy/fullPlateBronze.json)",
+      "$ref(heavy/fullPlateIron.json)",
+      "$ref(heavy/fullPlateSteel.json)",
+      "$ref(heavy/halfPlateBronze.json)",
+      "$ref(heavy/halfPlateIron.json)",
+      "$ref(heavy/halfPlateSteel.json)"
+    ]
+  }
+]

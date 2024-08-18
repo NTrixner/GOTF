@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Data
-public class GotfCategory extends GotfType implements Serializable {
+public class GotfCategory<T extends GotfItem> extends GotfType implements Serializable {
     private String category;
-    private List<GotfType> value;
+    private GotfItemList<T> value;
 }

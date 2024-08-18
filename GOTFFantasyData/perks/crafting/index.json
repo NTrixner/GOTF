@@ -1,14 +1,10 @@
 [
   {
     "category": "harvest",
-    "value": {
-      "$ref": "/harvest/index.json"
-    }
+    "value": "$ref(/harvest/index.json)"
   },
   {
     "category": "crafting",
-    "value": {
-      "$ref": "/crafting/index.json"
-    }
+    "value": "$ref(/crafting/index.json)"
   }
 ]

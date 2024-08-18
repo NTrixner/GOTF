@@ -1,26 +1,18 @@
 [
   {
     "category": "armorTraining",
-    "value": {
-      "$ref": "/armorTraining/index.json"
-    }
+    "value": "$ref(/armorTraining/index.json)"
   },
   {
     "category": "weaponTraining",
-    "value": {
-      "$ref": "/weaponTraining/index.json"
-    }
+    "value": "$ref(/weaponTraining/index.json)"
   },
   {
     "category": "maneuver",
-    "value": {
-      "$ref": "/maneuver/index.json"
-    }
+    "value": "$ref(/maneuver/index.json)"
   },
   {
     "category": "styles",
-    "value": {
-      "$ref": "/styles/index.json"
-    }
+    "value": "$ref(/styles/index.json)"
   }
 ]

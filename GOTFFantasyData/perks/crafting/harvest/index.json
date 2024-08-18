@@ -1,14 +1,6 @@
 [
-  {
-    "$ref": "gathering.json"
-  },
-  {
-    "$ref": "woodcutting.json"
-  },
-  {
-    "$ref": "butchering.json"
-  },
-  {
-    "$ref": "mining.json"
-  }
+  "$ref(gathering.json)",
+  "$ref(woodcutting.json)",
+  "$ref(butchering.json)",
+  "$ref(mining.json)"
 ]

@@ -1,20 +1,8 @@
 [
-  {
-    "$ref": "carefulstyle.json"
-  },
-  {
-    "$ref": "distractivestyle.json"
-  },
-  {
-    "$ref": "goadingstyle.json"
-  },
-  {
-    "$ref": "index.json"
-  },
-  {
-    "$ref": "protectivestyle.json"
-  },
-  {
-    "$ref": "recklessstyle.json"
-  }
+  "$ref(carefulstyle.json)",
+  "$ref(distractivestyle.json)",
+  "$ref(goadingstyle.json)",
+  "$ref(index.json)",
+  "$ref(protectivestyle.json)",
+  "$ref(recklessstyle.json)"
 ]

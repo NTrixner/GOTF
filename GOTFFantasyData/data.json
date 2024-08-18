@@ -6,26 +6,14 @@
   "created": "2023-01-09",
   "description": "This is the generic fantasy system for the GOTF (Generic open tabletop framework",
   "gapoi": {
-    "gameModes": {
-      "$ref": "/gameModes/index.json"
-    },
-    "attributes": {
-      "$ref": "/attributes/index.json"
-    },
-    "perks": {
-      "$ref": "/perks/index.json"
-    },
-    "origins": {
-      "$ref": "/origins/index.json"
-    },
-    "inventory": {
-      "$ref": "/origins/index.json"
-    },
+    "gameModes": "$ref(./gameModes/index.json)",
+    "attributes": "$ref(./attributes/index.json)",
+    "perks": "$ref(./perks/index.json)",
+    "origins": "$ref(./origins/index.json)",
+    "inventory": "$ref(./inventory/index.json)",
     "additionalData": [
       {
-        "npcs": {
-          "$ref": "npcs/index.json"
-        }
+        "npcs": "$ref(./npcs/index.json)"
       }
     ]
   }
